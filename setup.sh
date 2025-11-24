@@ -37,11 +37,11 @@ git clone https://github.com/DrFirstLee/qwen_AG_new.git
 
 # qwen25 환경 생성
 cd qwen_AG_new
-conda env create -f qwen25.yaml -n qwen25
+conda env create -f qwen3.yaml -n qwen3
 
 # 생성된 환경 활성화 안내
-echo ">>> qwen25 환경 생성 완료. 다음 명령으로 활성화하세요:"
-echo "conda activate qwen25"
+echo ">>> qwen3 환경 생성 완료. 다음 명령으로 활성화하세요:"
+echo "conda activate qwen3"
 
 정리해보면
 소라 : 잘만들어준다 그런데 일관성이 없다.

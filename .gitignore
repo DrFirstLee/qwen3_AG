@@ -1,0 +1,9 @@
+*.jpg
+*.png
+*.JPG
+__pycache__/*
+*.npy
+VLM_model_dot_gpt.py
+*-checkpoint*
+dot_images/*
+

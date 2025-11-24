@@ -1,0 +1,625 @@
+{
+    "dataset_info": {
+        "base_path": "${AGD20K_PATH}",
+        "dataset_type": "Seen",
+        "split": "testset",
+        "view_type": "egocentric"
+    },
+    "selected_samples": {
+        "jump_skis": {
+            "action": "jump",
+            "object": "skis",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/jump/skis/skis_002829.jpg"
+        },
+        "jump_skateboard": {
+            "action": "jump",
+            "object": "skateboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/jump/skateboard/skateboard_002387.jpg"
+        },
+        "jump_surfboard": {
+            "action": "jump",
+            "object": "surfboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/jump/surfboard/surfboard_000658.jpg"
+        },
+        "jump_snowboard": {
+            "action": "jump",
+            "object": "snowboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/jump/snowboard/snowboard_001704.jpg"
+        },
+        "peel_carrot": {
+            "action": "peel",
+            "object": "carrot",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/peel/carrot/carrot_003707.jpg"
+        },
+        "peel_orange": {
+            "action": "peel",
+            "object": "orange",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/peel/orange/orange_001193.jpg"
+        },
+        "peel_banana": {
+            "action": "peel",
+            "object": "banana",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/peel/banana/banana_000480.jpg"
+        },
+        "peel_apple": {
+            "action": "peel",
+            "object": "apple",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/peel/apple/apple_001541.jpg"
+        },
+        "wash_toothbrush": {
+            "action": "wash",
+            "object": "toothbrush",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/toothbrush/toothbrush_001991.jpg"
+        },
+        "wash_cup": {
+            "action": "wash",
+            "object": "cup",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/cup/cup_003621.jpg"
+        },
+        "wash_orange": {
+            "action": "wash",
+            "object": "orange",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/orange/orange_001193.jpg"
+        },
+        "wash_fork": {
+            "action": "wash",
+            "object": "fork",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/fork/fork_001691.jpg"
+        },
+        "wash_wine_glass": {
+            "action": "wash",
+            "object": "wine_glass",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/wine_glass/wine_glass_000186.jpg"
+        },
+        "wash_bowl": {
+            "action": "wash",
+            "object": "bowl",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/bowl/bowl_002825.jpg"
+        },
+        "wash_knife": {
+            "action": "wash",
+            "object": "knife",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/wash/knife/knife_002720.jpg"
+        },
+        "sit_on_chair": {
+            "action": "sit_on",
+            "object": "chair",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/chair/chair_002839.jpg"
+        },
+        "sit_on_couch": {
+            "action": "sit_on",
+            "object": "couch",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/couch/couch_000779.jpg"
+        },
+        "sit_on_bed": {
+            "action": "sit_on",
+            "object": "bed",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/bed/bed_003622.jpg"
+        },
+        "sit_on_bench": {
+            "action": "sit_on",
+            "object": "bench",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/bench/bench_001877.jpg"
+        },
+        "sit_on_bicycle": {
+            "action": "sit_on",
+            "object": "bicycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/bicycle/bicycle_002100.jpg"
+        },
+        "sit_on_motorcycle": {
+            "action": "sit_on",
+            "object": "motorcycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/motorcycle/motorcycle_000837.jpg"
+        },
+        "sit_on_skateboard": {
+            "action": "sit_on",
+            "object": "skateboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/skateboard/skateboard_001460.jpg"
+        },
+        "sit_on_surfboard": {
+            "action": "sit_on",
+            "object": "surfboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sit_on/surfboard/surfboard_000010.jpg"
+        },
+        "drag_suitcase": {
+            "action": "drag",
+            "object": "suitcase",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/drag/suitcase/suitcase_002998.jpg"
+        },
+        "type_on_laptop": {
+            "action": "type_on",
+            "object": "laptop",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/type_on/laptop/laptop_000585.jpg"
+        },
+        "type_on_keyboard": {
+            "action": "type_on",
+            "object": "keyboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/type_on/keyboard/keyboard_000439.jpg"
+        },
+        "pack_suitcase": {
+            "action": "pack",
+            "object": "suitcase",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pack/suitcase/suitcase_002212.jpg"
+        },
+        "cut_carrot": {
+            "action": "cut",
+            "object": "carrot",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut/carrot/carrot_001443.jpg"
+        },
+        "cut_orange": {
+            "action": "cut",
+            "object": "orange",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut/orange/orange_001193.jpg"
+        },
+        "cut_banana": {
+            "action": "cut",
+            "object": "banana",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut/banana/banana_002623.jpg"
+        },
+        "cut_apple": {
+            "action": "cut",
+            "object": "apple",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut/apple/apple_000054.jpg"
+        },
+        "ride_bicycle": {
+            "action": "ride",
+            "object": "bicycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/ride/bicycle/bicycle_003046.jpg"
+        },
+        "ride_motorcycle": {
+            "action": "ride",
+            "object": "motorcycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/ride/motorcycle/motorcycle_002198.jpg"
+        },
+        "cut_with_scissors": {
+            "action": "cut_with",
+            "object": "scissors",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut_with/scissors/scissors_002479.jpg"
+        },
+        "cut_with_knife": {
+            "action": "cut_with",
+            "object": "knife",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/cut_with/knife/knife_001749.jpg"
+        },
+        "sip_bottle": {
+            "action": "sip",
+            "object": "bottle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sip/bottle/bottle_000341.jpg"
+        },
+        "sip_cup": {
+            "action": "sip",
+            "object": "cup",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sip/cup/cup_001864.jpg"
+        },
+        "sip_wine_glass": {
+            "action": "sip",
+            "object": "wine_glass",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/sip/wine_glass/wine_glass_003343.jpg"
+        },
+        "catch_soccer_ball": {
+            "action": "catch",
+            "object": "soccer_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/catch/soccer_ball/soccer_ball_003333.jpg"
+        },
+        "catch_frisbee": {
+            "action": "catch",
+            "object": "frisbee",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/catch/frisbee/frisbee_000598.jpg"
+        },
+        "catch_rugby_ball": {
+            "action": "catch",
+            "object": "rugby_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/catch/rugby_ball/rugby_ball_003522.jpg"
+        },
+        "lie_on_couch": {
+            "action": "lie_on",
+            "object": "couch",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/lie_on/couch/couch_003293.jpg"
+        },
+        "lie_on_bed": {
+            "action": "lie_on",
+            "object": "bed",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/lie_on/bed/bed_002880.jpg"
+        },
+        "lie_on_bench": {
+            "action": "lie_on",
+            "object": "bench",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/lie_on/bench/bench_003727.jpg"
+        },
+        "lie_on_surfboard": {
+            "action": "lie_on",
+            "object": "surfboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/lie_on/surfboard/surfboard_000221.jpg"
+        },
+        "open_bottle": {
+            "action": "open",
+            "object": "bottle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/bottle/bottle_001033.jpg"
+        },
+        "open_refrigerator": {
+            "action": "open",
+            "object": "refrigerator",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/refrigerator/refrigerator_002162.jpg"
+        },
+        "open_oven": {
+            "action": "open",
+            "object": "oven",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/oven/oven_001370.jpg"
+        },
+        "open_book": {
+            "action": "open",
+            "object": "book",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/book/book_003044.jpg"
+        },
+        "open_suitcase": {
+            "action": "open",
+            "object": "suitcase",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/suitcase/suitcase_000520.jpg"
+        },
+        "open_microwave": {
+            "action": "open",
+            "object": "microwave",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/open/microwave/microwave_001049.jpg"
+        },
+        "text_on_cell_phone": {
+            "action": "text_on",
+            "object": "cell_phone",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/text_on/cell_phone/cell_phone_003361.jpg"
+        },
+        "boxing_punching_bag": {
+            "action": "boxing",
+            "object": "punching_bag",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/boxing/punching_bag/punching_bag_001845.jpg"
+        },
+        "stir_bowl": {
+            "action": "stir",
+            "object": "bowl",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/stir/bowl/bowl_000134.jpg"
+        },
+        "hit_baseball_bat": {
+            "action": "hit",
+            "object": "baseball_bat",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hit/baseball_bat/baseball_bat_001882.jpg"
+        },
+        "hit_tennis_racket": {
+            "action": "hit",
+            "object": "tennis_racket",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hit/tennis_racket/tennis_racket_002268.jpg"
+        },
+        "hit_hammer": {
+            "action": "hit",
+            "object": "hammer",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hit/hammer/hammer_001006.jpg"
+        },
+        "hit_axe": {
+            "action": "hit",
+            "object": "axe",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hit/axe/axe_000961.jpg"
+        },
+        "write_pen": {
+            "action": "write",
+            "object": "pen",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/write/pen/pen_003590.jpg"
+        },
+        "take_photo_cell_phone": {
+            "action": "take_photo",
+            "object": "cell_phone",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/take_photo/cell_phone/cell_phone_000601.jpg"
+        },
+        "take_photo_camera": {
+            "action": "take_photo",
+            "object": "camera",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/take_photo/camera/camera_002534.jpg"
+        },
+        "pour_bottle": {
+            "action": "pour",
+            "object": "bottle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pour/bottle/bottle_002780.jpg"
+        },
+        "pour_cup": {
+            "action": "pour",
+            "object": "cup",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pour/cup/cup_001535.jpg"
+        },
+        "pour_wine_glass": {
+            "action": "pour",
+            "object": "wine_glass",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pour/wine_glass/wine_glass_000186.jpg"
+        },
+        "kick_soccer_ball": {
+            "action": "kick",
+            "object": "soccer_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/kick/soccer_ball/soccer_ball_001588.jpg"
+        },
+        "kick_rugby_ball": {
+            "action": "kick",
+            "object": "rugby_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/kick/rugby_ball/rugby_ball_002080.jpg"
+        },
+        "kick_punching_bag": {
+            "action": "kick",
+            "object": "punching_bag",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/kick/punching_bag/punching_bag_001639.jpg"
+        },
+        "pick_up_skis": {
+            "action": "pick_up",
+            "object": "skis",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pick_up/skis/skis_001547.jpg"
+        },
+        "pick_up_suitcase": {
+            "action": "pick_up",
+            "object": "suitcase",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/pick_up/suitcase/suitcase_002493.jpg"
+        },
+        "carry_skis": {
+            "action": "carry",
+            "object": "skis",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/carry/skis/skis_002829.jpg"
+        },
+        "carry_skateboard": {
+            "action": "carry",
+            "object": "skateboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/carry/skateboard/skateboard_002668.jpg"
+        },
+        "carry_surfboard": {
+            "action": "carry",
+            "object": "surfboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/carry/surfboard/surfboard_002422.jpg"
+        },
+        "carry_snowboard": {
+            "action": "carry",
+            "object": "snowboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/carry/snowboard/snowboard_001325.jpg"
+        },
+        "stick_fork": {
+            "action": "stick",
+            "object": "fork",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/stick/fork/fork_000095.jpg"
+        },
+        "stick_knife": {
+            "action": "stick",
+            "object": "knife",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/stick/knife/knife_001072.jpg"
+        },
+        "look_out_binoculars": {
+            "action": "look_out",
+            "object": "binoculars",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/look_out/binoculars/binoculars_003630.jpg"
+        },
+        "hold_toothbrush": {
+            "action": "hold",
+            "object": "toothbrush",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/toothbrush/toothbrush_003341.jpg"
+        },
+        "hold_baseball_bat": {
+            "action": "hold",
+            "object": "baseball_bat",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/baseball_bat/baseball_bat_002547.jpg"
+        },
+        "hold_bottle": {
+            "action": "hold",
+            "object": "bottle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/bottle/bottle_001227.jpg"
+        },
+        "hold_cup": {
+            "action": "hold",
+            "object": "cup",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/cup/cup_002518.jpg"
+        },
+        "hold_scissors": {
+            "action": "hold",
+            "object": "scissors",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/scissors/scissors_002479.jpg"
+        },
+        "hold_skis": {
+            "action": "hold",
+            "object": "skis",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/skis/skis_001357.jpg"
+        },
+        "hold_tennis_racket": {
+            "action": "hold",
+            "object": "tennis_racket",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/tennis_racket/tennis_racket_001785.jpg"
+        },
+        "hold_book": {
+            "action": "hold",
+            "object": "book",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/book/book_001195.jpg"
+        },
+        "hold_frisbee": {
+            "action": "hold",
+            "object": "frisbee",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/frisbee/frisbee_001130.jpg"
+        },
+        "hold_golf_clubs": {
+            "action": "hold",
+            "object": "golf_clubs",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/golf_clubs/golf_clubs_000045.jpg"
+        },
+        "hold_hammer": {
+            "action": "hold",
+            "object": "hammer",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/hammer/hammer_000215.jpg"
+        },
+        "hold_fork": {
+            "action": "hold",
+            "object": "fork",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/fork/fork_000804.jpg"
+        },
+        "hold_badminton_racket": {
+            "action": "hold",
+            "object": "badminton_racket",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/badminton_racket/badminton_racket_002255.jpg"
+        },
+        "hold_suitcase": {
+            "action": "hold",
+            "object": "suitcase",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/suitcase/suitcase_003687.jpg"
+        },
+        "hold_wine_glass": {
+            "action": "hold",
+            "object": "wine_glass",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/wine_glass/wine_glass_002374.jpg"
+        },
+        "hold_skateboard": {
+            "action": "hold",
+            "object": "skateboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/skateboard/skateboard_002387.jpg"
+        },
+        "hold_axe": {
+            "action": "hold",
+            "object": "axe",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/axe/axe_001552.jpg"
+        },
+        "hold_surfboard": {
+            "action": "hold",
+            "object": "surfboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/surfboard/surfboard_002631.jpg"
+        },
+        "hold_snowboard": {
+            "action": "hold",
+            "object": "snowboard",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/snowboard/snowboard_001704.jpg"
+        },
+        "hold_bowl": {
+            "action": "hold",
+            "object": "bowl",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/bowl/bowl_000546.jpg"
+        },
+        "hold_knife": {
+            "action": "hold",
+            "object": "knife",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/hold/knife/knife_002682.jpg"
+        },
+        "drink_with_bottle": {
+            "action": "drink_with",
+            "object": "bottle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/drink_with/bottle/bottle_003259.jpg"
+        },
+        "drink_with_cup": {
+            "action": "drink_with",
+            "object": "cup",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/drink_with/cup/cup_000508.jpg"
+        },
+        "drink_with_wine_glass": {
+            "action": "drink_with",
+            "object": "wine_glass",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/drink_with/wine_glass/wine_glass_003343.jpg"
+        },
+        "brush_with_toothbrush": {
+            "action": "brush_with",
+            "object": "toothbrush",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/brush_with/toothbrush/toothbrush_001764.jpg"
+        },
+        "throw_soccer_ball": {
+            "action": "throw",
+            "object": "soccer_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/soccer_ball/soccer_ball_003436.jpg"
+        },
+        "throw_javelin": {
+            "action": "throw",
+            "object": "javelin",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/javelin/javelin_001474.jpg"
+        },
+        "throw_frisbee": {
+            "action": "throw",
+            "object": "frisbee",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/frisbee/frisbee_003249.jpg"
+        },
+        "throw_discus": {
+            "action": "throw",
+            "object": "discus",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/discus/discus_003558.jpg"
+        },
+        "throw_rugby_ball": {
+            "action": "throw",
+            "object": "rugby_ball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/rugby_ball/rugby_ball_000001.jpg"
+        },
+        "throw_baseball": {
+            "action": "throw",
+            "object": "baseball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/baseball/baseball_002670.jpg"
+        },
+        "throw_basketball": {
+            "action": "throw",
+            "object": "basketball",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/throw/basketball/basketball_003534.jpg"
+        },
+        "beat_drum": {
+            "action": "beat",
+            "object": "drum",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/beat/drum/drum_002586.jpg"
+        },
+        "lift_fork": {
+            "action": "lift",
+            "object": "fork",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/lift/fork/fork_001691.jpg"
+        },
+        "talk_on_cell_phone": {
+            "action": "talk_on",
+            "object": "cell_phone",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/talk_on/cell_phone/cell_phone_000601.jpg"
+        },
+        "push_bicycle": {
+            "action": "push",
+            "object": "bicycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/push/bicycle/bicycle_002432.jpg"
+        },
+        "push_motorcycle": {
+            "action": "push",
+            "object": "motorcycle",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/push/motorcycle/motorcycle_003541.jpg"
+        },
+        "eat_hot_dog": {
+            "action": "eat",
+            "object": "hot_dog",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/hot_dog/hot_dog_002166.jpg"
+        },
+        "eat_carrot": {
+            "action": "eat",
+            "object": "carrot",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/carrot/carrot_001443.jpg"
+        },
+        "eat_orange": {
+            "action": "eat",
+            "object": "orange",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/orange/orange_001193.jpg"
+        },
+        "eat_banana": {
+            "action": "eat",
+            "object": "banana",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/banana/banana_002458.jpg"
+        },
+        "eat_broccoli": {
+            "action": "eat",
+            "object": "broccoli",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/broccoli/broccoli_002796.jpg"
+        },
+        "eat_apple": {
+            "action": "eat",
+            "object": "apple",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/eat/apple/apple_001541.jpg"
+        },
+        "swing_baseball_bat": {
+            "action": "swing",
+            "object": "baseball_bat",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/swing/baseball_bat/baseball_bat_001882.jpg"
+        },
+        "swing_tennis_racket": {
+            "action": "swing",
+            "object": "tennis_racket",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/swing/tennis_racket/tennis_racket_003066.jpg"
+        },
+        "swing_golf_clubs": {
+            "action": "swing",
+            "object": "golf_clubs",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/swing/golf_clubs/golf_clubs_001992.jpg"
+        },
+        "swing_badminton_racket": {
+            "action": "swing",
+            "object": "badminton_racket",
+            "image_path": "${AGD20K_PATH}/Seen/testset/egocentric/swing/badminton_racket/badminton_racket_003649.jpg"
+        }
+    }
+}

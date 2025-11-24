@@ -33,7 +33,7 @@ unzip AGD20K.zip
 
 
 # 깃허브 레포 클론
-git clone https://github.com/DrFirstLee/qwen_AG_new.git
+git clone git@github.com:DrFirstLee/qwen3_AG.git
 
 # qwen25 환경 생성
 cd qwen_AG_new

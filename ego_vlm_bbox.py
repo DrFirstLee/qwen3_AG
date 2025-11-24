@@ -49,7 +49,7 @@ def main():
         raw_prompt = f"which part of {object_name} do people use for action '{action}'? give me bounding box coordinate "
         res_from_img = model.ask_with_image(raw_prompt, image_path)
         print(res_from_img)
-        res_text[f"{object_name}_{action}"] = res_from_img
+        res_text[f"{object_name}${action}${image_path.split('/')[-1]}"] = res_from_img
 
         output_file = "results_vlm_bbox.json"
 

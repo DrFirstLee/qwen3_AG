@@ -46,18 +46,26 @@ def main():
         gt_path = get_gt_path(image_path)   
         print(f"Action : {action}, Object : {object_name} image_name : {image_path.split('/')[-1]}")
         # Process the image
-        raw_prompt = f"which part of {object_name} do people use for action '{action}'? give me bounding box coordinate "
+        raw_prompt = f"""You are an expert in affordance detection.
+         which part of {object_name} do people use for action '{action}'? 
+         You must output exactly one bounding box for that part.
+
+        Bounding box format:
+        - Use pixel coordinates in the form [x_min, y_min, x_max, y_max].
+        - All values must be integers.
+        - Coordinate origin (0, 0) is at the top-left corner of the image.
+
+        """
         res_from_img = model.ask_with_image(raw_prompt, image_path)
         print(res_from_img)
         res_text[f"{object_name}${action}${image_path.split('/')[-1]}"] = res_from_img
 
-        output_file = "results_vlm_bbox.json"
+        output_file = "results/results_vlm_bbox.json"
 
         # JSON 파일로 저장
         with open(output_file, "w", encoding="utf-16") as f:
             json.dump(res_text, f, indent=4, ensure_ascii=False, sort_keys=True)
 
-        break
 
     # Print final summary
     print("=" * 50)

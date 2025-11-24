@@ -730,41 +730,24 @@ class QwenVLModel:
         ]
         exo_filename =  os.path.basename(exo_path)
         print(f"exo file name : {exo_filename} / exo_path")
-        # 채팅 템플릿 적용
-        text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        
-        # vision 정보 처리
-        image_inputs, video_inputs = process_vision_info(messages)
-        
-        # 입력 처리
-        inputs = self.processor(
-            text=[text],
-            images=image_inputs,
-            videos=video_inputs,
-            padding=True,
-            return_tensors="pt",
+
+        inputs = self.processor.apply_chat_template(
+            messages,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_dict=True,
+            return_tensors="pt"
         )
-        inputs = inputs.to(self.device)
-        
-        # 추론
-        with torch.no_grad():
-            output = self.model.generate(
-                **inputs, 
-                max_new_tokens=1024,
-                do_sample=False,
-                temperature=0.0 
-            )
-        
-        # 결과 디코딩
+        inputs = inputs.to(self.model.device)
+        # Inference: Generation of the output
+        generated_ids = self.model.generate(**inputs, max_new_tokens=128)
         generated_ids_trimmed = [
-            out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, output)
+            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
-        
         result = self.processor.batch_decode(
-            generated_ids_trimmed, 
-            skip_special_tokens=True, 
-            clean_up_tokenization_spaces=False
+            generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )[0]
+        
         # print(f"qwen with exo Results!! : {result}")
         # dot 좌표 파싱
         dots = self.parse_dot_coordinates(result)

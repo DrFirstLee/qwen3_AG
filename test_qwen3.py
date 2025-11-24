@@ -23,5 +23,5 @@ model = QwenVLModel(model_name = model_name)
 res = model.ask("who are you?")
 print(res)
 
-res_img = model.ask_with_image("tell me about the image?", "/home/bongo/porter_notebook/research/new_qwen_AG/skis_002849_annotated.jpg")
+res_img = model.ask_with_image("tell me about the image?",f"{AGD20K_PATH}/Seen/trainset/egocentric/boxing/punching_bag/punching_bag_000063.jpg")
 print(res_img)

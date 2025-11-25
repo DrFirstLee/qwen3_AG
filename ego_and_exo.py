@@ -5,7 +5,7 @@ from pathlib import Path
 import random
 
 from PIL import Image
-import my_prompt4 as my_prompt
+import my_prompt5 as my_prompt
 from file_managing import (
     load_selected_samples,
     get_actual_path,
@@ -42,6 +42,7 @@ def affordance_grounding(model, action, object_name, image_path, gt_path, exo_pa
 
 def main():
     # Initialize Qwen VL model
+    cnt = 0 
     missing_gt = 0
     model = QwenVLModel(model_name = model_name)
     metrics_tracker_ego = MetricsTracker(name="only_ego")
@@ -57,7 +58,7 @@ def main():
     print(f"Processing {total_samples} samples...")
     print("=" * 50)    
     for pair_key, sample_info in data["selected_samples"].items():
-        print("--- Start  ", "-"*80) 
+        print(f"--- Start  {cnt}/{total_samples}", "-"*80) 
         
         action = sample_info["action"]
         object_name = sample_info["object"]
@@ -73,13 +74,14 @@ def main():
         # 하위 디렉토리 포함 모든 이미지 수집
         all_images = [p for p in exo_best_path.rglob("*")
                     if p.suffix.lower() in valid_ext]
+        if  len(all_images)==0:
+            print(f"NO SEEN DATA SET : {action}/{object_name}")
+            continue
 
         # 랜덤 이미지 선택
         random_exo_image = random.choice(all_images)
 
-        if  (exo_best_path is None):
-            print(f"NO SEEN DATA SET : {action}/{object_name}")
-            continue
+
 
         # Process the image
         results_ego = affordance_grounding(model, action, object_name, image_path, gt_path)
@@ -104,7 +106,7 @@ def main():
 
         print("*** End  ", "*"*150)
         print("\n\n")
-
+        cnt += 1
     # Print final summary
     print("=" * 50)
     print(f"Total number of action-object pairs processed: {total_samples}")

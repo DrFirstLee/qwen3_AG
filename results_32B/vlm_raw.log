@@ -1,0 +1,1047 @@
+🤖 Qwen/Qwen3-VL-32B-Instruct 모델 로딩중...
+✅ Qwen3 모델 로딩 완료! (Main Device: cuda:0)
+Processing 123 samples...
+==================================================
+--- Start  1  / 123 --------------------------------------------------------------------------------
+Action : jump, Object : skis image_name : skis_002829.jpg
+When skiing, the part of the skis most commonly used for the action of **jumping** is the **tip** — specifically, the **front end (tip)** of the skis.
+
+Here’s why:
+
+- **Jumping Technique**: Skiers typically initiate a jump by **bending their knees and pushing off with their skis**, using the **tips** to launch into the air. The tips are designed to be **flexible and responsive**, allowing them to absorb impact and provide lift during takeoff.
+  
+- **Design Features**: The **tips** of modern skis (like the Traverse skis shown) are
+--- Start  2  / 123 --------------------------------------------------------------------------------
+Action : jump, Object : skateboard image_name : skateboard_002387.jpg
+The part of the skateboard used for the action of "jump" — such as in tricks like ollies, kickflips, or manuals — is primarily the **deck**, specifically the **tail** and **nose**.
+
+Here’s a breakdown:
+
+- **Tail**: The back end of the deck. Skaters use the tail to **pop** (snap it down) to launch the board into the air — this is essential for an **ollie** or other aerial tricks.
+- **Nose**: The front end of the deck. Used for tricks like **nose grabs** or **manuals** (balancing
+--- Start  3  / 123 --------------------------------------------------------------------------------
+Action : jump, Object : surfboard image_name : surfboard_000658.jpg
+Surfboards are not typically used for "jumping" in the way that skateboards or trampolines are — but if you're referring to **"jumping"** as part of a surfing maneuver (like a **cutback**, **snap**, or **air maneuver**), then the **middle to rear section** of the board is most involved.
+
+However, if you're asking which part of the surfboard is used for **initiating or executing a jump** (especially in the context of **foam surfboards** or **beginner boards**, like the Paragon Retro shown), then the answer depends on the
+--- Start  4  / 123 --------------------------------------------------------------------------------
+Action : jump, Object : snowboard image_name : snowboard_001704.jpg
+When snowboarders perform a **jump**, they primarily use the **entire board**, but the **key functional parts** involved are:
+
+### 1. **The Board’s Edge (Sidecut)**
+- The **edges** (especially the **sidecut** — the curved shape of the board’s edge) help with **initiating and landing** jumps.
+- When jumping, riders use the **edges** to **carve into the snow** before the jump (to gain speed and control) and to **land cleanly**.
+
+### 2. **The Nose and Tail**
+- The **nose** (front)
+--- Start  5  / 123 --------------------------------------------------------------------------------
+Action : peel, Object : carrot image_name : carrot_003707.jpg
+People typically use the **outer skin (or peel)** of the carrot for the action of **peeling**.
+
+When you "peel" a carrot, you remove its **outer layer** — the thin, tough skin — to reveal the smoother, edible flesh underneath. This is usually done with a **peeler** or a **knife**, as shown in the image with the green-handled knife on the cutting board.
+
+So, the part of the carrot used for the action "peel" is the **outer skin or peel itself** — not the inner flesh, but the layer you remove during peeling.
+
+✅ **Answer
+--- Start  6  / 123 --------------------------------------------------------------------------------
+Action : peel, Object : orange image_name : orange_001193.jpg
+People use the **outer skin (rind)** of the orange for the action of "peeling."  
+
+When you peel an orange, you remove this thick, textured outer layer — the **zest** and **pith** — to access the juicy segments inside. The peel is typically discarded, though sometimes it's used in cooking or baking for flavor.
+
+So, the part used for the action "peel" is:  
+👉 **The rind or outer skin of the orange.**
+--- Start  7  / 123 --------------------------------------------------------------------------------
+Action : peel, Object : banana image_name : banana_000480.jpg
+The part of the banana used for the action "peel" is the **outer skin or peel** — specifically, the **yellow outer layer** that surrounds the edible fruit inside.
+
+When someone "peels" a banana, they are removing this outer layer, starting typically from the top (near the stem) and pulling it back to expose the white, edible flesh inside. In the image, you can see the peel has been partially removed — the yellow outer layer is being pulled away from the fruit, which is the exact action of peeling.
+
+So, to answer directly:  
+👉 **The yellow outer skin (the peel)
+--- Start  8  / 123 --------------------------------------------------------------------------------
+Action : peel, Object : apple image_name : apple_001541.jpg
+People use the **outer skin (or peel)** of the apple for the action "peel."
+
+When you "peel" an apple, you remove this thin, outer layer — which is typically red, green, or yellow depending on the variety — to expose the white flesh underneath. The peel is edible but is often removed before eating, especially in cooked dishes or when preparing apples for baking, salads, or smoothies.
+
+In the image, the apple’s peel is clearly visible — shiny and red — and is still intact. The action of peeling would involve using a peeler or knife to remove this layer from the apple’s
+--- Start  9  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : toothbrush image_name : toothbrush_001991.jpg
+The part of the toothbrush used for the action "wash" is the **bristle head** — specifically, the **blue and white bristles at the top** of the toothbrush.
+
+This is the part that physically contacts the teeth and gums to remove plaque, food particles, and bacteria during brushing. The bristles are designed to vibrate or oscillate (in the case of an electric toothbrush like this Philips Sonicare) to enhance cleaning effectiveness.
+
+In the image provided, the bristle head is clearly visible at the top, with a mix of blue and white bristles arranged in a circular pattern — this is the working
+--- Start  10  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : cup image_name : cup_003621.jpg
+The part of the cup people use for the action "wash" is the **interior surface** — specifically, the **inside of the cup**, including the **bottom and sides** — as well as the **rim** and **handle**, since all these parts come into contact with liquids and hands.
+
+However, if we interpret "action 'wash'" as referring to **washing the cup** (i.e., cleaning it), then:
+
+- **Primary area to wash**: The **inside** of the cup — where liquid and residue accumulate.
+- **Secondary areas**: The **outside surface**, including the **handle**, and the **rim
+--- Start  11  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : orange image_name : orange_001193.jpg
+The question seems to be a playful or confusing mix of words — "which part of orange do people use for action 'wash'?" — which doesn't make literal sense, as oranges are not typically used for washing.
+
+However, if we interpret this as a riddle or pun, perhaps the intended joke is:
+
+> **"The peel!"** — because you *peel* an orange, and "peel" sounds like "wash" in some playful or misheard context? But that’s a stretch.
+
+Alternatively, if we consider the phrase **"wash"** as a misdirection or typo for **"eat"**,
+--- Start  12  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : fork image_name : fork_001691.jpg
+Actually, **no part of a fork is used for the action "wash"**.
+
+Forks are utensils designed for **eating**, not washing. The tines (the prongs) are used to pierce, lift, and hold food, while the handle is for gripping. The fork does not have any functional part for washing — that’s typically done with water, soap, and perhaps a sponge or brush.
+
+If you’re asking metaphorically or in a riddle-like context, it might be a trick question. But literally — **a fork is not used for washing**.
+
+✅ So, the correct answer is: **
+--- Start  13  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : wine_glass image_name : wine_glass_000186.jpg
+The part of the wine glass that people typically use for the action "wash" — meaning to rinse or clean the glass — is the **interior surface of the bowl**.
+
+When washing a wine glass, especially by hand, the main focus is on cleaning the **inside of the bowl** where the wine is poured and consumed. This includes:
+
+- The **inner curved surface** (to remove residue or stains),
+- The **rim** (to ensure no buildup or bacteria),
+- And sometimes the **stem and base**, though these are less critical for hygiene since they don’t come into contact with the drink.
+
+However, if the
+--- Start  14  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : bowl image_name : bowl_002825.jpg
+People typically use the **interior (inside) surface** of the bowl for the action of "wash."
+
+This is because:
+
+- The **inside** of the bowl is where water, soap, or cleaning agents are placed.
+- It’s the **functional area** where items (like hands, dishes, or food) are washed or rinsed.
+- The **exterior** (the part with the teal pattern) is decorative and not involved in the washing action.
+
+So, the **inner surface** — the curved, white, smooth part visible in the photo — is the part used for washing.
+--- Start  15  / 123 --------------------------------------------------------------------------------
+Action : wash, Object : knife image_name : knife_002720.jpg
+The question asks which part of the knife is used for the action "wash," but **knives are not typically used for washing**. Washing usually involves water, soap, and scrubbing—actions performed with hands, sponges, or brushes, not knives.
+
+However, if we interpret the question metaphorically or in the context of **knife maintenance**, then the part used for "washing" (i.e., cleaning) would be the **entire blade and handle**, as both need to be cleaned after use. But if we’re thinking of **washing** in the sense of **sharpening** (as in "
+--- Start  16  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : chair image_name : chair_002839.jpg
+The part of the chair that people use for the action **"sit_on"** is the **seat cushion** — the blue, grid-patterned, padded area at the bottom of the chair, where the person’s buttocks and thighs rest.
+
+In the image, this is the **lower rectangular cushion** that is attached to the white wooden frame. It is designed for comfort and support during sitting, especially since it’s part of a reclining or patio chair typically used outdoors.
+
+✅ So, the correct answer is: **the seat cushion (the blue padded part at the bottom of the chair)**.
+--- Start  17  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : couch image_name : couch_000779.jpg
+The part of the couch people use for the action **"sit_on"** is the **seat cushions** — specifically, the **three main horizontal cushions** that form the seating surface, located in front of the backrest.
+
+In the image, these are the **three reddish-brown, slightly worn cushions** that rest on the base of the sofa, directly beneath the tufted backrest. These are the **primary seating areas** designed for people to sit on.
+
+Additionally, the **armrests** (the curved wooden and fabric-covered sides) are not typically used for sitting, but rather for resting arms. The
+--- Start  18  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bed image_name : bed_003622.jpg
+People typically use the **edge of the bed**, especially the **foot end** or **side edge**, for the action "sit_on".
+
+In the image provided, the bed is a low, platform-style bed made from wooden pallets, with a blue duvet and white pillows. The most logical and common place for someone to sit on this bed would be:
+
+> **The edge of the bed, near the footboard (the end opposite the headboard).**
+
+This is because:
+
+- The head of the bed is usually occupied by pillows and is less comfortable for sitting.
+- The foot of the bed is open and flat, making
+--- Start  19  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bench image_name : bench_001877.jpg
+The part of the bench that people use for the action **"sit_on"** is the **seat** — specifically, the **horizontal slats** that form the flat, upper surface of the bench.
+
+In the image, this is the **red, slatted surface** running lengthwise across the bench, positioned between the two green hedges. These slats are designed to support a person’s weight when sitting.
+
+So, the answer is: **the horizontal red slats (the seat surface)**.
+--- Start  20  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bicycle image_name : bicycle_002100.jpg
+The part of the bicycle that people use for the action **"sit_on"** is the **seat** (also called the **saddle**).
+
+In the image, the seat is the black, curved component located above the rear wheel, attached to the frame via a seat post. It is designed for the rider to sit on while pedaling.
+
+✅ **Answer: seat**
+--- Start  21  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : motorcycle image_name : motorcycle_000837.jpg
+The part of the motorcycle that people use for the action **"sit_on"** is the **seat**.
+
+In the image, the seat is the black, contoured component located toward the rear of the motorcycle, positioned above the fuel tank and behind the handlebars. It is designed for the rider (and sometimes a passenger) to sit on while operating the motorcycle.
+
+This seat is typically ergonomically shaped to provide comfort and support during riding, and in this case, it appears to be a single, sport-style seat with a slight rise at the rear, common in sport or sport-touring motorcycles like the Kawasaki shown.
+
+
+--- Start  22  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : skateboard image_name : skateboard_001460.jpg
+The part of the skateboard used for the action **"sit_on"** is the **deck**.
+
+The **deck** is the flat, elongated board that makes up the main surface of the skateboard. It’s typically made of layers of wood (like maple) and has a textured grip tape on top to prevent slipping. While skateboards are primarily designed for standing and riding, some people may sit on the deck for casual use, during breaks, or in certain types of skateboarding (like longboarding or cruising) where sitting is part of the style or function.
+
+In the image provided, the deck features a blue galaxy-style design
+--- Start  23  / 123 --------------------------------------------------------------------------------
+Action : sit_on, Object : surfboard image_name : surfboard_000010.jpg
+The part of the surfboard used for the action **"sit_on"** is the **deck** — specifically, the **central, flat, textured area** where a person would sit or stand.
+
+In the image you provided, this area is the **blue and black textured section** that covers most of the board’s surface, featuring:
+
+- **White traction lines** (in the upper blue section) — these are designed to provide grip and prevent slipping.
+- **Black textured area with blue stitching** (lower section) — this is also part of the deck and provides additional grip, especially near the tail.
+- **Three small
+--- Start  24  / 123 --------------------------------------------------------------------------------
+Action : drag, Object : suitcase image_name : suitcase_002998.jpg
+The part of the suitcase used for the action "drag" is the **extendable telescoping handle** at the top.
+
+This handle, which is gold-colored in the image and branded with "STEVE MADDEN," is pulled out and used to **pull or drag** the suitcase behind the user. It is connected to the wheels at the base, allowing the suitcase to roll smoothly on surfaces.
+
+Additionally, the suitcase has **multi-directional spinner wheels** (visible at the bottom corners) that enable it to be dragged easily in any direction — a key feature for effortless maneuverability.
+
+So, to answer directly:  
+👉 **
+--- Start  25  / 123 --------------------------------------------------------------------------------
+Action : type_on, Object : laptop image_name : laptop_000585.jpg
+The part of the laptop people use for the action **'type_on'** is the **keyboard**.
+
+In the image, the keyboard is clearly visible — it’s the black, grid-like array of keys located below the screen. Users press these keys to input text, commands, or data into the laptop.
+
+Additionally, the **touchpad** (the smooth, rectangular surface below the keyboard) is used for navigation (clicking, scrolling, moving the cursor), but not for typing.
+
+✅ So, the correct answer is: **keyboard**.
+--- Start  26  / 123 --------------------------------------------------------------------------------
+Action : type_on, Object : keyboard image_name : keyboard_000439.jpg
+The part of the keyboard people use for the action **"type_on"** is the **keypad** — specifically, the **keys with letters, numbers, and symbols** (like QWERTY layout).
+
+In the image, the white keyboard in front of the iMac is a **wireless Apple keyboard** with a full set of keys. When someone types, they use their fingers to press these keys — primarily the **alphabetic keys (A-Z)**, **numeric keys (0-9)**, and **function keys** — to input text or commands.
+
+So, to answer directly:
+
+> **People use the
+--- Start  27  / 123 --------------------------------------------------------------------------------
+Action : pack, Object : suitcase image_name : suitcase_002212.jpg
+The part of the suitcase people use for the action "pack" is the **main interior compartment** — the large, open space inside the suitcase that is visible when the lid is open.
+
+In the image, this is the **large central area** with the **leopard-print lining**, where clothing and other items are placed. This compartment is designed to hold the bulk of your belongings.
+
+Additionally, people may also use the **smaller zippered pockets** (like the one on the right side of the interior) and the **mesh pocket** on the underside of the lid for organizing smaller items such as electronics, toiletries, or
+--- Start  28  / 123 --------------------------------------------------------------------------------
+Action : cut, Object : carrot image_name : carrot_001443.jpg
+In the image, the **top portion** of the carrot (the rounded, thicker end) is being cut. This part is typically used for cutting because:
+
+- It is **thicker and more stable**, making it easier to hold and slice safely.
+- The **top end** is often **less fibrous** and more uniform in texture compared to the tapered bottom, which can be tougher or have more core.
+- It is commonly **used in cooking** for dicing, slicing, or grating — especially in recipes where even pieces are desired.
+
+So, people usually use the **thicker, rounded top end** of the
+--- Start  29  / 123 --------------------------------------------------------------------------------
+Action : cut, Object : orange image_name : orange_001193.jpg
+The part of the orange that people typically use for the action "cut" is the **rind (or peel)** — specifically, the **outer skin** — because it's the part that needs to be sliced or removed to access the edible segments inside.
+
+However, if you're asking which part is *cut* during the action, it’s the **entire orange**, but the **rind** is usually the first part to be cut or peeled off.
+
+So, in short:  
+👉 **The rind (outer peel)** is the part most commonly cut or removed when preparing an orange for eating.
+
+If you're thinking
+--- Start  30  / 123 --------------------------------------------------------------------------------
+Action : cut, Object : banana image_name : banana_002623.jpg
+People typically use the **middle section** of the banana for the action of "cutting," especially when preparing it for eating or cooking.
+
+Here’s why:
+
+- The **middle part** is the **thickest and most flesh-filled** section of the banana, making it ideal for slicing into even pieces.
+- It’s **less likely to be bruised or overripe** compared to the ends.
+- The **peel is easiest to remove** from this area, and the fruit is firm enough to hold its shape when cut.
+
+However, in practice, people often cut the **entire banana** (except the very ends)
+--- Start  31  / 123 --------------------------------------------------------------------------------
+Action : cut, Object : apple image_name : apple_000054.jpg
+People typically use the **core** or the **flesh** of the apple for the action of "cutting," but more specifically, the **flesh** (the edible part surrounding the core) is what is usually cut into slices or pieces for eating, cooking, or baking.
+
+When you cut an apple, you are generally slicing through the **flesh**—the juicy, crisp part that surrounds the seeds and core. The **core** (which includes the seeds and tough central part) is often removed before or after cutting, depending on the recipe or preference.
+
+So, to answer directly:  
+👉 **The flesh of
+--- Start  32  / 123 --------------------------------------------------------------------------------
+Action : ride, Object : bicycle image_name : bicycle_003046.jpg
+The part of the bicycle that people use for the action "ride" is the **seat** (also called the **saddle**).
+
+When riding a bicycle, the rider sits on the seat to maintain balance and control while pedaling. The seat is positioned over the frame, typically between the handlebars and the pedals, allowing the rider to comfortably support their weight and operate the bike.
+
+Other key components involved in riding include:
+- **Handlebars** – for steering
+- **Pedals** – for propulsion
+- **Wheels** – for movement
+- **Frame** – for structural support
+
+But the primary part used for
+--- Start  33  / 123 --------------------------------------------------------------------------------
+Action : ride, Object : motorcycle image_name : motorcycle_002198.jpg
+The part of the motorcycle that people use for the action "ride" is the **seat**.
+
+The seat is where the rider sits and controls the motorcycle using the handlebars, throttle, brakes, and foot pegs. While the rider interacts with various components (like the handlebars to steer or the pedals to shift gears), the **seat** is the primary part that supports the rider’s body during the act of riding.
+
+So, the answer is: **the seat**.
+--- Start  34  / 123 --------------------------------------------------------------------------------
+Action : cut_with, Object : scissors image_name : scissors_002479.jpg
+The part of the scissors people use for the action **"cut_with"** is the **blades** — specifically, the **sharp, opposing edges** at the tips of the scissor blades.
+
+In the image, the scissors are designed to resemble a bird (likely a heron or crane), with the blades forming the bird’s beak. When using these scissors to cut, the user would **squeeze the handles (the loops)**, which causes the **blades to close together**, applying pressure to cut the material.
+
+So, while the **handles** are used to **manipulate** the scissors, the **bl
+--- Start  35  / 123 --------------------------------------------------------------------------------
+Action : cut_with, Object : knife image_name : knife_001749.jpg
+The part of the knife used for the action **"cut_with"** is the **blade**.
+
+Specifically, in the image, the **serrated edge** of the blade is the functional part designed for cutting. This type of blade is commonly used for slicing through tough or fibrous foods (like bread or meat) because the serrations grip and saw through the material effectively.
+
+So, to answer directly:
+
+> **The blade — especially the serrated edge — is used for the action 'cut_with'.**
+
+This is the part that makes contact with the food and performs the cutting motion.
+--- Start  36  / 123 --------------------------------------------------------------------------------
+Action : sip, Object : bottle image_name : bottle_000341.jpg
+People use the **top part of the bottle**, specifically the **neck and opening**, to perform the action of "sip."
+
+More precisely, the **mouth of the bottle** — the narrow opening at the top, just below the cap — is where the drinker places their lips to sip the contents. The cap is usually removed first, and then the bottle is tilted to allow the liquid to flow into the mouth.
+
+In the image, the bottle has a **yellow cap**, which would be unscrewed before sipping. The neck is the part that connects the cap to the main body of the bottle — this is the section you
+--- Start  37  / 123 --------------------------------------------------------------------------------
+Action : sip, Object : cup image_name : cup_001864.jpg
+The part of the cup people use for the action "sip" is the **rim** — the top edge of the cup’s opening.
+
+When sipping, a person brings the rim of the cup to their lips to drink the liquid inside. In the image, the rim is the circular edge of the white cup that surrounds the dark coffee. It’s the part that makes direct contact with the mouth during sipping.
+
+Additionally, the **handle** (the small white protrusion on the left side) is used to hold the cup securely, but not for sipping — it’s for gripping and stability.
+
+✅ So, the correct answer
+--- Start  38  / 123 --------------------------------------------------------------------------------
+Action : sip, Object : wine_glass image_name : wine_glass_003343.jpg
+People use the **rim** of the wine glass for the action of "sip."
+
+The **rim** is the top edge of the glass bowl, where the wine is brought to the lips. It is designed to be smooth and slightly flared to allow for easy, controlled sipping while minimizing the risk of spilling or tasting the glass itself. The shape of the rim can also influence the wine's aroma and flow into the mouth, enhancing the tasting experience.
+
+So, the correct part is: **the rim of the wine glass**.
+--- Start  39  / 123 --------------------------------------------------------------------------------
+Action : catch, Object : soccer_ball image_name : soccer_ball_003333.jpg
+In soccer, the **hands** are typically used to "catch" the ball — but **only by the goalkeeper**, and **only within the penalty area**. 
+
+The part of the soccer ball that is "caught" is **any part of the ball’s surface** — since the ball is spherical and smooth, there isn’t a specific “part” designed for catching. However, the goalkeeper usually catches the ball using their **palms and fingers**, often with the **top or side panels** of the ball making contact with their hands.
+
+In the image, the ball is an **Adidas Beau Jeu**, the official match
+--- Start  40  / 123 --------------------------------------------------------------------------------
+Action : catch, Object : frisbee image_name : frisbee_000598.jpg
+People typically use the **edges or rim** of the frisbee to catch it.
+
+In the image you provided, the frisbee has a **teal-colored body** with **white hexagonal-patterned sections** along the outer rim. These white sections are likely **grip-enhancing or reflective materials**, which can help with visibility and handling.
+
+### Why the rim?
+- The **rim** provides a larger surface area for catching, especially when the frisbee is spinning.
+- Most catches are made by **cupping the hand around the edge** of the frisbee, using fingers to stabilize it.
+- The
+--- Start  41  / 123 --------------------------------------------------------------------------------
+Action : catch, Object : rugby_ball image_name : rugby_ball_003522.jpg
+In the image provided, we see an **American football**, not a rugby ball. While both are oval-shaped and used in sports with catching, the **American football** has **lacing** on top, which is a key feature for grip and handling.
+
+---
+
+### For **catching** in American football (and similarly in rugby), people primarily use:
+
+✅ **The laced side (top) of the ball** — this is the **main grip area**.
+
+- The **bright green laces** (as seen in the image) are designed to help players **grip the ball securely** when catching or throwing.
+-
+--- Start  42  / 123 --------------------------------------------------------------------------------
+Action : lie_on, Object : couch image_name : couch_003293.jpg
+The part of the couch most commonly used for the action **"lie_on"** is the **chaise lounge section** — the extended, single-seat portion that curves outward from the main seating area.
+
+In the image, this is the **leftmost section** of the red sectional sofa — the part that extends horizontally and is slightly lower than the rest of the seating. It’s designed to accommodate someone lying down comfortably, often used for reclining or stretching out.
+
+✅ **Answer: The chaise lounge section (the extended left arm of the sectional couch).**
+
+This part is ideal for lying on because of its length and reclined
+--- Start  43  / 123 --------------------------------------------------------------------------------
+Action : lie_on, Object : bed image_name : bed_002880.jpg
+The part of the bed people use for the action **"lie_on"** is the **mattress** — specifically, the **top surface** of the mattress, which is covered by the bedding (in this image, a gray duvet or comforter and two pillows).
+
+In the image, the bed has a low wooden frame with a flat, elevated platform. The **sleeping surface** is the area where the pillows and duvet are placed — this is the part designed for lying down, resting, or sleeping. So, the **bed surface** (mattress + bedding) is the correct part for the action
+--- Start  44  / 123 --------------------------------------------------------------------------------
+Action : lie_on, Object : bench image_name : bench_003727.jpg
+The part of the bench that people use for the action **"lie_on"** is the **seat** — the horizontal wooden surface that runs across the front of the bench, supported by the legs.
+
+In the image, this is the **lower wooden plank** (or planks) that form the flat, horizontal surface where people sit. While the bench is designed primarily for sitting, if someone were to lie down on it (perhaps for resting or lounging), they would lie on this **seat portion**.
+
+Note: Lying on a standard park bench is not typical or comfortable, as it’s narrow and not designed for recl
+--- Start  45  / 123 --------------------------------------------------------------------------------
+Action : lie_on, Object : surfboard image_name : surfboard_000221.jpg
+The part of the surfboard used for the action "lie_on" is the **deck** — the top surface of the surfboard.
+
+When a surfer lies on the board (typically in the "paddling" position before catching a wave), they rest their chest, stomach, and arms on the **deck**, which is the flat, upper surface of the board. This surface is usually textured or covered with wax to provide grip and prevent slipping.
+
+So, the answer is: **the deck**.
+--- Start  46  / 123 --------------------------------------------------------------------------------
+Action : open, Object : bottle image_name : bottle_001033.jpg
+The part of the bottle people use for the action "open" is the **cap or lid**, which in this case is the **green top** of the bottle.
+
+Even though this is a decorative, hand-painted bottle (likely a ceramic or wooden figurine shaped like a bottle), the green top is designed to resemble a bottle cap. In real bottles, the cap is twisted or pulled off to open the bottle. So, **the green top** is the functional part associated with the action of opening — even if this particular bottle is not meant to be opened.
+
+**Answer: The green top (cap) of the bottle.
+--- Start  47  / 123 --------------------------------------------------------------------------------
+Action : open, Object : refrigerator image_name : refrigerator_002162.jpg
+People use the **doors** of the refrigerator to perform the action of "open."
+
+In the image shown, this refrigerator is a **side-by-side** model with **two vertical doors**:
+
+- The **left door** contains the **water and ice dispenser**, and
+- The **right door** is typically the **freezer** (though configurations vary).
+
+To open the refrigerator, users grasp the **handles** (the long, vertical, silver-colored bars on each door) and pull them outward. These handles are specifically designed for that action.
+
+✅ So, the **doors** (with their **handles**) are the parts used
+--- Start  48  / 123 --------------------------------------------------------------------------------
+Action : open, Object : oven image_name : oven_001370.jpg
+The part of the oven that people use for the action "open" is the **door**.
+
+In the image, the door is the front-facing, rectangular section with a large glass window and a horizontal **handle** at the top. The handle is specifically designed for gripping and pulling the door open. The door swings open from the right side (hinged on the right), allowing access to the interior racks and cooking chamber.
+
+So, to perform the action "open," a person would **grasp the handle** and **pull the door outward** to access the inside of the oven.
+--- Start  49  / 123 --------------------------------------------------------------------------------
+Action : open, Object : book image_name : book_003044.jpg
+The part of the book people use for the action "open" is the **cover** — specifically, the **front cover** or **back cover**, which are hinged at the **spine**.
+
+When you open a book, you typically:
+
+- Grasp the **front cover** (or sometimes the back cover),
+- Pull it away from the **spine** (the bound edge),
+- And flip it to reveal the **pages** inside.
+
+So, the **cover** is the part you physically manipulate to open the book, and the **spine** is the structural part that allows the opening motion.
+
+✅ **
+--- Start  50  / 123 --------------------------------------------------------------------------------
+Action : open, Object : suitcase image_name : suitcase_000520.jpg
+The part of the suitcase people use for the action "open" is the **zipper**.
+
+Specifically, in the image, you can see:
+
+- A **main zipper** that runs along the top and sides of the suitcase, allowing the two halves (top and bottom) to be unzipped and opened.
+- The zipper pulls (the small tabs attached to the zipper chain) are what users physically grasp and pull to open the suitcase.
+
+Additionally, the suitcase has a **hinged lid** (top half), which lifts open once the zipper is unzipped — so while the **hinge** allows the lid to
+--- Start  51  / 123 --------------------------------------------------------------------------------
+Action : open, Object : microwave image_name : microwave_001049.jpg
+The part of the microwave that people use for the action **"open"** is the **handle** located at the top of the door.
+
+In the image, this is the **long, beige-colored horizontal bar** positioned above the black glass door. This handle is designed to be gripped and pulled to open the microwave door, allowing access to the interior cavity.
+
+Additionally, the door itself is hinged at the top, so pulling the handle opens it downward. The handle is ergonomically placed for easy access and is typically made of a durable, heat-resistant material to prevent burns.
+
+✅ **Answer: The handle at the top
+--- Start  52  / 123 --------------------------------------------------------------------------------
+Action : text_on, Object : cell_phone image_name : cell_phone_003361.jpg
+The part of the cell phone people use for the action **"text_on"** (i.e., typing or entering text) is the **touchscreen display**.
+
+In the image, the phone is an **HTC** device with a large, dark blue screen — this is the **touchscreen**. When users want to text, they tap and type on this screen using their fingers or a stylus (if supported). The screen displays the keyboard (either on-screen or virtual) that allows for text input.
+
+Additionally, the **physical buttons** (if any) or **side keys** may be used for navigation or shortcuts
+--- Start  53  / 123 --------------------------------------------------------------------------------
+Action : boxing, Object : punching_bag image_name : punching_bag_001845.jpg
+People primarily use the **main body (the red middle section)** of the punching bag for the action of "boxing."
+
+Here’s why:
+
+- The **red central portion** is the largest and most accessible part of the bag, designed to absorb and respond to punches, hooks, jabs, and crosses.
+- It’s typically filled with dense material (like sand or rye) to provide resistance and feedback, making it ideal for practicing combinations and building hand speed and power.
+- The **black top and bottom sections** are usually more rigid or less filled — the top is for hanging and the bottom for stability — so they are not
+--- Start  54  / 123 --------------------------------------------------------------------------------
+Action : stir, Object : bowl image_name : bowl_000134.jpg
+People typically use the **interior surface of the bowl** (the bottom and sides) for the action of **stirring**.
+
+In the image, a spoon is inserted into the bowl, and the stirring action would involve moving the spoon **within the bowl’s interior**, specifically **around the bottom and sides** of the creamy substance (likely yogurt or cream) to mix or combine ingredients.
+
+So, the part of the bowl used for stirring is:
+
+> **The inside (interior) of the bowl, particularly the bottom and sides.**
+
+This area allows the spoon to move through the contents effectively, ensuring even mixing.
+--- Start  55  / 123 --------------------------------------------------------------------------------
+Action : hit, Object : baseball_bat image_name : baseball_bat_001882.jpg
+The part of the baseball bat used for the action "hit" is the **barrel**.
+
+The **barrel** is the **thickest, widest part** of the bat, located near the end opposite the handle. It is specifically designed to make contact with the ball. This area has the most mass and is engineered to deliver maximum power and transfer energy efficiently when striking the ball.
+
+In the image you provided, the **barrel** is the large, red, rounded end of the bat with the "GHOST" and "HYPERLITE" branding. That’s the part players swing to hit the ball.
+
+---
+
+
+--- Start  56  / 123 --------------------------------------------------------------------------------
+Action : hit, Object : tennis_racket image_name : tennis_racket_002268.jpg
+The part of the tennis racket used for the action of "hit" is the **strings** (also called the **string bed** or **playing surface**).
+
+### Why?
+- The strings are the **primary contact point** between the racket and the tennis ball.
+- When a player swings the racket to hit the ball, the ball makes direct contact with the strings.
+- The tension, pattern, and material of the strings affect how the ball is hit (e.g., spin, power, control).
+
+### Additional Notes:
+- While the **frame** (the outer edge) and **head** (the oval part) provide structure
+--- Start  57  / 123 --------------------------------------------------------------------------------
+Action : hit, Object : hammer image_name : hammer_001006.jpg
+The part of the hammer used for the action "hit" is the **head**, specifically the **flat side** (also called the **face** or **claw side** depending on the type of hammer).
+
+In the image, you can see a claw hammer lying on a wooden workbench. The **head** of the hammer has two main parts:
+
+1. **Flat striking face** — This is the broad, smooth side used for driving nails into wood or other materials. This is the primary part used for "hitting" in carpentry or general hammering tasks.
+
+2. **Claw** — The curved, fork
+--- Start  58  / 123 --------------------------------------------------------------------------------
+Action : hit, Object : axe image_name : axe_000961.jpg
+The part of the axe used for the action "hit" is the **blade** — specifically, the **cutting edge** of the blade.
+
+In the image you provided, the axe has a **single-bevel blade** (also called a "hatchet-style" blade), which is designed for chopping or splitting wood. The sharp, curved edge on the side of the blade is the part that makes contact with the material being struck.
+
+So, to answer your question directly:
+
+> **People use the sharp, curved edge of the blade (the cutting edge) to perform the "hit" action.**
+
+This is the part that
+--- Start  59  / 123 --------------------------------------------------------------------------------
+Action : write, Object : pen image_name : pen_003590.jpg
+The part of the pen used for the action of **writing** is the **tip** — specifically, the **nib** or **ballpoint** at the very end of the pen.
+
+In the image you provided:
+
+- The pen on top has a **silver-colored metallic tip** (likely a ballpoint or rollerball), which is the writing point.
+- The pen underneath also has a **metallic tip** at its end, which is used for writing.
+
+These tips are designed to dispense ink onto paper when pressed and moved across the surface.
+
+✅ So, the **writing part** is the **tip** — the
+--- Start  60  / 123 --------------------------------------------------------------------------------
+Action : take_photo, Object : cell_phone image_name : cell_phone_000601.jpg
+To take a photo with a cell phone, people typically use the **camera lens** (or **camera module**) located on the **back** of the phone.
+
+In the image you provided, the phone is lying face-up with its screen visible, so the **back** of the phone — where the camera is usually located — is not visible. However, based on standard smartphone design:
+
+- The **camera lens** is the physical component that captures light and images.
+- It is usually located on the **rear side** of the phone, often in the top corner (e.g., top left or top right).
+- Users point the
+--- Start  61  / 123 --------------------------------------------------------------------------------
+Action : take_photo, Object : camera image_name : camera_002534.jpg
+The part of the camera people use to take a photo is the **shutter button**.
+
+On this Canon DSLR camera, the **shutter button** is the prominent round button on the top right of the camera body (from the user’s perspective), located just behind the grip and near the viewfinder. It’s typically labeled with a small icon or is simply a raised button that you press to capture an image.
+
+In the image, you can see this button on the top right side of the camera body — it’s the large, circular button with a slight indentation or texture, positioned above the grip.
+
+Additionally, to take a
+--- Start  62  / 123 --------------------------------------------------------------------------------
+Action : pour, Object : bottle image_name : bottle_002780.jpg
+The part of the bottle used for the action "pour" is the **nipple (or spout)** — the white, flexible, tapered tip at the end of the pink cap.
+
+In this image, the object is a **baby bottle** filled with colorful beads (likely for decorative or craft purposes), and it has a **pink cap** with a **white silicone nipple**. In a real baby bottle, the nipple is where liquid is dispensed when the bottle is tilted — this is the **pouring mechanism**.
+
+Even though this bottle contains beads instead of liquid, the **nipple is still the functional part** designed
+--- Start  63  / 123 --------------------------------------------------------------------------------
+Action : pour, Object : cup image_name : cup_001535.jpg
+The part of the cup people use for the action "pour" is the **spout** — the small, curved extension on the side of the cup opposite the handle.
+
+In the image, the cup is a white ceramic mug with a handle, and it appears to be filled with coffee. While mugs like this are typically used for drinking and are not designed for pouring (unlike teapots or pitchers), if someone were to pour from it, they would tilt the cup and use the **rim** or **edge** near the handle — essentially the **open top** — to control the flow of liquid. However, the
+--- Start  64  / 123 --------------------------------------------------------------------------------
+Action : pour, Object : wine_glass image_name : wine_glass_000186.jpg
+When pouring wine into a glass, people typically use the **rim** or the **upper opening** of the wine glass.
+
+However, the **action of pouring** itself is usually performed by **holding the bottle** (not the glass) and directing the liquid into the **bowl** of the glass — specifically, the **upper part of the bowl near the rim** — to allow for a smooth pour and to minimize splashing.
+
+In the image you provided, the wine is being poured directly into the **bowl** of the glass, near the **rim**, which is the correct and most common place for pouring. The **
+--- Start  65  / 123 --------------------------------------------------------------------------------
+Action : kick, Object : soccer_ball image_name : soccer_ball_001588.jpg
+In soccer, players typically use the **front or top surface** of the ball — specifically, the **center of the ball’s upper half** — when performing a **kick**.
+
+More precisely, the **instep (the area between the toes and the ankle)** of the foot is used to strike the **center of the ball’s upper surface** (often called the "sweet spot") for a powerful, accurate kick. This part of the ball is usually one of the **hexagonal or pentagonal panels** located near the top, depending on the ball’s design.
+
+In the image you provided, the ball is resting on the
+--- Start  66  / 123 --------------------------------------------------------------------------------
+Action : kick, Object : rugby_ball image_name : rugby_ball_002080.jpg
+Actually, the object shown in the image is an **American football**, not a rugby ball — though they are similar in shape.
+
+In American football, the part most commonly used for **kicking** is the **tip (or point)** of the ball. This is because:
+
+- The ball is **prolate spheroid** (oval-shaped), and kicking it with the **point** allows for better **aerodynamics** and **accuracy**.
+- Kicks like **field goals** or **punts** are typically executed by striking the ball near its **tip** with the **instep** or **toe**
+--- Start  67  / 123 --------------------------------------------------------------------------------
+Action : kick, Object : punching_bag image_name : punching_bag_001639.jpg
+In a standard **Everlast MMA punching bag** like the one shown, people typically use the **lower half** of the bag for **kicking**.
+
+### Why the lower half?
+- The **lower section** is designed to absorb and withstand kicks, especially from the legs (roundhouse, front, side kicks).
+- It’s usually **denser and more stable** when hung properly, allowing for effective leg strikes without excessive swinging.
+- The bag’s **weight and shape** are optimized so that kicks to the bottom cause the bag to swing, helping with timing and power development.
+
+### Additional Notes:
+- The **top part
+--- Start  68  / 123 --------------------------------------------------------------------------------
+Action : pick_up, Object : skis image_name : skis_001547.jpg
+The part of the skis used for the action **"pick_up"** — meaning lifting or grasping the skis — is typically the **tips** or the **ends** of the skis.
+
+In the image provided, the **tips** (the pointed ends) are clearly visible and feature the **Völkl** branding in red and black. These are the most convenient and commonly used parts for picking up skis because:
+
+- They are **easy to grip** with one or two hands.
+- They are **lighter** and more balanced for lifting.
+- The **tips are designed to be handled** — they
+--- Start  69  / 123 --------------------------------------------------------------------------------
+Action : pick_up, Object : suitcase image_name : suitcase_002493.jpg
+People typically use the **top handle** or **side handle** of the suitcase for the action "pick up."
+
+In the image provided:
+
+- The **top handle** is the brown leather-like handle attached to the top of the suitcase, which is designed for lifting the suitcase by hand.
+- There is also a **side handle** (also brown leather-like) on the left side, which can be used for lifting or carrying the suitcase when the telescoping handle is retracted.
+
+✅ **Primary answer: The top handle** — it is the most common and ergonomic part used for picking up the suitcase.
+
+Additionally, the **telesc
+--- Start  70  / 123 --------------------------------------------------------------------------------
+Action : carry, Object : skis image_name : skis_002829.jpg
+The part of the skis used for the action **"carry"** is typically the **top (or upper) surface**, specifically the **tip area** or **upper third** of the ski.
+
+### Why?
+When carrying skis (e.g., walking uphill, moving from parking to lift, or transporting them), people usually:
+- **Hold the skis by the tips** (the narrow, rounded ends at the top).
+- Sometimes, they **carry them by the bindings** or **mid-section** if they’re attached to boots or being carried in a specific way.
+
+However, the **most common and practical method**
+--- Start  71  / 123 --------------------------------------------------------------------------------
+Action : carry, Object : skateboard image_name : skateboard_002668.jpg
+The part of the skateboard most commonly used for the action **"carry"** is the **deck** — specifically, the **top surface** or **side edges** of the deck.
+
+### Why?
+- The **deck** is the main board that the rider stands on, and it’s also the part that’s typically **picked up and held** when carrying the skateboard.
+- People usually **hold the deck by its edges** (often near the nose or tail) when carrying it, especially when walking or storing it.
+- The **wheels and trucks** are not typically used for carrying, as they are designed for rolling,
+--- Start  72  / 123 --------------------------------------------------------------------------------
+Action : carry, Object : surfboard image_name : surfboard_002422.jpg
+The part of the surfboard used for the action **"carry"** is typically the **tail** — specifically, the **bottom edge near the tail** or the **center of the board’s width** — depending on the design and the surfer’s preference.
+
+In the image you provided, the surfboard has a **three-fin setup** (a thruster) and a **rounded tail**. The **black leash plug** is located at the **very end of the tail**, which is the standard spot for attaching a surfboard leash. This area is also commonly used to **carry the board** by gripping it with one
+--- Start  73  / 123 --------------------------------------------------------------------------------
+Action : carry, Object : snowboard image_name : snowboard_001325.jpg
+The part of the snowboard used for the action **"carry"** is typically the **center section** or **middle area** of the board — specifically, the **area between the bindings**, often referred to as the **"carry zone"** or **"handhold area"**.
+
+In the image you provided, the snowboard is shown with a **black protective cover** (or sleeve) over most of its surface, which is common for carrying or storing the board. This cover usually has a **reinforced grip area** or **handle** in the middle, designed for easy carrying.
+
+### Why the middle?
+
+--- Start  74  / 123 --------------------------------------------------------------------------------
+Action : stick, Object : fork image_name : fork_000095.jpg
+The part of the fork used for the action "stick" is the **tines** — the pointed prongs at the end of the fork.
+
+In the image, you can see the fork inserted into the salad, and it’s the **tines** that are piercing and holding the food (like cucumber, beans, or greens). This is the primary functional part for spearing or "sticking" food.
+
+So, to answer directly:  
+👉 **The tines** are used for the action "stick."
+--- Start  75  / 123 --------------------------------------------------------------------------------
+Action : stick, Object : knife image_name : knife_001072.jpg
+The part of the knife used for the action of "stick" — meaning to pierce or stab — is the **blade**, specifically the **tip** (or **point**) of the blade.
+
+In the image you provided, the knife has a **tanto-style blade**, which is characterized by a straight edge and a sharp, angular tip. This design is especially effective for **stabbing or piercing**, as the tip is thick and strong, allowing it to penetrate materials without easily breaking.
+
+So, to answer your question directly:
+
+> **The tip of the blade** is the part used for the action of "stick" (stab
+--- Start  76  / 123 --------------------------------------------------------------------------------
+Action : look_out, Object : binoculars image_name : binoculars_003630.jpg
+The part of the binoculars that people use for the action **"look out"** (i.e., to observe or view distant objects) is the **eyepieces** — the two smaller lenses at the front (closest to the eyes) through which you look.
+
+In the image, these are the circular lenses on the right side of each barrel (from the viewer’s perspective). The larger lenses at the opposite end are called **objective lenses**, which gather light from the scene, but you don’t look through them — you look through the **eyepieces**.
+
+So, to answer your question directly:
+
+> **People
+--- Start  77  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : toothbrush image_name : toothbrush_003341.jpg
+The part of the toothbrush that people use for the action "hold" is the **handle**.
+
+In the image, the handle is the long, tapered portion of the toothbrush below the bristles. It has a textured, speckled design (likely for better grip) and is made from a biodegradable material, as indicated by the packaging. The handle is designed to be comfortably grasped in the hand while brushing teeth.
+
+✅ So, the **handle** is the part used for holding.
+--- Start  78  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : baseball_bat image_name : baseball_bat_002547.jpg
+The part of the baseball bat that people use to **hold** is the **handle** — the thinner, tapered end opposite the barrel (bat head).
+
+In the image you provided, the **handle** is the section near the silver end cap, which is wrapped with black grip tape (as shown in the close-up of the "Sealing glue" area). This grip area is specifically designed for a secure and comfortable hold during swinging.
+
+Although the image highlights the "carefully polished bat head" and "print clear and durable" on the barrel, the **actual holding part** is the **handle**, which is the narrow, textured
+--- Start  79  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : bottle image_name : bottle_001227.jpg
+People typically use the **body** or **mid-section** of the bottle to hold it, especially for a glass bottle like the one shown in the image.
+
+More specifically:
+
+- The **main cylindrical part** (the body) is the most common area to grip because it provides a stable, comfortable hold.
+- The **neck** is usually avoided for holding, as it’s narrower and can be slippery, especially when wet (as in this image where the bottle is in water).
+- The **base** is not practical for holding — it’s too small and unstable.
+- The **label area** (which is on the body)
+--- Start  80  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : cup image_name : cup_002518.jpg
+People use the **handle** of the cup for the action of "hold."
+
+In the image, the white ceramic cup has a curved handle on its left side, which is specifically designed for gripping and holding the cup securely while drinking. The handle provides a comfortable and stable way to lift and carry the cup without touching the hot body of the cup.
+--- Start  81  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : scissors image_name : scissors_002479.jpg
+People use the **handles** (specifically the **finger loops**) of the scissors for the action of "hold."
+
+In the image, the golden scissors are designed with two circular loops at the bottom — these are the **handles** where fingers are inserted to grip and operate the scissors. The part that is held is the **lower portion** of the scissors, where the two finger loops are located.
+
+So, the answer is: **the handles or finger loops**.
+--- Start  82  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : skis image_name : skis_001357.jpg
+The part of the skis that people use for the action **"hold"** — meaning to grip or secure themselves to the skis — is the **bindings**.
+
+Bindings are the mechanical components located at the center of each ski (typically where the boots attach) that **hold the ski boot in place** during skiing. They are designed to securely "hold" the skier’s boot to the ski for control and power transfer, while also releasing in case of a fall to prevent injury.
+
+So, to answer your question directly:
+
+> **The bindings are the part of the skis used for the action "hold" — they
+--- Start  83  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : tennis_racket image_name : tennis_racket_001785.jpg
+People use the **handle** (also called the grip) of the tennis racket to hold it during play.
+
+In the image, the handle is the black, textured part at the bottom of the racket, ending in a cap with the Wilson "W" logo. This part is specifically designed for a secure and comfortable grip, allowing players to control the racket during swings, serves, and volleys.
+
+✅ **Answer: The handle (or grip)**
+--- Start  84  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : book image_name : book_001195.jpg
+The part of the book people use to **hold** it is typically the **spine** or the **edges of the pages** near the spine, especially when holding it open.
+
+In the image shown, the book is open and resting on a surface, and there is a **yellow ribbon bookmark** visible near the bottom edge of the spine. While the ribbon is not used to hold the book, it is attached to the **spine**, which is the central binding part of the book.
+
+So, to answer your question:
+
+> **The spine** is the part of the book that people typically use to hold it — especially when
+--- Start  85  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : frisbee image_name : frisbee_001130.jpg
+People typically hold the **rim** (the outer edge) of a frisbee for action.
+
+In the image you provided, the frisbee is a **Star Runner Airglow 175g** model, which is designed for throwing and catching — likely for recreational or casual play. The **rim** is the thick, raised edge around the circumference of the disc. This is the part that players grip with their fingers (usually thumb on one side, fingers wrapped around the other) to throw the frisbee accurately.
+
+### Why the rim?
+- It provides a **secure grip**.
+- It allows for **
+--- Start  86  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : golf_clubs image_name : golf_clubs_000045.jpg
+People use the **grip** part of golf clubs for the action "hold."
+
+In the image you provided, the **black, textured top section** of the club is the grip. This is the part designed to be held by the golfer’s hands. It is typically made of rubber or synthetic materials with a textured surface to provide a secure, non-slip hold during the swing.
+
+So, the correct answer is: **the grip**.
+--- Start  87  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : hammer image_name : hammer_000215.jpg
+The part of the hammer that people use for the action **"hold"** is the **handle** (also called the **haft** or **shaft**).
+
+In the image, the long, cylindrical metal part extending from the head is the handle. It is designed to be gripped by the hand to control and swing the hammer. The handle is typically made of wood, fiberglass, or metal (as in this case), and often has a textured or ergonomic grip to improve hold and reduce slippage.
+
+✅ So, the answer is: **the handle**.
+--- Start  88  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : fork image_name : fork_000804.jpg
+People use the **handle** of the fork to hold it.
+
+The handle is the long, flat, and often slightly tapered part that extends from the base of the tines. It is designed to be gripped comfortably in the hand, allowing for control and precision when eating. The tines (the prongs at the top) are used for piercing and lifting food, while the handle is specifically for holding and maneuvering the fork.
+
+In the image provided, the handle is the shiny, elongated portion extending from the fork’s head down to the rounded end.
+--- Start  89  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : badminton_racket image_name : badminton_racket_002255.jpg
+People use the **handle** (also called the **grip**) of the badminton racket to hold it during play.
+
+In the image, you can see the black, textured lower part of each racket — that’s the handle. It’s designed to provide a secure and comfortable grip, often with additional grip tape (like the purple and black ones shown) to enhance hold and absorb sweat.
+
+So, the part used for the action "hold" is the **handle**.
+--- Start  90  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : suitcase image_name : suitcase_003687.jpg
+The part of the suitcase people use for the action "hold" is the **top handle** (also called a **carry handle** or **hand grip**), which is located on the top surface of the suitcase, near the extended telescopic pull handle.
+
+In the image:
+
+- The **top handle** is a black, horizontal grip positioned on the upper side of the suitcase, just below the extended telescopic handle.
+- This handle is used for **carrying the suitcase by hand** — for example, when lifting it onto a luggage rack, carrying it short distances, or when the wheels are not suitable (e.g., on
+--- Start  91  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : wine_glass image_name : wine_glass_002374.jpg
+People typically hold the **stem** of a wine glass.
+
+### Why the stem?
+- Holding the **stem** prevents your hand’s warmth from transferring to the bowl of the glass, which could warm up the wine and alter its flavor and aroma—especially important for **white wines** or **sparkling wines**, like the golden-hued wine shown in the image.
+- It also helps keep fingerprints off the bowl, preserving the visual clarity and presentation of the wine.
+- The **base** (the round bottom) is not designed for holding—it’s for stability.
+- The **bowl** (the large rounded part) is for
+--- Start  92  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : skateboard image_name : skateboard_002387.jpg
+On a skateboard, the part people use for "hold" — meaning to grip or maintain control — is primarily the **deck**, specifically the **grip tape** on top.
+
+### Here’s why:
+- The **grip tape** is the rough, sandpaper-like surface on the top of the deck. It’s designed to provide traction so the rider’s feet don’t slip off while riding, turning, or performing tricks.
+- Riders **stand on** the deck and use their feet to control the board — pushing, turning, and balancing — all of which require a secure "hold" on the board.
+- The **deck
+--- Start  93  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : axe image_name : axe_001552.jpg
+People use the **handle** (also called the **haft**) of the axe for holding and gripping during action.
+
+In the image, the handle is the **red and black ergonomic grip** that extends from the metal axe head. This part is designed to be held firmly in the hand to control the axe during swinging or chopping motions. The black and red color scheme, along with the contoured shape, suggests it’s made for comfort, grip, and shock absorption during use.
+
+So, the **handle** is the part used for "hold."
+--- Start  94  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : surfboard image_name : surfboard_002631.jpg
+The part of the surfboard that people use for "hold" — meaning to grip or stabilize themselves while riding — is typically the **tail** or **back end** of the board, especially when standing or balancing.
+
+However, in the context of the image you’ve described, the surfboard is lying on the sand with a **black leash attached** near the tail. The leash connects the surfer’s ankle to the board, so it’s not used for “holding” in the sense of gripping with hands, but rather for **keeping the board attached** to the surfer during a fall.
+
+If you're asking about **where
+--- Start  95  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : snowboard image_name : snowboard_001704.jpg
+The part of the snowboard used for the action "hold" — meaning where the rider stands and controls the board — is the **binding area**, specifically the **inserts** or **mounting points** located near the center of the board.
+
+In the image you provided:
+
+- The **top board (left)** shows the **topsheet** with a detailed graphic. Near the center, you can see a row of **small circular holes** — these are the **inserts** where the **bindings** are mounted.
+- The **bottom board (right)** shows the **base** (or bottom) of the snowboard,
+--- Start  96  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : bowl image_name : bowl_000546.jpg
+People typically use the **outer rim or sides** of the bowl to hold it.
+
+More specifically, the **curved outer edge (rim)** and the **sides (walls)** of the bowl are grasped with fingers and thumb to lift or carry it. This part provides a stable grip and allows for secure handling without spilling the contents.
+
+In the image, the three bowls shown have wide, rounded rims and sloped sides — ideal for holding with one or two hands. The **rim** is especially important for gripping, especially when the bowl is filled or heavy.
+
+✅ So, the part used for the action "hold"
+--- Start  97  / 123 --------------------------------------------------------------------------------
+Action : hold, Object : knife image_name : knife_002682.jpg
+People use the **handle** of the knife for the action "hold."
+
+In the image, the knife has a **black handle** (also called a "blade handle" or "knife grip"), which is designed to be gripped securely by the hand. The handle is typically made of materials like wood, plastic, or rubber for comfort and a firm grip, especially when cutting or chopping.
+
+The **blade** is used for cutting, not holding — holding the blade is unsafe and impractical.
+
+✅ So, the correct part of the knife used for "hold" is the **handle**.
+--- Start  98  / 123 --------------------------------------------------------------------------------
+Action : drink_with, Object : bottle image_name : bottle_003259.jpg
+The part of the bottle people use for the action **"drink_with"** is the **neck and opening (mouth)** of the bottle.
+
+In the image, this is the narrow, uppermost section of the glass Coca-Cola bottle — the area just below the cap (which is missing here) and above the main body. This is where the liquid is poured or sipped from, typically using a straw or directly from the mouth of the bottle.
+
+So, to answer directly:
+
+> **The opening (mouth) at the top of the bottle's neck** is the part used for "drink_with".
+
+This is the functional interface between
+--- Start  99  / 123 --------------------------------------------------------------------------------
+Action : drink_with, Object : cup image_name : cup_000508.jpg
+The part of the cup people use for the action **"drink_with"** is the **rim** — the top edge of the cup.
+
+When drinking from a mug, people typically bring the **rim** to their lips to consume the liquid inside. While the handle is used to hold the cup, the **rim** is the functional part that makes direct contact with the mouth during the act of drinking.
+
+So, the correct answer is: **rim**.
+--- Start  100  / 123 --------------------------------------------------------------------------------
+Action : drink_with, Object : wine_glass image_name : wine_glass_003343.jpg
+People use the **bowl** of the wine glass for the action "drink_with".
+
+More specifically, they bring the **rim** (the top edge) of the bowl to their lips to drink. The bowl is the large, rounded part that holds the wine, and it's designed to allow the drinker to swirl the wine and bring it to their mouth comfortably.
+
+So, while the **bowl** is the main part used, the **rim** is the precise point of contact during drinking.
+
+✅ **Answer: bowl** (with the rim being the specific edge used for drinking)
+--- Start  101  / 123 --------------------------------------------------------------------------------
+Action : brush_with, Object : toothbrush image_name : toothbrush_001764.jpg
+The part of the toothbrush used for the action **"brush_with"** is the **bristle head** — specifically, the **blue-green bristles** at the top of the toothbrush.
+
+This is the functional part that directly contacts the teeth and gums during brushing. The bristles are designed to move (in this case, via sonic vibrations) to remove plaque and clean the teeth.
+
+Even though the handle and button are important for operation, the **bristles** are the part that performs the actual brushing action.
+
+✅ **Answer: The bristles (the blue-green brush head at the top).**
+--- Start  102  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : soccer_ball image_name : soccer_ball_003436.jpg
+In soccer, the term "throw" typically refers to the **throw-in**, which is a method of restarting play after the ball has gone out of bounds over the sideline.
+
+For a throw-in, players use **both hands** to throw the ball from behind their head, over their head, and into the field of play. The ball must be thrown using **both hands** and must be released from behind and over the head — **not with one hand or by bouncing it**.
+
+So, to answer your question:
+
+> **Which part of the soccer ball do people use for the action 'throw'?**
+
+The answer is: **
+--- Start  103  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : javelin image_name : javelin_001474.jpg
+In a javelin, the part people use for the action of **throwing** is the **grip** — specifically, the **yellow textured section** in the middle of the javelin shown in the image.
+
+### Why this part?
+- The **grip** is designed to be held firmly by the thrower’s hand.
+- It’s typically made of a **non-slip material** (like rubber or textured plastic) to provide better control and prevent the javelin from slipping during the throw.
+- In the image, the yellow section is clearly marked as the **grip**, and it’s located near the center of
+--- Start  104  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : frisbee image_name : frisbee_003249.jpg
+The part of the frisbee used for the action of **throwing** is typically the **outer rim or edge**, especially the **top surface** where fingers grip and apply spin.
+
+In the image shown, this frisbee is designed specifically for **dogs** (as indicated by the handles and durable, textured material), but if we consider the general use for **humans**, here’s how it works:
+
+- **Fingers grip the rim**: People usually place their fingers along the **outer edge** of the frisbee, often with the thumb on top and fingers underneath, to get a firm grip.
+- **Spin
+--- Start  105  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : discus image_name : discus_003558.jpg
+In discus throwing, athletes use the **entire discus** as the object being thrown — but the **specific part they grip** to initiate the throw is the **center (or hub)** of the discus.
+
+Looking at the image:
+
+- The discus has a **red face** and a **silver rim**.
+- In the center, there is a **metal hub** (the shiny circular part), which is **designed for gripping**.
+- The **"NORDIC SPORT" label** is placed on the red surface, just below the hub — this is not the grip point.
+
+### So, to
+--- Start  106  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : rugby_ball image_name : rugby_ball_000001.jpg
+In the image, you’re looking at an American football (often mistakenly called a "rugby ball" in some contexts, though they are distinct sports with different balls), and the part used for the action of **throwing** is primarily the **laced area** — the **lacing** (or "laces") on the long side of the ball.
+
+### Why the laces?
+- The laces provide **grip** for the fingers, especially the index and middle fingers, allowing for better control and spin when throwing.
+- When throwing, players typically **grab the ball with their fingers under the laces**, which helps
+--- Start  107  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : baseball image_name : baseball_002670.jpg
+In baseball, the part of the ball that people use for the action of **"throwing"** is the **entire ball**, but more specifically, the **surface (the leather cover with stitching)** is what the pitcher grips and uses to generate spin and control.
+
+However, if you're asking about **which part of the ball is in contact with the hand during a throw**, it’s typically:
+
+> **The seams and the leather surface** — especially the **raised stitching**.
+
+### Why?
+- The **seams** (the raised stitching) provide **grip** for the pitcher.
+- Pitchers often grip the
+--- Start  108  / 123 --------------------------------------------------------------------------------
+Action : throw, Object : basketball image_name : basketball_003534.jpg
+In basketball, players primarily use their **hands**—specifically the **fingers and palms**—to perform the action of **throwing** (or shooting, passing, etc.).
+
+When throwing the ball, especially during a shot or pass, the **fingers** are crucial for:
+
+- **Control and grip** — holding the ball securely.
+- **Direction and spin** — guiding the ball’s trajectory and applying backspin (for shooting) or side spin (for passing).
+- **Release** — the final push and flick of the fingers to send the ball toward the basket or teammate.
+
+The **palms** help stabilize
+--- Start  109  / 123 --------------------------------------------------------------------------------
+Action : beat, Object : drum image_name : drum_002586.jpg
+The part of the drum that people use for the action "beat" is the **drumhead** (also called the **head** or **skin**).
+
+In the image, the drumhead is the **white, circular surface** on top of the blue drum shell. It’s the surface that is struck with drumsticks, hands, or mallets to produce sound.
+
+So, to answer your question directly:  
+👉 **People beat the drumhead.**
+
+This is the primary playing surface of a snare drum (which this appears to be, based on the size and hardware). The tension rods and lugs (the
+--- Start  110  / 123 --------------------------------------------------------------------------------
+Action : lift, Object : fork image_name : fork_001691.jpg
+The part of the fork used for the action **"lift"** is the **tines** — the pointed prongs at the top of the fork.
+
+### Why?
+- The **tines** are designed to **pierce, grip, and lift** food (like meat, vegetables, or pasta) from a plate or bowl.
+- When you use a fork to lift food to your mouth, you typically **insert the tines into the food**, then **elevate** it using the handle as a lever.
+
+### Additional Notes:
+- The **handle** provides grip and leverage but doesn’t directly interact with the food
+--- Start  111  / 123 --------------------------------------------------------------------------------
+Action : talk_on, Object : cell_phone image_name : cell_phone_000601.jpg
+To talk on a cell phone, people typically use the **speaker and microphone** located on the **front of the device**, near the top edge — especially when using the phone in **speakerphone mode** or during a **voice call with the screen facing up**.
+
+However, if you're referring to the **physical part** used for the action of *talking*, it's primarily the **microphone** (which captures your voice) and the **speaker** (which plays the other person’s voice). These components are usually embedded in the **top bezel** of the phone, just above the screen.
+
+In the image shown
+--- Start  112  / 123 --------------------------------------------------------------------------------
+Action : push, Object : bicycle image_name : bicycle_002432.jpg
+The part of the bicycle that people use for the action "push" is the **pedals**.
+
+In the image, the pedals are attached to the crankset, which is connected to the chain and rear wheel. When a rider pushes down on the pedals, it turns the crank, moves the chain, and rotates the rear wheel, propelling the bicycle forward.
+
+Although the bicycle in the photo is decorated with cute gray rock-like figures and flowers (making it look like a whimsical art piece), the functional parts like the pedals are still present and would be used for pushing if the bike were operational.
+--- Start  113  / 123 --------------------------------------------------------------------------------
+Action : push, Object : motorcycle image_name : motorcycle_003541.jpg
+The part of the scooter (which is a type of motorcycle) that people use for the action "push" — typically meaning to start moving it manually, such as when pushing it along the ground — is the **kickstand** and **body frame** (specifically the lower part near the front wheel and footboard).
+
+However, if you're referring to the **mechanical "push"** to start the engine (in older or non-electric scooters), that would be the **kick starter** — a lever located near the footboard that you push with your foot to engage the engine.
+
+But in the context of the
+--- Start  114  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : hot_dog image_name : hot_dog_002166.jpg
+People typically eat the **entire length** of the hot dog, but the **main edible part** is the **sausage itself** — the cooked meat portion shown in the image. In this case, the sausage is grilled and has charred, crispy spots, which are often considered desirable for flavor.
+
+The **action of eating** involves consuming the **sausage**, which is usually placed in a bun. However, since the image shows only the sausage on the grill (no bun), the part being prepared for eating is the **grilled sausage**, including its outer casing and inner meat.
+
+So, to answer directly:  
+👉
+--- Start  115  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : carrot image_name : carrot_001443.jpg
+People typically eat the **edible root** of the carrot — the **main fleshy part** that grows underground. In the image, the carrot is shown cut in half, and the part being sliced is the **root**, which is the part consumed.
+
+This part is rich in nutrients like beta-carotene (which the body converts to vitamin A), fiber, and antioxidants. The top green leafy part (the foliage or "tops") is also edible but less commonly eaten and has a more bitter, herbaceous flavor. It’s often used in salads or cooking, but the main part people use for eating is the
+--- Start  116  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : orange image_name : orange_001193.jpg
+People eat the **flesh** (or pulp) of the orange — the juicy, segmented interior that contains the vitamin C and flavor. The outer peel (rind) is typically not eaten, though some people may consume a small amount of the zest (the colored outer layer) for flavor.
+
+So, the part of the orange used for the action "eat" is the **juicy segments inside the peel** — the edible pulp.
+--- Start  117  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : banana image_name : banana_002458.jpg
+The part of the banana people use for the action "eat" is the **flesh inside the peel** — specifically, the **soft, yellow, edible inner portion**.
+
+In the image, you see the **outer peel** of the banana, which is yellow with some brown spots (indicating ripeness). While the peel is visible, it is **not eaten** — it’s discarded. The actual edible part is the **white or cream-colored pulp** (also called the "flesh") inside the peel.
+
+So, to answer directly:  
+👉 **The inner flesh (pulp) of the banana** is what
+--- Start  118  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : broccoli image_name : broccoli_002796.jpg
+People primarily eat the **florets** of the broccoli — the green, tree-like clusters at the top of the stalk. These are the most commonly consumed part because they are tender, flavorful, and packed with nutrients.
+
+However, the **stalk** (or stem) is also edible and nutritious, especially when peeled and cooked. It can be sliced and eaten raw in salads or cooked in stir-fries, soups, or roasted dishes.
+
+So, to answer your question:  
+👉 **The florets are the main part people eat**, but **the stalk is also edible and often used** in cooking.
+
+In the image, you
+--- Start  119  / 123 --------------------------------------------------------------------------------
+Action : eat, Object : apple image_name : apple_001541.jpg
+People eat the **flesh** of the apple — the soft, juicy, edible part inside the skin. This is the main part consumed, typically after removing the skin (optional) and avoiding the core, which contains the seeds.
+
+In the image, the apple is whole and uncut, so the entire visible red outer part is the skin, and the inner part (not visible) is the flesh — the part we eat. The stem and seeds are not eaten.
+
+✅ So, the part used for eating is the **flesh** (also called the pulp or果肉 in some languages).
+--- Start  120  / 123 --------------------------------------------------------------------------------
+Action : swing, Object : baseball_bat image_name : baseball_bat_001882.jpg
+The part of the baseball bat that people use for the action of **"swing"** is the **handle** (also called the **grip**).
+
+### Why?
+- The **handle** is the section of the bat that the batter **holds** with both hands.
+- It’s designed for a secure grip, often with textured or patterned surfaces (as seen in the red and yellow pattern on the lower part of the bat in the image) to prevent slipping during the swing.
+- The **barrel** (the thick, wider end) is used to **hit** the ball, but the **swing motion** is
+--- Start  121  / 123 --------------------------------------------------------------------------------
+Action : swing, Object : tennis_racket image_name : tennis_racket_003066.jpg
+People use the **handle** of the tennis racket for the action of "swing."
+
+The handle is the part gripped by the player’s hand, and it allows them to control and maneuver the racket during a swing. The motion of swinging originates from the hand and arm gripping the handle, which transfers force through the shaft to the head of the racket, ultimately striking the ball.
+
+While the **head** (with the strings) makes contact with the ball, the **handle** is the part used to perform the swinging action itself.
+--- Start  122  / 123 --------------------------------------------------------------------------------
+Action : swing, Object : golf_clubs image_name : golf_clubs_001992.jpg
+The part of the golf club used for the action of **"swing"** is the **shaft and head**, with the **head** being the primary component that makes contact with the ball, and the **shaft** being the part that transfers the golfer’s motion and force from the hands to the head.
+
+In the image provided:
+
+- The **black grip** (top part) is where the golfer holds the club — it’s essential for control during the swing, but not the part that strikes the ball.
+- The **silver shaft** is the long, rigid (or sometimes flexible) part that connects the grip to the
+--- Start  123  / 123 --------------------------------------------------------------------------------
+Action : swing, Object : badminton_racket image_name : badminton_racket_003649.jpg
+In a badminton racket, the part used for the action of **"swing"** is the **shaft** (also called the **handle** or **grip**), along with the **head** (the oval-shaped frame with strings).
+
+However, to be precise:
+
+- The **grip (handle)** is what the player holds and uses to **control and execute the swing motion**. It's the part directly manipulated by the hand to generate power, direction, and spin.
+- The **head** (the part with the strings) is the **striking surface** — it makes contact with the shuttlecock,
+==================================================
+All images successfully processed!

@@ -7,3 +7,5 @@ VLM_model_dot_gpt.py
 *-checkpoint*
 dot_images/*
 results/*
+*.log
+*.json

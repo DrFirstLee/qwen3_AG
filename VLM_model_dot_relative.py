@@ -454,11 +454,16 @@ class QwenVLModel:
         """
         주어진 텍스트 질문에 대해 model.generate()를 사용하여 답변을 반환합니다.
         """
+        raw_image = Image.open(image_path).convert("RGB")
+        orig_width, orig_height = raw_image.size
+        resized_image = raw_image.resize((1000, 1000))
+
+
         messages = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image", "image": image_path},
+                    {"type": "image", "image": resized_image},
                     {"type": "text", "text": question}
                 ]
             }
@@ -727,11 +732,15 @@ class QwenVLModel:
         Returns:
             dict: Model's response and processed information
         """
+        raw_image = Image.open(image_path).convert("RGB")
+        orig_width, orig_height = raw_image.size
+        resized_image = raw_image.resize((1000, 1000))
+
         messages = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image", "image": image_path},
+                    {"type": "image", "image": resized_image},
                     {"type": "image", "image": exo_path},
                     {"type": "text", "text": prompt}
                 ]
@@ -760,7 +769,12 @@ class QwenVLModel:
         # print(f"qwen with exo Results!! : {result}")
         # dot 좌표 파싱
         dots = self.parse_dot_coordinates(result)
-        # print(f"parsed dots!!! : {dots}")
+        print(f"parsed dots!!! : {dots}")
+        dots = [
+                    [int(x * (orig_width / 1000)), int(y * (orig_height / 1000))] 
+                    for x, y in dots
+                ]
+        print(f"restored_dots!!! : {dots}")
         # Draw dots on the image and get metrics
         dot_image_path, heatmap_tensor = self.draw_dots_on_image(image_path, dots, gt_path, action, exo_path, exo_type)
         

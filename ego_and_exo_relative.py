@@ -1,7 +1,9 @@
-# nohup python -u ego_only.py > GPT5_relative_coord.log 2>&1 & tail -f GPT5_relative_coord.log
 import os
 import torch
 import random
+from pathlib import Path
+import random
+
 from PIL import Image
 import my_prompt5_relative as my_prompt
 from file_managing import (
@@ -11,19 +13,16 @@ from file_managing import (
 )
 from config import AGD20K_PATH, model_name
 from VLM_model_dot_relative import QwenVLModel, MetricsTracker
-
 import os
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 os.environ["PYTORCH_ENABLE_SDPA"] = "1"
 
 
-
-
-def affordance_grounding(model, action, object_name, image_path, gt_path, exo_path=None,  failed_heatmap_path=None, validation_reason=None):
+def affordance_grounding(model, action, object_name, image_path, gt_path, exo_path=None, exo_type=None):
     """
     Process each image using Qwen VL model
     """
-    print(f"Processing image: Action: {action}, Object: {object_name}, Image path: {image_path}, GT path: {gt_path}, Image exists: {os.path.exists(image_path)}, GT exists: {os.path.exists(gt_path)}")
+    # print(f"Processing image: Action: {action}, Object: {object_name}, Image path: {image_path.split('/')[-1]}, GT path: {gt_path.split('/')[-1]}, Image exists: {os.path.exists(image_path)}, GT exists: {os.path.exists(gt_path)}")
     
 
     if exo_path is None:
@@ -35,20 +34,22 @@ def affordance_grounding(model, action, object_name, image_path, gt_path, exo_pa
     else:
 
         prompt = my_prompt.process_image_exo_prompt(action, object_name)
-        results = model.process_image_exo(image_path, prompt, gt_path, exo_path, action)
+        results = model.process_image_exo(image_path, prompt, gt_path, exo_path, action, exo_type)
 
     return results
 
 
+
 def main():
     # Initialize Qwen VL model
+    cnt = 0 
+    missing_gt = 0
     model = QwenVLModel(model_name = model_name)
     metrics_tracker_ego = MetricsTracker(name="only_ego")
+    metrics_tracker_exo_best = MetricsTracker(name="with_exo_best")
 
     json_path = os.path.join("selected_samples.json")
     data = load_selected_samples(json_path)
-    missing_gt = 0
-    processed_count = 0
 
     # Get total number of samples
     total_samples = len(data['selected_samples'])
@@ -57,31 +58,46 @@ def main():
     print(f"Processing {total_samples} samples...")
     print("=" * 50)    
     for pair_key, sample_info in data["selected_samples"].items():
-        processed_count += 1
-        print(f"--- Start  {processed_count}  / {total_samples}", "-"*80) 
+        print(f"--- Start  {cnt}/{total_samples}", "-"*80) 
         
         action = sample_info["action"]
         object_name = sample_info["object"]
 
         image_path = get_actual_path(sample_info["image_path"])
-        gt_path = get_gt_path(image_path)   
+        gt_path = get_gt_path(image_path)    
         print(f"Action : {action}, Object : {object_name} image_name : {image_path.split('/')[-1]}")
-        # Process the image
-        results_ego = affordance_grounding(model, action, object_name, image_path, gt_path)
-        metrics_ego = results_ego['metrics']
-        if metrics_ego:
-            # Update and print metrics
-            metrics_tracker_ego.update(metrics_ego)
-            metrics_tracker_ego.print_metrics(metrics_ego, image_path.split('/')[-1])
-                    
+        exo_best_path = Path(f"{AGD20K_PATH}/Seen/trainset/exocentric/{action}/{object_name}")
+
+        # 이미지 확장자 목록
+        valid_ext = {".jpg", ".PNG", ".png", ".JPG"}
+
+        # 하위 디렉토리 포함 모든 이미지 수집
+        all_images = [p for p in exo_best_path.rglob("*")
+                    if p.suffix.lower() in valid_ext]
+        if  len(all_images)==0:
+            print(f"NO SEEN DATA SET : {action}/{object_name}")
+            continue
+
+        # 랜덤 이미지 선택
+        random_exo_image = random.choice(all_images)
+
+            
+        # with exo random
+        results_exo_best = affordance_grounding(model, action, object_name, image_path, gt_path, str(random_exo_image)     )
+        metrics_exo_best = results_exo_best['metrics']
+
+        if metrics_exo_best:
+            metrics_tracker_exo_best.update(metrics_exo_best)
+            metrics_tracker_exo_best.print_metrics(metrics_exo_best, image_path.split('/')[-1])
+            
+           
         # Count missing GT files
         if not os.path.exists(gt_path):
             missing_gt += 1
-        
+
         print("*** End  ", "*"*150)
         print("\n\n")
-        # break
-
+        cnt += 1
     # Print final summary
     print("=" * 50)
     print(f"Total number of action-object pairs processed: {total_samples}")

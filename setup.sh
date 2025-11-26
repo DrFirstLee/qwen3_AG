@@ -52,7 +52,7 @@ ssh -i /home/bongo/porter_notebook/research/research.pem -p 46854 root@185.65.93
 ssh -p 46854 root@185.65.93.114 -L 8080:localhost:8080
 
 ssh -i /home/bongo/porter_notebook/research/research.pem -p 46854 root@185.65.93.114  "tar -C /root/qwen3_AG/ -czf - results" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
-ssh -i /home/bongo/porter_notebook/research/research.pem -p 46854 root@185.65.93.114  "tar -C /root/qwen3_AG/ -czf - dot_images_3_32B_error" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
+ssh -i /home/bongo/porter_notebook/research/research.pem -p 46854 root@185.65.93.114  "tar -C /root/qwen3_AG/ -czf - 32B_ego_exo_relative_prompt5" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
 
 
 

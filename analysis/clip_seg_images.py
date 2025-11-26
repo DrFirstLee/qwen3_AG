@@ -231,11 +231,11 @@ for pair_key, sample_info in data["selected_samples"].items():
     else:
         item_name = file_name.split("_")[0] + "_" + file_name.split("_")[1]
     AGD20K_PATH = '/home/DATA/AGD20K'
-    vlm_heatmap_path = f"/home/bongo/porter_notebook/research/qwen3/32B_prompt5_images/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap.jpg"
+    vlm_heatmap_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_only_relative_prompt4/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap.jpg"
     gt_path =  f"{AGD20K_PATH}/Seen/testset/GT/{action_name}/{item_name}/{file_name.split('.')[0]}.png"
-    dot_path = f"/home/bongo/porter_notebook/research/qwen3/32B_prompt5_images/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
+    dot_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_only_relative_prompt4/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
     print(item_name, action_name, file_name)
-    output_path = f"clipseg_verb/{file_name.split('.')[0]}_{action_name}.png"
+    output_path = f"clipseg_32B_prompt4_relative/{file_name.split('.')[0]}_{action_name}.png"
     # --- 2. VLM 히트맵 로드 및 DINO 특징 추출 ---
     original_image = Image.open(original_image_path).convert('RGB')
     try:
@@ -256,9 +256,9 @@ for pair_key, sample_info in data["selected_samples"].items():
     )
 
     
-    # vlm_heatmap = vlm_heatmap ** gamma + epsilon
-    # vlm_fused_heatmap = vlm_heatmap * clip_heatmap
-    vlm_fused_heatmap = clip_heatmap
+    vlm_heatmap = vlm_heatmap ** gamma + epsilon
+    vlm_fused_heatmap = vlm_heatmap * clip_heatmap
+    # vlm_fused_heatmap = clip_heatmap
 
     
     # Calculate metrics if GT is available

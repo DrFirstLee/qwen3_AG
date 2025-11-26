@@ -47,14 +47,19 @@ def main():
         print(f"Action : {action}, Object : {object_name} image_name : {image_path.split('/')[-1]}")
         # Process the image
         raw_prompt = f"""You are an expert in affordance detection.
-         which part of {object_name} do people use for action '{action}'? 
-         You must output exactly one bounding box for that part.
+        Which specific part of the '{object_name}' do people use for the action '{action}'? 
+        You must output exactly one bounding box for that functional part.
 
-        Bounding box format:
-        - Use pixel coordinates in the form [x_min, y_min, x_max, y_max].
-        - All values must be integers.
-        - Coordinate origin (0, 0) is at the top-left corner of the image.
+        📏 Coordinate System (CRITICAL):
+        - Assume the input image is resized to a **1000x1000** grid.
+        - **X-axis range**: 0 to 1000 (Left to Right)
+        - **Y-axis range**: 0 to 1000 (Top to Bottom)
+        - Do NOT use the original image resolution. Use this normalized 1000x1000 scale.
 
+        📦 Output Format:
+        - Provide the bounding box in **[x_min, y_min, x_max, y_max]** format.
+        - All values must be **integers** between 0 and 1000.
+        - Example: [250, 400, 650, 800]
         """
         res_from_img = model.ask_with_image(raw_prompt, image_path)
         print(res_from_img)

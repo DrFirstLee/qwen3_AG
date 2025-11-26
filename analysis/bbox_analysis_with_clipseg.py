@@ -7,6 +7,17 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
+import matplotlib.cm as cm  # 컬러맵 사용을 위해 필요
+
+from torchvision import transforms
+from PIL import Image
+from sklearn.cluster import KMeans
+from transformers import CLIPSegProcessor, CLIPSegForImageSegmentation
+
+# CLIPSeg 모델 로드
+processor = CLIPSegProcessor.from_pretrained("CIDAS/clipseg-rd64-refined")
+clip_model = CLIPSegForImageSegmentation.from_pretrained("CIDAS/clipseg-rd64-refined")
+
 # ==========================================
 # 1. 경로 설정 (환경에 맞게 수정해주세요)
 # ==========================================
@@ -16,8 +27,8 @@ JSON_PATH = '/home/bongo/porter_notebook/research/qwen3/result_32B_relative/resu
 # 예: '/home/bongo/dataset/images/'
 SOURCE_IMAGE_DIR = "/home/DATA/AGD20K/Seen/testset/egocentric"
 
-OUTPUT_DIR = 'bbox_32B_relative'
-
+OUTPUT_DIR = 'bbox_clipseg_32B_relative'
+epsilon = 0.1#1e-6 #
 # ==========================================
 # 2. BBox 파싱 헬퍼 함수
 # ==========================================
@@ -56,6 +67,67 @@ with open(JSON_PATH, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 print(f"총 {len(data)}개의 데이터를 처리합니다...")
+
+gamma = 0.1
+def get_clipseg_heatmap(
+        image_path: str,
+        model, 
+        processor, 
+        object_name: str,
+    ):
+    """
+    (수정됨) CLIPSeg 모델을 사용하여 이미지와 텍스트 프롬프트 간의
+    세그멘테이션 히트맵을 추출합니다.
+    """
+    if model is None or processor is None:
+        print("Error: CLIPSeg model or processor not loaded.")
+        return None, None
+    
+    original_image = Image.open(image_path).convert('RGB')
+    original_size = original_image.size # (width, height)
+
+    # 1. 단일 텍스트 프롬프트 정의
+    prompt_text = object_name
+
+    # 2. 입력 처리
+    inputs = processor(
+        text=[prompt_text], 
+        images=[original_image], 
+        padding="max_length", 
+        return_tensors="pt"
+    )
+    
+    # 3. 예측
+    with torch.no_grad():
+        outputs = model(**inputs)
+        # preds의 shape 처리는 로직에 따라 다르지만, 결과적으로 heatmap을 뽑을 때 주의해야 합니다.
+        preds = outputs.logits.unsqueeze(0).unsqueeze(1) 
+
+    # 4. 히트맵 생성
+    # [중요 수정] .squeeze()를 추가하여 (1, 352, 352) -> (352, 352)로 변환합니다.
+    heatmap_small = torch.sigmoid(preds[0][0]).cpu().detach().squeeze() 
+    
+    # 디버깅용 출력 (이제 torch.Size([352, 352])가 나와야 함)
+    # print(f"shape of clip_heatmap : {heatmap_small.shape}")
+
+    # 5. PIL 이미지 변환 및 리사이즈
+    # heatmap_small.numpy()는 이제 (352, 352)이므로 PIL이 정상적으로 인식합니다.
+    # float32 타입 유지를 위해 mode='F'를 명시할 수도 있으나, 보통 그냥 넘겨도 됩니다.
+    final_heatmap = np.array(
+        Image.fromarray(heatmap_small.numpy())
+        .resize(original_size, resample=Image.Resampling.BILINEAR)
+    )
+    
+    # print(f"shape of final_heatmap : {final_heatmap.shape}")
+
+    # 0-1 정규화
+    if final_heatmap.max() > 0:
+        final_heatmap = (final_heatmap - final_heatmap.min()) / (final_heatmap.max() - final_heatmap.min())
+        # gamma, epsilon은 외부 변수를 사용하므로 함수 인자로 받거나 전역 변수여야 합니다.
+        # 여기서는 코드 맥락상 전역 변수 gamma, epsilon을 사용한다고 가정합니다.
+        final_heatmap = final_heatmap #** gamma + epsilon
+        
+    return final_heatmap
 
 
 def get_gt_path(image_path):
@@ -140,6 +212,7 @@ for key_str, bbox_raw in data.items():
     file_name = parts[2]  # 실제 이미지 파일명
 
 
+
     # --- 2. BBox 값 파싱 (헬퍼 함수 사용) ---
     bbox_1000 = parse_bbox_str(bbox_raw)
 
@@ -148,7 +221,13 @@ for key_str, bbox_raw in data.items():
         continue
     # 3. 원본 이미지 불러오기
     img_full_path = os.path.join(SOURCE_IMAGE_DIR, action, object_name,file_name)
-
+    clip_heatmap = get_clipseg_heatmap(
+        img_full_path,
+        clip_model, # Pass the model object (now on GPU)
+        processor,
+        object_name,
+    )
+    
     gt_path = get_gt_path(img_full_path)  
     
     if not os.path.exists(img_full_path):
@@ -161,7 +240,6 @@ for key_str, bbox_raw in data.items():
     img = Image.open(img_full_path).convert("RGB")
     orig_w, orig_h = img.size
     draw = ImageDraw.Draw(img)
-
     try:
         # GT 열기 (Grayscale L 모드로 변환)    
         with Image.open(gt_path).convert('L') as gt_img:
@@ -186,38 +264,88 @@ for key_str, bbox_raw in data.items():
     x1 = max(0, x1); y1 = max(0, y1)
     x2 = min(orig_w, x2); y2 = min(orig_h, y2)
     # 빈 마스크 생성 (0으로 채움)
-    pred_tensor = torch.zeros((orig_h, orig_w), dtype=torch.float32)
-    
-    # BBox 영역을 1로 채움
-    if x2 > x1 and y2 > y1:
-        pred_tensor[y1:y2, x1:x2] = 1.0
+
+    if hasattr(clip_heatmap, 'cpu'):
+            heatmap_np = clip_heatmap.detach().cpu().numpy()
+    elif isinstance(clip_heatmap, np.ndarray):
+        heatmap_np = clip_heatmap
     else:
-        print(f"[Warn] 유효하지 않은 BBox 크기: {key_str}")
-        continue            
+        # 리스트 등 다른 타입일 경우
+        heatmap_np = np.array(clip_heatmap)
+    
+    heatmap_np = heatmap_np.squeeze()
+
+    # 결과를 담을 빈(0으로 채워진) 텐서 생성
+    masked_clip_heatmap = np.zeros_like(heatmap_np)
+
+    # 좌표가 이미지 범위를 벗어나지 않도록 안전장치 (Clamping)
+    x1 = max(0, min(x1, orig_w))
+    y1 = max(0, min(y1, orig_h))
+    x2 = max(0, min(x2, orig_w))
+    y2 = max(0, min(y2, orig_h))        
     # 4. BBox 그리기 (x1, y1, x2, y2)
     # outline: 테두리 색상, width: 두께
+    if x2 > x1 and y2 > y1:
+        # 원본 크기로 늘린 히트맵에서 해당 영역만 가져와서 복사
+        masked_clip_heatmap[y1:y2, x1:x2] = clip_heatmap[y1:y2, x1:x2]
+
+    masked_clip_heatmap += epsilon
+    # ---------------------------------------------------------
+    # [Step 3] 히트맵 시각화 (Colorization & Overlay)
+    # ---------------------------------------------------------
+    # 1. Normalize (0~1)
+    map_np = masked_clip_heatmap
+    min_v, max_v = map_np.min(), map_np.max()
+    if max_v - min_v > 0:
+        norm_map = (map_np - min_v) / (max_v - min_v)
+    else:
+        norm_map = map_np # 모든 값이 0인 경우
+
+    # 2. Apply Colormap (Jet: Blue -> Red)
+    # cm.jet은 RGBA(0~1) 반환 -> 0~255로 변환
+    colormap_img = cm.jet(norm_map)
+    colormap_img = (colormap_img * 255).astype(np.uint8)
+    
+    # 3. Create PIL Image
+    heatmap_pil = Image.fromarray(colormap_img)
+
+    # 4. Alpha Channel 조절 (중요!)
+    # 히트맵 값이 0인 곳(BBox 밖)은 투명하게, 값이 높은 곳은 진하게
+    # 최대 투명도를 180(약 70%) 정도로 설정하여 원본이 비치게 함
+    alpha = (norm_map * 180).astype(np.uint8)
+    heatmap_pil.putalpha(Image.fromarray(alpha))
+
+    # 5. Overlay
+    img_rgba = img.convert("RGBA")
+    img_rgba.alpha_composite(heatmap_pil) # 합성
+
+    # ---------------------------------------------------------
+    # [Step 4] BBox 그리기 및 저장
+    # ---------------------------------------------------------
+    # 합성이 끝난 이미지 위에 빨간 박스를 그려야 선명하게 보임
+    draw = ImageDraw.Draw(img_rgba)
     draw.rectangle(final_bbox, outline="red", width=5)
 
-    # (선택) 텍스트 추가: 어떤 액션인지 박스 위에 글씨 쓰기
-    # 폰트가 없으면 기본 폰트 사용 (한글 깨질 수 있음, 영문 추천)
+    # 텍스트 라벨
     try:
-        # 리눅스 기본 폰트 경로 예시 (없으면 생략 가능)
         font = ImageFont.truetype("DejaVuSans-Bold.ttf", 30)
     except:
         font = ImageFont.load_default()
     
-        label = f"{action}"
-        draw.text((x1, y1-25), label, fill="red", font=font)
-    # 5. 이미지 저장
-    # 파일명 충돌 방지를 위해 key_str 전체를 파일명으로 사용하거나
-    # file_name 앞에 action을 붙여서 저장
+    label = f"{action}"
+    # 텍스트 배경 (선택사항)
+    # draw.rectangle([x1, y1-35, x1+100, y1], fill="red")
+    draw.text((x1, y1-35), label, fill="red", font=font)
+
+    # 저장
     save_name = f"{object_name}_{action}_{file_name}"
     save_path = os.path.join(OUTPUT_DIR, save_name)
     
-    img.save(save_path)
+    # RGBA -> RGB 변환 후 저장 (JPEG 저장을 위해)
+    img_rgba.convert("RGB").save(save_path)
     print(f"[Saved] {save_path}")
     # 6. Metric 계산
-    metrics = calculate_metrics(pred_tensor, gt_tensor)
+    metrics = calculate_metrics(masked_clip_heatmap, gt_tensor)
     
     # 누적
     total_metrics['KLD'] += metrics['KLD']
@@ -246,5 +374,5 @@ for key_str, bbox_raw in data.items():
             "average": {"KLD": avg_kld, "SIM": avg_sim, "NSS": avg_nss},
             "details": results_detail
         }
-        with open("evaluation_metrics_result.json", "w") as f:
+        with open("bbox_clipseg_metrics_result.json", "w") as f:
             json.dump(summary, f, indent=4)

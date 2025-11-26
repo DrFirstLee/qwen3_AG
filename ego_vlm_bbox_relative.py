@@ -1,9 +1,9 @@
 # nohup python -u ego_only.py > GPT5_relative_coord.log 2>&1 & tail -f GPT5_relative_coord.log
 import os
+import json
 import torch
 import random
 from PIL import Image
-import my_prompt5_relative as my_prompt
 from file_managing import (
     load_selected_samples,
     get_actual_path,
@@ -16,29 +16,7 @@ import os
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 os.environ["PYTORCH_ENABLE_SDPA"] = "1"
 
-
-
-
-def affordance_grounding(model, action, object_name, image_path, gt_path, exo_path=None,  failed_heatmap_path=None, validation_reason=None):
-    """
-    Process each image using Qwen VL model
-    """
-    print(f"Processing image: Action: {action}, Object: {object_name}, Image path: {image_path}, GT path: {gt_path}, Image exists: {os.path.exists(image_path)}, GT exists: {os.path.exists(gt_path)}")
-    
-
-    if exo_path is None:
-        prompt = my_prompt.process_image_ego_prompt(action, object_name)
-               
-        results = model.process_image_ego(image_path, prompt, gt_path, action)
-
-        
-    else:
-
-        prompt = my_prompt.process_image_exo_prompt(action, object_name)
-        results = model.process_image_exo(image_path, prompt, gt_path, exo_path, action)
-
-    return results
-
+res_text = {}
 
 def main():
     # Initialize Qwen VL model
@@ -67,25 +45,29 @@ def main():
         gt_path = get_gt_path(image_path)   
         print(f"Action : {action}, Object : {object_name} image_name : {image_path.split('/')[-1]}")
         # Process the image
-        results_ego = affordance_grounding(model, action, object_name, image_path, gt_path)
-        metrics_ego = results_ego['metrics']
-        if metrics_ego:
-            # Update and print metrics
-            metrics_tracker_ego.update(metrics_ego)
-            metrics_tracker_ego.print_metrics(metrics_ego, image_path.split('/')[-1])
-                    
-        # Count missing GT files
-        if not os.path.exists(gt_path):
-            missing_gt += 1
-        
-        print("*** End  ", "*"*150)
-        print("\n\n")
-        # break
+        raw_prompt = f"""You are an expert in affordance detection.
+         which part of {object_name} do people use for action '{action}'? 
+         You must output exactly one bounding box for that part.
+
+        Bounding box format:
+        - Use pixel coordinates in the form [x_min, y_min, x_max, y_max].
+        - All values must be integers.
+        - Coordinate origin (0, 0) is at the top-left corner of the image.
+
+        """
+        res_from_img = model.ask_with_image(raw_prompt, image_path)
+        print(res_from_img)
+        res_text[f"{object_name}${action}${image_path.split('/')[-1]}"] = res_from_img
+
+        output_file = "results/results_vlm_bbox_relative.json"
+
+        # JSON 파일로 저장
+        with open(output_file, "w", encoding="utf-16") as f:
+            json.dump(res_text, f, indent=4, ensure_ascii=False, sort_keys=True)
+
 
     # Print final summary
     print("=" * 50)
-    print(f"Total number of action-object pairs processed: {total_samples}")
-    print(f"Number of missing GT files: {missing_gt}")
     print(f"All images successfully processed!")
 
 if __name__ == "__main__":

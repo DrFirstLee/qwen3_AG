@@ -3,17 +3,25 @@ def process_image_ego_prompt(action, object_name):
         You are a visual reasoning agent specialized in identifying critical keypoints for physical interactions.
 
         📷 Context:
-        You are given an image of size 1000x1000 pixels showing a '{object_name}' involved in the action '{action}'. Your task is to extract **precise, single-point coordinates** that represent key interaction points on the object necessary for performing the action.
+        You are given an image of size 1000x1000 pixels showing a '{object_name}' involved in the action '{action}'. Your task is to extract **precise, single-point coordinates** and then provide their corresponding semantic part names with relevance labels in JSON format.
 
         🔍 Task Requirements:
-        - Identify several **semantically meaningful keypoints** directly on the '{object_name}'
-        - Each point must be a **single coordinate [x, y]** in **pixel-based format** (i.e., integers from 0 to 999)
+        - First, output a list of **[x, y]** pixel coordinates (integers from 0 to 999) for several semantically meaningful keypoints on the '{object_name}'
         - Points must lie **strictly within the boundaries** of the '{object_name}'
-        - Avoid clustering: ensure points are spatially distinct and representative of different functional regions (minimum distance between any two points: 100 pixels, which is ~10% of 1000px)
+        """+"""
+        - Then, output a list of JSON objects in the format: [{"part": "part_name", "label": "positive"}, ...] where:
+            - part_name: descriptive name of the object part in one word (e.g., "rim", "handle", "base")
+            - label: "positive" if the point is crucial for the action, "negative" if it's irrelevant or non-functional
+            - list maximum 5 part name
+        - Avoid clustering: ensure points are spatially distinct and representative of different functional regions (minimum distance between any two points: 100 pixels)
         - Do **not** output bounding boxes, masks, or any textual explanations
+
 
         🧠 Reasoning Guidance:
         Think about how a human would interact with this object during the action. Consider grip points, pivot areas, contact zones, or structural landmarks essential for the motion.
+        Assign "positive" to points that are directly involved in the interaction (e.g., where hands touch, force is applied).
+        Assign "negative" to structurally present but functionally irrelevant points (e.g., decorative parts, non-contact surfaces).
+        part_names must not be duplicated.
 
         ✅ Output Format (Strict):
         [
@@ -21,17 +29,32 @@ def process_image_ego_prompt(action, object_name):
         [x2, y2],
         [x3, y3]
         ]
+        [
+        {"part": "part_name_1", "label": "positive"},
+        {"part": "part_name_2", "label": "negative"},
+        {"part": "part_name_3", "label": "positive"}
+        ]
 
         ❌ Prohibited:
-        - Any text, labels, comments, or explanations
+        - Any text, labels, comments, or explanations outside these two blocks
         - Coordinates outside the object (x, y ∈ [0, 999])
         - Multiple points too close together (< 100 pixels apart)
         - Bounding boxes or region descriptions
+        - Invalid label values (must be exactly "positive" or "negative")
 
         🎯 Example (for reference only — do not include in output):
-        If the object is a 'cup' and the action is 'lifting', key points might be the rim center, handle grip, and base center — all expressed as pixel coordinates within the 1000x1000 frame.
+        [
+        [300, 500],
+        [400, 800],
+        [600, 450]
+        ]
+        [
+        {"part": "rim", "label": "positive"},
+        {"part": "base", "label": "negative"},
+        {"part": "handle", "label": "positive"}
+        ]
 
-        Now, analyze the image and output ONLY the coordinates as specified.
+        Now, analyze the image and output ONLY the coordinates and part-label pairs as specified.
     """
 
 def process_image_exo_prompt(action, object_name):

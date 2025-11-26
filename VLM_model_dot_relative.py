@@ -523,7 +523,7 @@ class QwenVLModel:
         )
         inputs = inputs.to(self.model.device)
         # Inference: Generation of the output
-        generated_ids = self.model.generate(**inputs, max_new_tokens=128)
+        generated_ids = self.model.generate(**inputs, max_new_tokens=1024)
         generated_ids_trimmed = [
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
@@ -540,6 +540,9 @@ class QwenVLModel:
                     for x, y in dots
                 ]
         print(f"restored_dots!!! : {dots}")
+        parsed_part = self.parse_part_labels(result)
+        print("parsed_part : ",parsed_part)
+
         # Draw dots on the image and get metrics
         dot_image_path, heatmap_tensor = self.draw_dots_on_image(image_path, dots, gt_path, action)
         
@@ -581,7 +584,8 @@ class QwenVLModel:
             'dot_only_image_path': dot_only_path,
             'heatmap_image_path': heatmap_path,
             'heatmap_tensor': heatmap_tensor,
-            'metrics': metrics
+            'metrics': metrics,
+            'parsed_part' : parsed_part
         }
     
     def parse_dot_coordinates(self, text):
@@ -660,6 +664,59 @@ class QwenVLModel:
 
         print(f"final points :{points}")
         return points
+
+    def parse_part_labels(self, text):
+        """
+        Parse the part-label information from model output.
+        Expected format after coordinates:
+        [
+        {"part": "rim", "label": "positive"},
+        {"part": "base", "label": "negative"}
+        ]
+
+        Args:
+            text (str): The full model output string
+
+        Returns:
+            list: List of dictionaries with "part" and "label" keys
+        """
+        labels = []
+        try:
+            # Look for JSON array of objects starting with [{"part": ...
+            json_pattern = r"\[\s*({\"part\":.*?})\s*\]"  # Match one or more objects inside brackets
+            match = re.search(json_pattern, text, re.DOTALL)
+            if match:
+                # Extract the entire JSON array
+                json_str = match.group(0)
+                parsed = json.loads(json_str)
+
+                # Validate each item
+                for item in parsed:
+                    if isinstance(item, dict) and "part" in item and "label" in item:
+                        if item["label"] in ["positive", "negative"]:
+                            labels.append(item)
+                        else:
+                            print(f"Invalid label: {item['label']} — skipping")
+                    else:
+                        print(f"Invalid format: {item} — skipping")
+
+                return labels
+        except Exception as e:
+            print(f"Label JSON parsing failed: {e}")
+            pass
+
+        # Fallback: try to parse line-by-line if it's not JSON
+        # Example: "rim - positive", "base - negative"
+        fallback_pattern = r'"([^"]+)"\s*-\s*("[^"]+")'
+        matches = re.findall(fallback_pattern, text)
+        for match in matches:
+            part_name, label = match[0], match[1].strip('"')
+            if label in ["positive", "negative"]:
+                labels.append({"part": part_name, "label": label})
+            else:
+                print(f"Invalid label in fallback: {label}")
+
+        return labels
 
     def calculate_metrics(self, pred_heatmap, gt_map):
         """
@@ -775,6 +832,10 @@ class QwenVLModel:
                     for x, y in dots
                 ]
         print(f"restored_dots!!! : {dots}")
+        parsed_part = self.parse_part_labels(result)
+        print("parsed_part : ",parsed_part)
+
+
         # Draw dots on the image and get metrics
         dot_image_path, heatmap_tensor = self.draw_dots_on_image(image_path, dots, gt_path, action, exo_path, exo_type)
         

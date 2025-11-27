@@ -530,7 +530,9 @@ class QwenVLModel:
         result = self.processor.batch_decode(
             generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )[0]
-        
+        parsed_part = self.parse_part_labels(result)
+        print("parsed_part : ",parsed_part)
+                
         print(f"qwen ego Results!! : {result}")
         # dot 좌표 파싱
         dots = self.parse_dot_coordinates(result)
@@ -540,8 +542,7 @@ class QwenVLModel:
                     for x, y in dots
                 ]
         print(f"restored_dots!!! : {dots}")
-        parsed_part = self.parse_part_labels(result)
-        print("parsed_part : ",parsed_part)
+
 
         # Draw dots on the image and get metrics
         dot_image_path, heatmap_tensor = self.draw_dots_on_image(image_path, dots, gt_path, action)

@@ -4,7 +4,7 @@ import torch
 import random
 import json
 from PIL import Image
-import my_prompt_qwen3_clipprompt as my_prompt
+import my_prompt5_relative_clipprompt as my_prompt # my_prompt_qwen3_clipprompt 
 from file_managing import (
     load_selected_samples,
     get_actual_path,

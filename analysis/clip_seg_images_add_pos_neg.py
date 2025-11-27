@@ -198,10 +198,28 @@ def get_clipseg_heatmap(
         final_heatmap = (final_heatmap - final_heatmap.min()) / (final_heatmap.max() - final_heatmap.min())
         # gamma, epsilon은 외부 변수를 사용하므로 함수 인자로 받거나 전역 변수여야 합니다.
         # 여기서는 코드 맥락상 전역 변수 gamma, epsilon을 사용한다고 가정합니다.
-        final_heatmap = final_heatmap ** gamma ##+ epsilon
+        final_heatmap = final_heatmap ** gamma ### + epsilon
         
     return final_heatmap
 
+#### PART INFO FROM QWEN3 -VL-32B
+import json
+json_dir = "/home/bongo/porter_notebook/research/qwen3/32B_ask_vlms/32B_vlm_parts_answer.json"
+# 1. 파일 읽기 (1차 파싱: 키는 문자열, 값은 '문자열로 된 리스트' 상태)
+with open(json_dir, 'r', encoding='utf-16') as f:
+    raw_data = json.load(f)
+
+# 2. 값(Value)을 실제 리스트/딕셔너리로 변환 (2차 파싱)
+result_dict = {}
+
+for key, value_str in raw_data.items():
+
+    # 문자열로 되어 있는 리스트("[\n{...}]")를 실제 파이썬 리스트로 변환
+    parsed_value = json.loads(value_str)
+    result_dict[key] = parsed_value
+
+result_dict
+##
 
 gamma = 0.5
 epsilon = 0.1#1e-6 #
@@ -235,7 +253,7 @@ for pair_key, sample_info in data["selected_samples"].items():
     gt_path =  f"{AGD20K_PATH}/Seen/testset/GT/{action_name}/{item_name}/{file_name.split('.')[0]}.png"
     dot_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
     print(item_name, action_name, file_name)
-    output_path = f"clipseg_32B_prompt5_wo_epsilon/{file_name.split('.')[0]}_{action_name}.png"
+    output_path = f"clipseg_32B_prompt5_pos_only/{file_name.split('.')[0]}_{action_name}.png"
     # --- 2. VLM 히트맵 로드 및 DINO 특징 추출 ---
     original_image = Image.open(original_image_path).convert('RGB')
     try:
@@ -254,8 +272,53 @@ for pair_key, sample_info in data["selected_samples"].items():
         processor,
         action_name + " " + item_name,
     )
+    ## ADDED
+    current_key = f"{item_name}_{action_name}"
+    object_mask = (clip_heatmap > 0).astype(float)
 
-    
+
+    if current_key in result_dict:
+        # 해당 키에 대한 부품 리스트 가져오기
+        parts_list = result_dict[current_key]
+        
+        print(f"Applying parts refinement for {current_key}: {len(parts_list)} parts")
+        
+        for part_info in parts_list:
+            p_name = part_info['part']   # 예: "handle"
+            p_label = part_info['label'] # 예: "positive" or "negative"
+            
+            # 3. 부품(Part)에 대한 CLIPSeg 히트맵 추출
+            part_heatmap = get_clipseg_heatmap(
+                image_path=original_image_path,
+                model=clip_model,     # 루프 밖에서 정의된 모델
+                processor=processor,  # 루프 밖에서 정의된 프로세서
+                object_name=p_name    # 객체 전체가 아닌 '부품 이름'으로 추출
+            )
+            
+            if part_heatmap is not None:
+                # 4. 마스킹 적용: 원본 객체가 있는 위치에서만 부품 값을 유효하게 함
+                # (배경에 있는 다른 물체의 'handle' 등이 잡히는 것을 방지)
+                masked_part_heatmap = part_heatmap * object_mask
+                print(f"{item_name} // p_name : {p_name} , p_label : {p_label}")
+                # 5. Positive / Negative 적용
+                # 가중치(weight)를 0.5~1.0 정도로 조절하여 반영 강도를 튜닝할 수도 있습니다.
+                refinement_strength = 1.0 
+                
+                if p_label == "positive":
+                    clip_heatmap = (masked_part_heatmap * refinement_strength)
+                # elif p_label == "negative":
+                #     clip_heatmap = clip_heatmap - (masked_part_heatmap * refinement_strength)
+
+                # if p_label == "negative":
+                #     clip_heatmap = clip_heatmap - (masked_part_heatmap * refinement_strength)
+
+        # 6. 최종 클리핑 (MINMAX)
+        clip_heatmap = (clip_heatmap - clip_heatmap.min()) / (clip_heatmap.max() - clip_heatmap.min())
+        
+    else:
+        print(f"Warning: Key '{current_key}' not found in result_dict.")
+
+
     vlm_heatmap = vlm_heatmap ** gamma + epsilon
     vlm_fused_heatmap = vlm_heatmap * clip_heatmap
     # vlm_fused_heatmap = clip_heatmap

@@ -15,7 +15,8 @@ from torchvision import transforms
 from PIL import Image
 from sklearn.cluster import KMeans
 from transformers import CLIPSegProcessor, CLIPSegForImageSegmentation
-
+import math
+    
 # ------------------------------------------------------
 # 2. System Path Setup (로컬 모듈 경로 설정)
 # ------------------------------------------------------
@@ -33,9 +34,64 @@ from file_managing import (
     load_selected_samples,
     get_actual_path,
     get_gt_path,
-    prompt_dict_obj
 )
 
+
+# USE DINO-ViT MODEL (pretrained)
+dino_model = timm.create_model('vit_base_patch16_224_dino', pretrained=True)
+dino_model
+
+def get_dino_features(image, model):
+    """
+    DINO 특징을 추출하고 원본 이미지 크기로 리사이즈하여 반환합니다.
+    Returns: (Original_H, Original_W, Feature_Dim) 형태의 Numpy 배열
+    """
+    # 1. 원본 이미지 크기 저장 (PIL은 W, H 순서)
+    original_w, original_h = image.size
+    
+    # DINO 입력 전처리
+    transform = T.Compose([
+        T.Resize((224, 224)),
+        T.ToTensor(),
+        T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    ])
+    
+    # 모델의 디바이스 확인 후 텐서 이동
+    device = next(model.parameters()).device
+    img_tensor = transform(image).unsqueeze(0).to(device)
+    
+    with torch.no_grad():
+        outputs = model.forward_features(img_tensor)
+        patch_tokens = outputs[:, 1:, :] # CLS 토큰 제외, shape: (1, 196, 768)
+
+    # 2. 1D 토큰을 2D 격자(Grid)로 변환
+    B, N, C = patch_tokens.shape
+    # 예: 196개 패치 -> 14x14 그리드 (sqrt(196) = 14)
+    H_grid = W_grid = int(N ** 0.5) 
+
+    # (Batch, N, C) -> (Batch, C, N) -> (Batch, C, H_grid, W_grid)
+    features_spatial = patch_tokens.transpose(1, 2).reshape(B, C, H_grid, W_grid)
+    # shape: (1, 768, 14, 14)
+
+    # 3. 원본 이미지 크기로 업샘플링 (Resize)
+    # F.interpolate는 (Height, Width) 순서로 크기를 받습니다.
+    features_resized = F.interpolate(
+        features_spatial, 
+        size=(original_h, original_w), 
+        mode="bilinear", 
+        align_corners=False
+    )
+    # shape: (1, 768, Original_H, Original_W)
+
+    # 4. 사용하기 편한 형태(Numpy, Channel-last)로 변환
+    # (Batch, Channel, Height, Width) -> (Height, Width, Channel)
+    # squeeze(0)으로 배치 차원 제거 -> permute로 차원 순서 변경
+    final_features = features_resized.squeeze(0).permute(1, 2, 0).cpu().numpy()
+
+    print(f"Original Features Shape: {patch_tokens.shape}")
+    print(f"Resized Features Shape: {final_features.shape}")
+
+    return final_features
 # ------------------------------------------------------
 # 4. Model Initialization (모델 및 설정 로드)
 # ------------------------------------------------------
@@ -199,7 +255,7 @@ def get_clipseg_heatmap(
         final_heatmap = (final_heatmap - final_heatmap.min()) / (final_heatmap.max() - final_heatmap.min())
         # gamma, epsilon은 외부 변수를 사용하므로 함수 인자로 받거나 전역 변수여야 합니다.
         # 여기서는 코드 맥락상 전역 변수 gamma, epsilon을 사용한다고 가정합니다.
-        final_heatmap = final_heatmap ** gamma ##+ epsilon
+        final_heatmap = final_heatmap# ** gamma ##+ epsilon
         
     return final_heatmap
 
@@ -207,7 +263,7 @@ def get_clipseg_heatmap(
 gamma = 0.5
 epsilon = 0.1#1e-6 #
 metrics_tracker_dino = MetricsTracker(name="only_ego")
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 json_path = os.path.join("/home/bongo/porter_notebook/research/qwen3","selected_samples.json")
 data = load_selected_samples(json_path)
 missing_gt = 0
@@ -236,7 +292,7 @@ for pair_key, sample_info in data["selected_samples"].items():
     gt_path =  f"{AGD20K_PATH}/Seen/testset/GT/{action_name}/{item_name}/{file_name.split('.')[0]}.png"
     dot_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
     print(item_name, action_name, file_name)
-    output_path = f"dummy/{file_name.split('.')[0]}_{action_name}.png"
+    output_path = f"clipseg_32B_prompt5_wo_epsilon_DINO/{file_name.split('.')[0]}_{action_name}.png"
     # --- 2. VLM 히트맵 로드 및 DINO 특징 추출 ---
     original_image = Image.open(original_image_path).convert('RGB')
     try:
@@ -248,18 +304,50 @@ for pair_key, sample_info in data["selected_samples"].items():
 #     print("Loading VLM heatmap...")
     vlm_heatmap = load_vlm_heatmap(vlm_heatmap_path, original_image.size)
 
-    plsp_name = prompt_dict_obj[action_name][item_name]#.split(' ')[-1]
-    print(f"plsp_name : {plsp_name}")
+    dino_features = get_dino_features(original_image, dino_model)
     clip_heatmap = get_clipseg_heatmap(
         original_image_path,
         clip_model, # Pass the model object (now on GPU)
         processor,
-        plsp_name,
+        item_name,
     )
 
+
+    # clip_mask = clip_heatmap.copy()
+    # binary_mask = (clip_mask > 0.05).astype(np.float32)
+
+    # # 이제 torch로 변환
+    # clip_mask = torch.from_numpy(binary_mask).unsqueeze(-1)  # (H, W, 1)
+    # # 2. DINO feature → tensor (C, H, W)
+    # dino_tensor = torch.from_numpy(dino_features).permute(2, 0, 1)  # (C, H, W)
     
+    # # 3. 마스크 적용 (broadcast)
+    # masked_features = dino_tensor * clip_mask.permute(2, 0, 1)  # (C, H, W)
+    
+    # # 4. 최종 heatmap (채널 평균)
+    # final_heatmap = masked_features.mean(dim=0)  # (H, W)
+    
+    # 5. 정규화
+
+    dino_tensor = torch.from_numpy(dino_features).permute(2, 0, 1).to(device)  # (C, H, W)
+    clip_heatmap = (clip_heatmap > 0.3).astype(np.float32)
+    clip_tensor = torch.from_numpy(clip_heatmap).to(device)                    # (H, W)
+
+    # 2. clip_tensor를 (1, H, W) → (1, 1, H, W)로 확장해서 broadcasting 준비
+    clip_tensor = clip_tensor.unsqueeze(0).unsqueeze(0)  # (1, 1, H, W)
+
+    # 3. 마스크 적용
+    masked = dino_tensor.unsqueeze(0) * clip_tensor  # (1, C, H, W)
+
+    # 4. 채널 평균 → 최종 heatmap
+    final_heatmap = masked.mean(dim=1).squeeze(0)  # (H, W)
+
+    # 5. CPU + numpy로 변환 (vlm_heatmap과 곱하기 위해)
+    final_heatmap = final_heatmap.cpu().numpy()
+
     vlm_heatmap = vlm_heatmap ** gamma + epsilon
-    vlm_fused_heatmap = vlm_heatmap * clip_heatmap
+    vlm_fused_heatmap = vlm_heatmap* np.array(final_heatmap) 
+    # vlm_fused_heatmap = vlm_heatmap * final_heatmap
     # vlm_fused_heatmap = clip_heatmap
 
     
@@ -274,12 +362,10 @@ for pair_key, sample_info in data["selected_samples"].items():
         continue
     metrics_tracker_dino.print_metrics(metrics_dino, vlm_heatmap_path.split('/')[-1])
     
-    metrics_text = f"[{plsp_name} {action_name} {file_name}]  KLD: {metrics_dino['KLD']:.4f} | SIM: {metrics_dino['SIM']:.4f} | NSS: {metrics_dino['NSS']:.4f}"
-    
     # --- 4. 결과 시각화 ---
     # ✨ 레이아웃을 1x4에서 1x5로 변경하고, figsize을 조정합니다.
     fig, ax = plt.subplots(1, 6, figsize=(25, 5))
-    fig.suptitle(metrics_text, fontsize=20, fontweight='bold', y=0.98)
+
     # --- Plot 1: 원본 이미지 (ax[0]) ---
     ax[0].imshow(original_image)
     ax[0].set_title('Original Image')
@@ -306,7 +392,7 @@ for pair_key, sample_info in data["selected_samples"].items():
     # 이 dino_attention_heatmap 변수는 클러스터링 전에 미리 계산해 두어야 합니다.
     # (예: dino_attention_heatmap = generate_dino_heatmap(original_image_path, dino_model) )
     ax[4].imshow(original_image)
-    ax[4].imshow(clip_heatmap, cmap='jet', alpha=0.5)
+    ax[4].imshow(final_heatmap, cmap='jet', alpha=0.5)
     ax[4].set_title('clip_heatmap')
     ax[4].axis('off')
 

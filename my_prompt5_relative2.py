@@ -30,24 +30,24 @@ def process_image_ego_prompt(action, object_name):
 def process_image_exo_prompt(action, object_name):
     return f"""
     You are given two images:
-    1. An **egocentric** image (Target) where you must select keypoints.
-    2. An **exocentric** reference image showing how the action '{action}' is typically performed on the '{object_name}'.
+    1. An egocentric image (**Target**) where you must select keypoints.
+    2. An exocentric image (**Reference**) showing how the action '{action}' is typically performed on the '{object_name}' with human.
 
     🎯 Task:
-    Select multiple [x, y] keypoints in the **egocentric image**(First Image) that are critical for performing the action '{action}' on the '{object_name}'.
+    Select multiple [x, y] keypoints in the **First Image**(egocentric image) that are critical for performing the action '{action}' on the '{object_name}'.
 
     📏 Coordinate System (CRITICAL):
-    - Apply a **1000x1000** grid to the **Egocentric image**.
+    - Apply a **1000x1000** grid to the  **First Image**(egocentric image).
     - **X-axis**: 0 (left) to 1000 (right)
     - **Y-axis**: 0 (top) to 1000 (bottom)
     - Return coordinates as **integers** within this [0, 1000] range.
 
-    🔍 Use the exocentric image(Second) to:
+    🔍 Use the **Second Image**(exocentric image) to:
     - Understand typical interaction patterns
     - Identify functionally important parts (e.g., contact or force areas)
 
     📌 Guidelines:
-    - Keypoints must lie **within** the '{object_name}' in the egocentric image
+    - Keypoints must lie **within** the '{object_name}' in the  **First Image**(egocentric image)
     - If there are multiple '{object_name}' instances, mark keypoints on **each of them**
     - Place **at least 3 well-separated** points covering the entire functional region
     - e.g., for a handle: both ends and the center

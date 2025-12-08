@@ -5,7 +5,7 @@ from pathlib import Path
 import random
 
 from PIL import Image
-import my_prompt_qwen3 as my_prompt
+import my_prompt5_relative as my_prompt
 from file_managing import (
     load_selected_samples,
     get_actual_path,

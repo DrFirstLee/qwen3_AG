@@ -5,7 +5,7 @@ from pathlib import Path
 import random
 
 from PIL import Image
-import my_prompt5_relative as my_prompt
+import my_prompt5_relative2 as my_prompt
 from file_managing import (
     load_selected_samples,
     get_actual_path,
@@ -39,6 +39,11 @@ def affordance_grounding(model, action, object_name, image_path, gt_path, exo_pa
     return results
 
 
+import json
+
+with open("/root/qwen3_AG/results_32B_absolute/3B_exo_best_image.json", 'r', encoding='utf-8') as f:
+    best_exo_json = json.load(f)
+
 
 def main():
     # Initialize Qwen VL model
@@ -62,7 +67,6 @@ def main():
         
         action = sample_info["action"]
         object_name = sample_info["object"]
-
         image_path = get_actual_path(sample_info["image_path"])
         gt_path = get_gt_path(image_path)    
         print(f"Action : {action}, Object : {object_name} image_name : {image_path.split('/')[-1]}")
@@ -71,7 +75,6 @@ def main():
         # 이미지 확장자 목록
         valid_ext = {".jpg", ".PNG", ".png", ".JPG"}
 
-        # 하위 디렉토리 포함 모든 이미지 수집
         all_images = [p for p in exo_best_path.rglob("*")
                     if p.suffix.lower() in valid_ext]
         if  len(all_images)==0:
@@ -80,7 +83,12 @@ def main():
 
         # 랜덤 이미지 선택
         random_exo_image = random.choice(all_images)
-
+        # try:
+        #     exo_name = best_exo_json[f'{action}${object_name}'] 
+        # except:
+        #     print(f"ERROR - no exo!! {action}${object_name} ")
+        #     continue
+        # random_exo_image = Path(f"{AGD20K_PATH}/Seen/trainset/exocentric/{action}/{object_name}/{exo_name}") # 
             
         # with exo random
         results_exo_best = affordance_grounding(model, action, object_name, image_path, gt_path, str(random_exo_image)     )

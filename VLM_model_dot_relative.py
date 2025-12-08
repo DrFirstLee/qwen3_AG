@@ -55,11 +55,15 @@ class MetricsTracker:
         print(f"\n{'='*50}")
         print(f"Metrics for {self.name} {image_name}:")
         print(f" {self.name} Current - KLD: {current_metrics['KLD']:.4f} | SIM: {current_metrics['SIM']:.4f} | NSS: {current_metrics['NSS']:.4f}")
-        
-        if self.total_samples > 0:
-            averages = self.get_averages()
-            print(f"\nCumulative {self.name}  Averages over {self.total_samples} samples:")
-            print(f"Average - KLD: {averages['KLD']:.4f} | SIM: {averages['SIM']:.4f} | NSS: {averages['NSS']:.4f}")
+        try:
+            if self.total_samples > 0:
+                averages = self.get_averages()
+                print(f"\nCumulative {self.name}  Averages over {self.total_samples} samples:")
+                print(f"Average - KLD: {averages['KLD']:.4f} | SIM: {averages['SIM']:.4f} | NSS: {averages['NSS']:.4f}")
+            
+        except:
+            print("METRICS ERROR")
+
         print(f"{'='*50}\n")
 
 
@@ -437,7 +441,7 @@ class QwenVLModel:
             output_ids = self.model.generate(
                 input_ids=inputs.input_ids,
                 attention_mask=inputs.attention_mask,
-                max_new_tokens=1024,
+                max_new_tokens=2048,
                 do_sample=False,
                 temperature=0.0
             )
@@ -449,6 +453,31 @@ class QwenVLModel:
         response = self.processor.decode(generated_ids, skip_special_tokens=True)
         
         return response
+
+    def ask_with_messages(self, messages: list) -> str:
+        """
+        주어진 텍스트 질문에 대해 model.generate()를 사용하여 답변을 반환합니다.
+        """
+
+        # 채팅 템플릿 적용
+        # Preparation for inference
+        inputs = self.processor.apply_chat_template(
+            messages,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_dict=True,
+            return_tensors="pt"
+        )
+        inputs = inputs.to(self.model.device)
+        # Inference: Generation of the output
+        generated_ids = self.model.generate(**inputs, max_new_tokens=1024)
+        generated_ids_trimmed = [
+            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+        ]
+        output_text = self.processor.batch_decode(
+            generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+        )[0]
+        return output_text
 
     def ask_with_image(self, question: str, image_path:str) -> str:
         """

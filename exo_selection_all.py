@@ -192,14 +192,11 @@ for num in target_item_dict.keys():
                 ],
             }
         ]
-
-        # 4. 입력 전처리
-        # apply_chat_template으로 텍스트 프롬프트 생성
+        # 4. Preprocess
+        # apply_chat_template, making chat template
         text = processor.apply_chat_template(
             messages, tokenize=False, add_generation_prompt=True
         )
-
-        # 이미지 로드 및 입력 텐서 생성
         image = Image.open(image_path).convert("RGB")
         inputs = processor(
             text=[text],
@@ -208,23 +205,22 @@ for num in target_item_dict.keys():
             return_tensors="pt"
         ).to(model.device)
 
-        # 5. 모델 추론 (Forward Pass)
-        # generate() 대신 model()을 호출하여 raw logits를 얻습니다.
+        # 5. Forward Pass
+        # model() to  get raw logits
         with torch.no_grad():
             outputs = model(**inputs)
             
             # outputs.logits shape: [batch_size, seq_len, vocab_size]
-            # 우리는 '다음 토큰'을 예측하고 싶으므로 시퀀스의 가장 마지막(-1) 로짓을 가져옵니다.
             next_token_logits = outputs.logits[0, -1, :]
 
-        # 6. 로짓 프로빙 (Logit Probing) & 랭킹
+        # 6. Logit Probing & Ranking
         action_scores = {}
         for action, token_id in action_token_map.items():
-            # 해당 행동 토큰의 점수(logit)만 쏙 뽑아서 저장
+            # get logit score
             score = next_token_logits[token_id].item()
             action_scores[action] = score
 
-        # 점수가 높은 순서대로 정렬
+        # sorting
         sorted_actions = sorted(action_scores.items(), key=lambda x: x[1], reverse=True)
         best_action = sorted_actions[0][0]
 

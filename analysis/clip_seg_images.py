@@ -8,6 +8,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import timm
+import glob
 import torch
 import torch.nn.functional as F
 import torchvision.transforms as T
@@ -232,11 +233,21 @@ for pair_key, sample_info in data["selected_samples"].items():
     else:
         item_name = file_name.split("_")[0] + "_" + file_name.split("_")[1]
     AGD20K_PATH = '/home/DATA/AGD20K'
-    vlm_heatmap_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap.jpg"
+    
+    vlm_heatmap_path = f"/home/bongo/porter_notebook/research/qwen3/dot_verifying/gemini25pro_verified/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap.jpg"
+    print(vlm_heatmap_path)
+    # matched_files = glob.glob(vlm_heatmap_path)
+    # vlm_heatmap_exo  = f"/home/bongo/porter_notebook/research/qwen3/dot_verifying/gemini25pro_verified/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap_exo_reference_{action_name}_*.jpg"
+    # matched_files = glob.glob(vlm_heatmap_exo)
+    # # print(f"{vlm_heatmap_exo} // matched_files length : {len(matched_files)}")
+    # if len(matched_files) ==0:
+    #     print(f" NO Image!! {file_name.split('.')[0]}_{action_name}")
+    #     continue
+    # vlm_heatmap_path =  f"/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/heatmaps/{file_name.split('.')[0]}_{action_name}_heatmap_exo_reference_{action_name}_{}.jpg"
     gt_path =  f"{AGD20K_PATH}/Seen/testset/GT/{action_name}/{item_name}/{file_name.split('.')[0]}.png"
-    dot_path = f"/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
+    dot_path = f"/home/bongo/porter_notebook/research/qwen3/dot_verifying/gemini25pro_verified/dots_only/{file_name.split('.')[0]}_{action_name}_dots.jpg"
     print(item_name, action_name, file_name)
-    output_path = f"dummy/{file_name.split('.')[0]}_{action_name}.png"
+    output_path = f"clipseg_o_32B_gemini25pro_verified/{file_name.split('.')[0]}_{action_name}.png"
     # --- 2. VLM 히트맵 로드 및 DINO 특징 추출 ---
     original_image = Image.open(original_image_path).convert('RGB')
     try:
@@ -249,12 +260,12 @@ for pair_key, sample_info in data["selected_samples"].items():
     vlm_heatmap = load_vlm_heatmap(vlm_heatmap_path, original_image.size)
 
     plsp_name = prompt_dict_obj[action_name][item_name]#.split(' ')[-1]
-    print(f"plsp_name : {plsp_name}")
+    # print(f"plsp_name : {plsp_name}")
     clip_heatmap = get_clipseg_heatmap(
         original_image_path,
         clip_model, # Pass the model object (now on GPU)
         processor,
-        plsp_name,
+        item_name,
     )
 
     
@@ -274,7 +285,7 @@ for pair_key, sample_info in data["selected_samples"].items():
         continue
     metrics_tracker_dino.print_metrics(metrics_dino, vlm_heatmap_path.split('/')[-1])
     
-    metrics_text = f"[{plsp_name} {action_name} {file_name}]  KLD: {metrics_dino['KLD']:.4f} | SIM: {metrics_dino['SIM']:.4f} | NSS: {metrics_dino['NSS']:.4f}"
+    metrics_text = f"[{item_name} {action_name} {file_name}]  KLD: {metrics_dino['KLD']:.4f} | SIM: {metrics_dino['SIM']:.4f} | NSS: {metrics_dino['NSS']:.4f}"
     
     # --- 4. 결과 시각화 ---
     # ✨ 레이아웃을 1x4에서 1x5로 변경하고, figsize을 조정합니다.

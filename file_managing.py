@@ -29,3 +29,205 @@ def get_gt_path(image_path):
     parts[-1] = base_name + '.png'
     return '/'.join(parts)
 
+prompt_dict_obj = {
+    "beat": {
+        "drum": "drum",
+    },
+    "boxing": {
+        "punching_bag": "punching bag",
+    },
+    "brush_with": {
+        "toothbrush": "toothbrush",
+    },
+    "carry": {
+        "skateboard": "skateboard",
+        "skis": "skis",
+        "snowboard": "snowboard",
+        "surfboard": "surfboard",
+    },
+    "catch": {
+        "frisbee": "frisbee",
+        "rugby_ball": "rugby ball",
+        "soccer_ball": "soccer ball",
+    },
+    "cut": {
+        "apple": "apple",
+        "banana": "banana",
+        "carrot": "carrot",
+        "orange": "orange",
+    },
+    "cut_with": {
+        "knife": "knife blade",
+        "scissors": "scissors blade",
+    },
+    "drag": {
+        "suitcase": "suitcase",
+    },
+    "drink_with": {
+        "bottle": "bottle cap",
+        "cup": "cup",
+        "wine_glass": "wineglass",
+    },
+    "eat": {
+        "apple": "fruit",
+        "banana": "banana",
+        "broccoli": "broccoli",
+        "carrot": "carrot",
+        "hot_dog": "hot dog",
+        "orange": "orange",
+    },
+    "hit": {
+        "axe": "axe handle",
+        "baseball_bat": "baseball bat",
+        "hammer": "hammer handle",
+        "tennis_racket": "tennis racket handle",
+    },
+    "hold": {
+        "axe": "axe handle",
+        "badminton_racket": "badminton racket handle",
+        "baseball_bat": "baseball bat handle",
+        "book": "book page",
+        "bottle": "bottle body",
+        "bowl": "bowl",
+        "cup": "cup handle",
+        "fork": "fork handle",
+        "frisbee": "frisbee",
+        "golf_clubs": "golf club handle",
+        "hammer": "hammer handle",
+        "knife": "knife handle",
+        "scissors": "scissors handle",
+        "skateboard": "skateboard",
+        "skis": "skis",
+        "snowboard": "snowboard",
+        "suitcase": "suitcase",
+        "surfboard": "surfboard",
+        "tennis_racket": "tennis racket handle",
+        "toothbrush": "toothbrush handle",
+        "wine_glass": "wineglass neck"
+    },
+    "jump":{
+        "skateboard": "skateboard",
+        "skis": "skis",
+        "snowboard": "snowboard",
+        "surfboard": "surfboard",
+    },
+    "kick": {
+        "punching_bag": "punching bag",
+        "rugby_ball": "rugby ball",
+        "soccer_ball": "soccer ball"
+    },
+    "lie_on": {
+        "bed": "bed",
+        "bench": "bench seat",
+        "couch": "couch seat",
+        "surfboard": "surfboard"
+    },
+    "lift":{
+        "fork": "fork handle",
+    },
+    "look_out":{
+        "binoculars": "binoculars"
+    },
+    "open": {
+        "book": "book page",
+        "bottle": "bottle cap",
+        "microwave": "microwave door handle",
+        "oven": "oven door handle",
+        "refrigerator": "refrigerator door handle",
+        "suitcase": "suitcase",
+    },
+    "pack": {
+        "suitcase": "suitcase",
+    },
+    "peel": {
+        "apple": "fruit",
+        "banana": "banana",
+        "carrot": "carrot",
+        "orange": "orange",
+    },
+    "pick_up": {
+        "suitcase": "suitcase",
+        "skis": "skis",
+    },
+    "pour": {
+        "bottle": "bottle body",
+        "cup": "cup handle",
+        "wine_glass": "wine glass neck",
+    },
+    "push": {
+        "bicycle": "bicycle handlebars",
+        "motorcycle": "motorcycle handlebars.motorcycle seat",
+    },
+    "ride": {
+        "bicycle": "bicycle handlebars.bicycle pedal.bicycle seat",
+        "motorcycle": "motorcycle handlebars.motorcycle seat.motorcycle footrest",
+    },
+    "sip": {
+        "bottle": "bottle cap",
+        "cup": "cup",
+        "wine_glass": "wine glass",
+    },
+    "sit_on": {
+        "bed": "bed",
+        "bench": "bench seat",
+        "bicycle": "bicycle seat",
+        "chair": "chair seat",
+        "couch": "couch seat",
+        "motorcycle": "motorcycle seat",
+        "skateboard": "skateboard top",
+        "surfboard": "surfboard",
+    },
+    "stick": {
+        "fork": "fork tines",
+        "knife": "knife blade",
+    },
+    "stir": {
+        "bowl": "bowl inside",
+    },
+    "swing": {
+        "badminton_racket": "badminton racket handle",
+        "baseball_bat": "baseball bat handle",
+        "golf_clubs": "golf club handle",
+        "tennis_racket": "tennis racket handle",
+    },
+    "take_photo": {
+        "camera": "camera grip",
+        "cell_phone": "cell phone",
+    },
+    "talk_on": {
+        "cell_phone": "cell phone screen",
+    },
+    "text_on": {
+        "cell_phone": "cell phone screen",
+    },
+    "talk_on": {
+        "cell_phone": "cell phone screen",
+    },
+    "throw": {
+        "baseball": "baseball",
+        "basketball": "basketball",
+        "discus": "discus",
+        "frisbee": "frisbee",
+        "javelin": "javelin handle",
+        "rugby_ball": "rugby ball",
+        "soccer_ball": "soccer ball",
+    },
+    "type_on": {
+        "keyboard": "keyboard",
+        "laptop": "laptop keyboard",
+    },
+    "wash": {
+        "bowl": "bowl",
+        "carrot": "carrot",
+        "cup": "cup",
+        "fork": "fork tines",
+        "knife": "knife blade",
+        "orange": "orange",
+        "toothbrush": "toothbrush",
+        "wine_glass": "wine glass body",
+    },
+    "write": {
+        "pen": "pen grip",
+    },
+}
+

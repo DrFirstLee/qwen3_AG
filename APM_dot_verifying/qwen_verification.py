@@ -176,7 +176,7 @@ def parse_log_to_df(file_path):
 model = QwenVLModel(model_name = model_name)
 cnt_d = 0
 # --- 실행 ---
-file_path = '/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/ego_exo_prompt5_relative.log'
+file_path =  '/home/bongo/porter_notebook/research/qwen3/ego_exo_prompt5_relative.txt'
 df_fin = parse_log_to_df(file_path).head(4)
 df_fin
 

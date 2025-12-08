@@ -1,0 +1,4130 @@
+  🤖 Qwen/Qwen3-VL-32B-Instruct 모델 로딩중...
+  ✅ Qwen3 모델 로딩 완료! (Main Device: cuda:0)
+  Processing 123 samples...
+  ==================================================
+  --- Start  0/123 --------------------------------------------------------------------------------
+  Action : jump, Object : skis image_name : skis_002829.jpg
+  qwen ego Results!! : [
+    [280, 490],
+    [720, 490],
+    [280, 900],
+    [720, 900]
+  ]
+  parsed dots!!! : [[280, 490], [720, 490], [280, 900], [720, 900]]
+  restored_dots!!! : [[157, 735], [403, 735], [157, 1350], [403, 1350]]
+
+  ==================================================
+  Metrics for only_ego skis_002829.jpg:
+  only_ego Current - KLD: 1.1155 | SIM: 0.3736 | NSS: 1.4524
+
+  Cumulative only_ego  Averages over 1 samples:
+  Average - KLD: 1.1155 | SIM: 0.3736 | NSS: 1.4524
+  ==================================================
+
+  exo file name : jump_skis_000509.jpg / exo_path
+  parsed dots!!! : [[250, 750], [350, 750], [450, 750]]
+  restored_dots!!! : [[140, 1125], [196, 1125], [252, 1125]]
+
+  ==================================================
+  Metrics for with_exo_best skis_002829.jpg:
+  with_exo_best Current - KLD: 9.8528 | SIM: 0.0033 | NSS: -0.4087
+
+  Cumulative with_exo_best  Averages over 1 samples:
+  Average - KLD: 9.8528 | SIM: 0.0033 | NSS: -0.4087
+  ==================================================
+
+  *** End   ******************************************************************************************************************************************************
+
+
+
+  --- Start  1/123 --------------------------------------------------------------------------------
+  Action : jump, Object : skateboard image_name : skateboard_002387.jpg
+  qwen ego Results!! : [
+    [500, 350],
+    [350, 650],
+    [650, 650]
+  ]
+  parsed dots!!! : [[500, 350], [350, 650], [650, 650]]
+  restored_dots!!! : [[750, 332], [525, 617], [975, 617]]
+
+  ==================================================
+  Metrics for only_ego skateboard_002387.jpg:
+  only_ego Current - KLD: 3.6953 | SIM: 0.3071 | NSS: 0.5182
+
+  Cumulative only_ego  Averages over 2 samples:
+  Average - KLD: 2.4054 | SIM: 0.3404 | NSS: 0.9853
+  ==================================================
+
+  exo file name : jump_skateboard_001997.jpg / exo_path
+  parsed dots!!! : [[200, 350], [500, 250], [800, 150]]
+  restored_dots!!! : [[300, 332], [750, 237], [1200, 142]]
+
+  ==================================================
+  Metrics for with_exo_best skateboard_002387.jpg:
+  with_exo_best Current - KLD: 0.7594 | SIM: 0.4998 | NSS: 1.3099
+
+  Cumulative with_exo_best  Averages over 2 samples:
+  Average - KLD: 5.3061 | SIM: 0.2515 | NSS: 0.4506
+  ==================================================
+
+  *** End   ******************************************************************************************************************************************************
+
+
+
+  --- Start  2/123 --------------------------------------------------------------------------------
+  Action : jump, Object : surfboard image_name : surfboard_000658.jpg
+  qwen ego Results!! : [
+    [200, 200],
+    [500, 500],
+    [800, 800]
+  ]
+  parsed dots!!! : [[200, 200], [500, 500], [800, 800]]
+  restored_dots!!! : [[160, 300], [401, 750], [642, 1200]]
+
+  ==================================================
+  Metrics for only_ego surfboard_000658.jpg:
+  only_ego Current - KLD: 2.7645 | SIM: 0.2552 | NSS: -0.1193
+
+  Cumulative only_ego  Averages over 3 samples:
+  Average - KLD: 2.5251 | SIM: 0.3120 | NSS: 0.6171
+  ==================================================
+
+  exo file name : jump_surfboard_001694.jpg / exo_path
+  parsed dots!!! : [[180, 850], [320, 750], [480, 650]]
+  restored_dots!!! : [[144, 1275], [256, 1125], [385, 975]]
+
+  ==================================================
+  Metrics for with_exo_best surfboard_000658.jpg:
+  with_exo_best Current - KLD: 5.3996 | SIM: 0.2073 | NSS: -0.0371
+
+  Cumulative with_exo_best  Averages over 3 samples:
+  Average - KLD: 5.3372 | SIM: 0.2368 | NSS: 0.2880
+  ==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  3/123 --------------------------------------------------------------------------------
+Action : jump, Object : snowboard image_name : snowboard_001704.jpg
+qwen ego Results!! : [
+  [250, 200],
+  [500, 500],
+  [750, 200]
+]
+parsed dots!!! : [[250, 200], [500, 500], [750, 200]]
+restored_dots!!! : [[150, 300], [301, 750], [451, 300]]
+
+==================================================
+Metrics for only_ego snowboard_001704.jpg:
+ only_ego Current - KLD: 3.4961 | SIM: 0.2005 | NSS: -0.2501
+
+Cumulative only_ego  Averages over 4 samples:
+Average - KLD: 2.7679 | SIM: 0.2841 | NSS: 0.4003
+==================================================
+
+exo file name : jump_snowboard_000100.jpg / exo_path
+parsed dots!!! : [[250, 500], [500, 500], [750, 500]]
+restored_dots!!! : [[150, 750], [301, 750], [451, 750]]
+
+==================================================
+Metrics for with_exo_best snowboard_001704.jpg:
+ with_exo_best Current - KLD: 3.6340 | SIM: 0.1249 | NSS: -0.3163
+
+Cumulative with_exo_best  Averages over 4 samples:
+Average - KLD: 4.9114 | SIM: 0.2088 | NSS: 0.1370
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  4/123 --------------------------------------------------------------------------------
+Action : peel, Object : carrot image_name : carrot_003707.jpg
+qwen ego Results!! : [
+  [224, 341],
+  [455, 385],
+  [715, 441]
+]
+parsed dots!!! : [[224, 341], [455, 385], [715, 441]]
+restored_dots!!! : [[143, 145], [291, 164], [457, 188]]
+
+==================================================
+Metrics for only_ego carrot_003707.jpg:
+ only_ego Current - KLD: 0.5685 | SIM: 0.5613 | NSS: 1.8981
+
+Cumulative only_ego  Averages over 5 samples:
+Average - KLD: 2.3280 | SIM: 0.3395 | NSS: 0.6999
+==================================================
+
+exo file name : peel_carrot_000552.jpg / exo_path
+parsed dots!!! : [[210, 348], [490, 392], [810, 475]]
+restored_dots!!! : [[134, 148], [313, 167], [518, 202]]
+
+==================================================
+Metrics for with_exo_best carrot_003707.jpg:
+ with_exo_best Current - KLD: 0.8994 | SIM: 0.4465 | NSS: 1.4146
+
+Cumulative with_exo_best  Averages over 5 samples:
+Average - KLD: 4.1090 | SIM: 0.2564 | NSS: 0.3925
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  5/123 --------------------------------------------------------------------------------
+Action : peel, Object : orange image_name : orange_001193.jpg
+qwen ego Results!! : [
+  [538, 505],
+  [438, 534],
+  [621, 594]
+]
+parsed dots!!! : [[538, 505], [438, 534], [621, 594]]
+restored_dots!!! : [[344, 242], [280, 256], [397, 285]]
+
+==================================================
+Metrics for only_ego orange_001193.jpg:
+ only_ego Current - KLD: 1.4969 | SIM: 0.5433 | NSS: 1.2234
+
+Cumulative only_ego  Averages over 6 samples:
+Average - KLD: 2.1895 | SIM: 0.3735 | NSS: 0.7871
+==================================================
+
+exo file name : peel_orange_000504.jpg / exo_path
+parsed dots!!! : [[520, 480], [420, 580], [590, 620]]
+restored_dots!!! : [[332, 230], [268, 278], [377, 297]]
+
+==================================================
+Metrics for with_exo_best orange_001193.jpg:
+ with_exo_best Current - KLD: 1.8777 | SIM: 0.4970 | NSS: 1.1407
+
+Cumulative with_exo_best  Averages over 6 samples:
+Average - KLD: 3.7371 | SIM: 0.2965 | NSS: 0.5172
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  6/123 --------------------------------------------------------------------------------
+Action : peel, Object : banana image_name : banana_000480.jpg
+qwen ego Results!! : [
+  [500, 347],
+  [456, 768],
+  [125, 732]
+]
+parsed dots!!! : [[500, 347], [456, 768], [125, 732]]
+restored_dots!!! : [[320, 166], [291, 368], [80, 351]]
+
+==================================================
+Metrics for only_ego banana_000480.jpg:
+ only_ego Current - KLD: 1.0717 | SIM: 0.3877 | NSS: 1.2502
+
+Cumulative only_ego  Averages over 7 samples:
+Average - KLD: 2.0298 | SIM: 0.3755 | NSS: 0.8533
+==================================================
+
+exo file name : peel_banana_004627.jpg / exo_path
+parsed dots!!! : [[490, 385], [500, 650], [500, 840]]
+restored_dots!!! : [[313, 184], [320, 312], [320, 403]]
+
+==================================================
+Metrics for with_exo_best banana_000480.jpg:
+ with_exo_best Current - KLD: 0.6944 | SIM: 0.5081 | NSS: 1.6916
+
+Cumulative with_exo_best  Averages over 7 samples:
+Average - KLD: 3.3025 | SIM: 0.3267 | NSS: 0.6850
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  7/123 --------------------------------------------------------------------------------
+Action : peel, Object : apple image_name : apple_001541.jpg
+qwen ego Results!! : [
+  [500, 400],
+  [350, 350],
+  [700, 350]
+]
+parsed dots!!! : [[500, 400], [350, 350], [700, 350]]
+restored_dots!!! : [[255, 256], [178, 224], [357, 224]]
+
+==================================================
+Metrics for only_ego apple_001541.jpg:
+ only_ego Current - KLD: 0.7561 | SIM: 0.6460 | NSS: 0.9394
+
+Cumulative only_ego  Averages over 8 samples:
+Average - KLD: 1.8706 | SIM: 0.4093 | NSS: 0.8640
+==================================================
+
+exo file name : peel_apple_005014.jpg / exo_path
+parsed dots!!! : [[450, 450], [300, 450], [600, 450]]
+restored_dots!!! : [[229, 288], [153, 288], [306, 288]]
+
+==================================================
+Metrics for with_exo_best apple_001541.jpg:
+ with_exo_best Current - KLD: 0.7261 | SIM: 0.5684 | NSS: 0.8618
+
+Cumulative with_exo_best  Averages over 8 samples:
+Average - KLD: 2.9804 | SIM: 0.3569 | NSS: 0.7071
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  8/123 --------------------------------------------------------------------------------
+Action : wash, Object : toothbrush image_name : toothbrush_001991.jpg
+qwen ego Results!! : [
+  [467, 500],
+  [467, 650],
+  [467, 350]
+]
+parsed dots!!! : [[467, 500], [467, 650], [467, 350]]
+restored_dots!!! : [[607, 520], [607, 676], [607, 364]]
+
+==================================================
+Metrics for only_ego toothbrush_001991.jpg:
+ only_ego Current - KLD: 3.1922 | SIM: 0.1462 | NSS: 0.4293
+
+Cumulative only_ego  Averages over 9 samples:
+Average - KLD: 2.0174 | SIM: 0.3801 | NSS: 0.8157
+==================================================
+
+exo file name : wash_toothbrush_003068.jpg / exo_path
+parsed dots!!! : [[460, 54], [460, 310], [460, 835]]
+restored_dots!!! : [[598, 56], [598, 322], [598, 868]]
+
+==================================================
+Metrics for with_exo_best toothbrush_001991.jpg:
+ with_exo_best Current - KLD: 0.9924 | SIM: 0.4015 | NSS: 2.6934
+
+Cumulative with_exo_best  Averages over 9 samples:
+Average - KLD: 2.7595 | SIM: 0.3619 | NSS: 0.9278
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  9/123 --------------------------------------------------------------------------------
+Action : wash, Object : cup image_name : cup_003621.jpg
+qwen ego Results!! : [
+  [500, 175],
+  [500, 500],
+  [500, 825]
+]
+parsed dots!!! : [[500, 175], [500, 500], [500, 825]]
+restored_dots!!! : [[320, 74], [320, 213], [320, 352]]
+
+==================================================
+Metrics for only_ego cup_003621.jpg:
+ only_ego Current - KLD: 1.5508 | SIM: 0.2996 | NSS: 0.9218
+
+Cumulative only_ego  Averages over 10 samples:
+Average - KLD: 1.9708 | SIM: 0.3721 | NSS: 0.8263
+==================================================
+
+exo file name : wash_cup_006039.jpg / exo_path
+parsed dots!!! : [[490, 400], [550, 650], [650, 400]]
+restored_dots!!! : [[313, 170], [352, 277], [416, 170]]
+
+==================================================
+Metrics for with_exo_best cup_003621.jpg:
+ with_exo_best Current - KLD: 2.6668 | SIM: 0.1403 | NSS: 0.0811
+
+Cumulative with_exo_best  Averages over 10 samples:
+Average - KLD: 2.7502 | SIM: 0.3397 | NSS: 0.8431
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  10/123 --------------------------------------------------------------------------------
+Action : wash, Object : orange image_name : orange_001193.jpg
+qwen ego Results!! : [
+  [530, 511],
+  [446, 507],
+  [593, 611]
+]
+parsed dots!!! : [[530, 511], [446, 507], [593, 611]]
+restored_dots!!! : [[339, 245], [285, 243], [379, 293]]
+
+==================================================
+Metrics for only_ego orange_001193.jpg:
+ only_ego Current - KLD: 1.4229 | SIM: 0.5584 | NSS: 1.2172
+
+Cumulative only_ego  Averages over 11 samples:
+Average - KLD: 1.9210 | SIM: 0.3890 | NSS: 0.8619
+==================================================
+
+exo file name : wash_orange_009384.jpg / exo_path
+parsed dots!!! : [[533, 506], [426, 533], [587, 638]]
+restored_dots!!! : [[341, 242], [272, 255], [375, 306]]
+
+==================================================
+Metrics for with_exo_best orange_001193.jpg:
+ with_exo_best Current - KLD: 1.5308 | SIM: 0.5381 | NSS: 1.1942
+
+Cumulative with_exo_best  Averages over 11 samples:
+Average - KLD: 2.6394 | SIM: 0.3577 | NSS: 0.8750
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  11/123 --------------------------------------------------------------------------------
+Action : wash, Object : fork image_name : fork_001691.jpg
+qwen ego Results!! : [
+  [190, 260],
+  [320, 370],
+  [800, 850]
+]
+parsed dots!!! : [[190, 260], [320, 370], [800, 850]]
+restored_dots!!! : [[178, 252], [300, 359], [752, 826]]
+
+==================================================
+Metrics for only_ego fork_001691.jpg:
+ only_ego Current - KLD: 1.5875 | SIM: 0.4009 | NSS: 1.5324
+
+Cumulative only_ego  Averages over 12 samples:
+Average - KLD: 1.8932 | SIM: 0.3900 | NSS: 0.9178
+==================================================
+
+exo file name : wash_fork_005120.jpg / exo_path
+parsed dots!!! : [[100, 150], [200, 250], [300, 350]]
+restored_dots!!! : [[94, 145], [188, 243], [282, 340]]
+
+==================================================
+Metrics for with_exo_best fork_001691.jpg:
+ with_exo_best Current - KLD: 0.3845 | SIM: 0.6837 | NSS: 2.4332
+
+Cumulative with_exo_best  Averages over 12 samples:
+Average - KLD: 2.4515 | SIM: 0.3849 | NSS: 1.0049
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  12/123 --------------------------------------------------------------------------------
+Action : wash, Object : wine_glass image_name : wine_glass_000186.jpg
+qwen ego Results!! : [
+  [500, 475],
+  [500, 600],
+  [500, 750]
+]
+parsed dots!!! : [[500, 475], [500, 600], [500, 750]]
+restored_dots!!! : [[213, 304], [213, 384], [213, 480]]
+
+==================================================
+Metrics for only_ego wine_glass_000186.jpg:
+ only_ego Current - KLD: 3.2567 | SIM: 0.2040 | NSS: 0.2677
+
+Cumulative only_ego  Averages over 13 samples:
+Average - KLD: 1.9981 | SIM: 0.3757 | NSS: 0.8678
+==================================================
+
+exo file name : wash_wine_glass_000134.jpg / exo_path
+parsed dots!!! : [[320, 620], [450, 600], [580, 620]]
+restored_dots!!! : [[136, 396], [192, 384], [247, 396]]
+
+==================================================
+Metrics for with_exo_best wine_glass_000186.jpg:
+ with_exo_best Current - KLD: 7.0020 | SIM: 0.0655 | NSS: -0.2522
+
+Cumulative with_exo_best  Averages over 13 samples:
+Average - KLD: 2.8015 | SIM: 0.3603 | NSS: 0.9082
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  13/123 --------------------------------------------------------------------------------
+Action : wash, Object : bowl image_name : bowl_002825.jpg
+qwen ego Results!! : [
+  [500, 450],
+  [250, 650],
+  [750, 650]
+]
+parsed dots!!! : [[500, 450], [250, 650], [750, 650]]
+restored_dots!!! : [[250, 168], [125, 243], [375, 243]]
+
+==================================================
+Metrics for only_ego bowl_002825.jpg:
+ only_ego Current - KLD: 6.8944 | SIM: 0.1009 | NSS: -0.4492
+
+Cumulative only_ego  Averages over 14 samples:
+Average - KLD: 2.3478 | SIM: 0.3561 | NSS: 0.7737
+==================================================
+
+exo file name : wash_bowl_011493.jpg / exo_path
+parsed dots!!! : [[250, 300], [500, 300], [750, 300]]
+restored_dots!!! : [[125, 112], [250, 112], [375, 112]]
+
+==================================================
+Metrics for with_exo_best bowl_002825.jpg:
+ with_exo_best Current - KLD: 1.4198 | SIM: 0.4715 | NSS: 0.6804
+
+Cumulative with_exo_best  Averages over 14 samples:
+Average - KLD: 2.7028 | SIM: 0.3683 | NSS: 0.8919
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  14/123 --------------------------------------------------------------------------------
+Action : wash, Object : knife image_name : knife_002720.jpg
+qwen ego Results!! : [
+  [588, 445],
+  [623, 598],
+  [738, 870]
+]
+parsed dots!!! : [[588, 445], [623, 598], [738, 870]]
+restored_dots!!! : [[376, 189], [398, 254], [472, 370]]
+
+==================================================
+Metrics for only_ego knife_002720.jpg:
+ only_ego Current - KLD: 2.5075 | SIM: 0.1978 | NSS: 0.8075
+
+Cumulative only_ego  Averages over 15 samples:
+Average - KLD: 2.3585 | SIM: 0.3455 | NSS: 0.7759
+==================================================
+
+exo file name : wash_knife_006751.jpg / exo_path
+parsed dots!!! : [[520, 250], [580, 480], [680, 750]]
+restored_dots!!! : [[332, 106], [371, 204], [435, 319]]
+
+==================================================
+Metrics for with_exo_best knife_002720.jpg:
+ with_exo_best Current - KLD: 1.0054 | SIM: 0.3977 | NSS: 2.2979
+
+Cumulative with_exo_best  Averages over 15 samples:
+Average - KLD: 2.5897 | SIM: 0.3702 | NSS: 0.9856
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  15/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : chair image_name : chair_002839.jpg
+qwen ego Results!! : [
+  [400, 790],
+  [550, 380],
+  [200, 600]
+]
+parsed dots!!! : [[400, 790], [550, 380], [200, 600]]
+restored_dots!!! : [[170, 505], [234, 243], [85, 384]]
+
+==================================================
+Metrics for only_ego chair_002839.jpg:
+ only_ego Current - KLD: 1.2492 | SIM: 0.3952 | NSS: 0.6273
+
+Cumulative only_ego  Averages over 16 samples:
+Average - KLD: 2.2891 | SIM: 0.3486 | NSS: 0.7667
+==================================================
+
+exo file name : sit_on_chair_011668.jpg / exo_path
+parsed dots!!! : [[375, 780], [500, 650], [625, 850]]
+restored_dots!!! : [[159, 499], [213, 416], [266, 544]]
+
+==================================================
+Metrics for with_exo_best chair_002839.jpg:
+ with_exo_best Current - KLD: 0.4591 | SIM: 0.6893 | NSS: 1.4465
+
+Cumulative with_exo_best  Averages over 16 samples:
+Average - KLD: 2.4565 | SIM: 0.3902 | NSS: 1.0144
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  16/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : couch image_name : couch_000779.jpg
+qwen ego Results!! : [
+  [490, 745],
+  [662, 722],
+  [804, 685]
+]
+parsed dots!!! : [[490, 745], [662, 722], [804, 685]]
+restored_dots!!! : [[245, 276], [331, 267], [402, 254]]
+
+==================================================
+Metrics for only_ego couch_000779.jpg:
+ only_ego Current - KLD: 0.3940 | SIM: 0.6376 | NSS: 2.5367
+
+Cumulative only_ego  Averages over 17 samples:
+Average - KLD: 2.1776 | SIM: 0.3656 | NSS: 0.8708
+==================================================
+
+exo file name : sit_on_couch_007634.jpg / exo_path
+parsed dots!!! : [[375, 583], [575, 612], [775, 583]]
+restored_dots!!! : [[187, 216], [287, 227], [387, 216]]
+
+==================================================
+Metrics for with_exo_best couch_000779.jpg:
+ with_exo_best Current - KLD: 1.0505 | SIM: 0.3904 | NSS: 1.5006
+
+Cumulative with_exo_best  Averages over 17 samples:
+Average - KLD: 2.3738 | SIM: 0.3902 | NSS: 1.0430
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  17/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bed image_name : bed_003622.jpg
+qwen ego Results!! : [
+  [500, 630],
+  [400, 640],
+  [600, 640]
+]
+parsed dots!!! : [[500, 630], [400, 640], [600, 640]]
+restored_dots!!! : [[320, 266], [256, 270], [384, 270]]
+
+==================================================
+Metrics for only_ego bed_003622.jpg:
+ only_ego Current - KLD: 0.6110 | SIM: 0.6716 | NSS: 1.8188
+
+Cumulative only_ego  Averages over 18 samples:
+Average - KLD: 2.0906 | SIM: 0.3826 | NSS: 0.9234
+==================================================
+
+exo file name : sit_on_bed_013457.jpg / exo_path
+parsed dots!!! : [[400, 640], [600, 640], [500, 720]]
+restored_dots!!! : [[256, 270], [384, 270], [320, 304]]
+
+==================================================
+Metrics for with_exo_best bed_003622.jpg:
+ with_exo_best Current - KLD: 0.6949 | SIM: 0.6142 | NSS: 1.7027
+
+Cumulative with_exo_best  Averages over 18 samples:
+Average - KLD: 2.2805 | SIM: 0.4026 | NSS: 1.0797
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  18/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bench image_name : bench_001877.jpg
+qwen ego Results!! : [
+  [385, 502],
+  [547, 593],
+  [698, 642]
+]
+parsed dots!!! : [[385, 502], [547, 593], [698, 642]]
+restored_dots!!! : [[164, 321], [233, 379], [297, 410]]
+
+==================================================
+Metrics for only_ego bench_001877.jpg:
+ only_ego Current - KLD: 0.2923 | SIM: 0.7132 | NSS: 1.6547
+
+Cumulative only_ego  Averages over 19 samples:
+Average - KLD: 1.9960 | SIM: 0.4000 | NSS: 0.9619
+==================================================
+
+exo file name : sit_on_bench_008663.jpg / exo_path
+parsed dots!!! : [[200, 400], [400, 500], [600, 600]]
+restored_dots!!! : [[85, 256], [170, 320], [255, 384]]
+
+==================================================
+Metrics for with_exo_best bench_001877.jpg:
+ with_exo_best Current - KLD: 0.2512 | SIM: 0.7508 | NSS: 1.6793
+
+Cumulative with_exo_best  Averages over 19 samples:
+Average - KLD: 2.1737 | SIM: 0.4210 | NSS: 1.1112
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  19/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : bicycle image_name : bicycle_002100.jpg
+qwen ego Results!! : [
+  [385, 292],
+  [415, 362],
+  [450, 510]
+]
+parsed dots!!! : [[385, 292], [415, 362], [450, 510]]
+restored_dots!!! : [[246, 124], [265, 154], [288, 217]]
+
+==================================================
+Metrics for only_ego bicycle_002100.jpg:
+ only_ego Current - KLD: 0.9202 | SIM: 0.4295 | NSS: 3.0445
+
+Cumulative only_ego  Averages over 20 samples:
+Average - KLD: 1.9422 | SIM: 0.4015 | NSS: 1.0661
+==================================================
+
+exo file name : sit_on_bicycle_014088.jpg / exo_path
+parsed dots!!! : [[420, 580], [420, 410], [380, 300]]
+restored_dots!!! : [[268, 247], [268, 174], [243, 127]]
+
+==================================================
+Metrics for with_exo_best bicycle_002100.jpg:
+ with_exo_best Current - KLD: 1.1077 | SIM: 0.3729 | NSS: 2.6350
+
+Cumulative with_exo_best  Averages over 20 samples:
+Average - KLD: 2.1204 | SIM: 0.4186 | NSS: 1.1874
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  20/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : motorcycle image_name : motorcycle_000837.jpg
+qwen ego Results!! : [
+  [645, 404],
+  [783, 316],
+  [805, 301]
+]
+parsed dots!!! : [[645, 404], [783, 316], [805, 301]]
+restored_dots!!! : [[412, 193], [501, 151], [515, 144]]
+
+==================================================
+Metrics for only_ego motorcycle_000837.jpg:
+ only_ego Current - KLD: 0.9660 | SIM: 0.4141 | NSS: 2.4220
+
+Cumulative only_ego  Averages over 21 samples:
+Average - KLD: 1.8957 | SIM: 0.4021 | NSS: 1.1306
+==================================================
+
+exo file name : sit_on_motorcycle_002469.jpg / exo_path
+parsed dots!!! : [[350, 375], [590, 420], [750, 380]]
+restored_dots!!! : [[224, 180], [377, 201], [480, 182]]
+
+==================================================
+Metrics for with_exo_best motorcycle_000837.jpg:
+ with_exo_best Current - KLD: 1.0215 | SIM: 0.3988 | NSS: 2.8473
+
+Cumulative with_exo_best  Averages over 21 samples:
+Average - KLD: 2.0681 | SIM: 0.4176 | NSS: 1.2665
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  21/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : skateboard image_name : skateboard_001460.jpg
+qwen ego Results!! : [
+  [490, 390],
+  [350, 550],
+  [650, 250]
+]
+parsed dots!!! : [[490, 390], [350, 550], [650, 250]]
+restored_dots!!! : [[503, 325], [359, 459], [668, 208]]
+
+==================================================
+Metrics for only_ego skateboard_001460.jpg:
+ only_ego Current - KLD: 0.9797 | SIM: 0.6663 | NSS: 0.8348
+
+Cumulative only_ego  Averages over 22 samples:
+Average - KLD: 1.8541 | SIM: 0.4141 | NSS: 1.1172
+==================================================
+
+exo file name : sit_on_skateboard_010726.jpg / exo_path
+parsed dots!!! : [[200, 500], [500, 300], [800, 200]]
+restored_dots!!! : [[205, 417], [514, 250], [822, 167]]
+
+==================================================
+Metrics for with_exo_best skateboard_001460.jpg:
+ with_exo_best Current - KLD: 0.5286 | SIM: 0.6272 | NSS: 0.8139
+
+Cumulative with_exo_best  Averages over 22 samples:
+Average - KLD: 1.9981 | SIM: 0.4271 | NSS: 1.2459
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  22/123 --------------------------------------------------------------------------------
+Action : sit_on, Object : surfboard image_name : surfboard_000010.jpg
+qwen ego Results!! : [
+  [500, 333],
+  [500, 525],
+  [500, 750]
+]
+parsed dots!!! : [[500, 333], [500, 525], [500, 750]]
+restored_dots!!! : [[161, 329], [161, 518], [161, 741]]
+
+==================================================
+Metrics for only_ego surfboard_000010.jpg:
+ only_ego Current - KLD: 0.6182 | SIM: 0.7029 | NSS: 0.2305
+
+Cumulative only_ego  Averages over 23 samples:
+Average - KLD: 1.8003 | SIM: 0.4266 | NSS: 1.0786
+==================================================
+
+exo file name : sit_on_surfboard_005719.jpg / exo_path
+parsed dots!!! : [[500, 500], [300, 600], [700, 600]]
+restored_dots!!! : [[161, 494], [96, 592], [225, 592]]
+
+==================================================
+Metrics for with_exo_best surfboard_000010.jpg:
+ with_exo_best Current - KLD: 2.8808 | SIM: 0.4729 | NSS: 0.1600
+
+Cumulative with_exo_best  Averages over 23 samples:
+Average - KLD: 2.0365 | SIM: 0.4291 | NSS: 1.1987
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  23/123 --------------------------------------------------------------------------------
+Action : drag, Object : suitcase image_name : suitcase_002998.jpg
+qwen ego Results!! : [
+  [592, 35],
+  [500, 195],
+  [500, 890]
+]
+parsed dots!!! : [[592, 35], [500, 195], [500, 890]]
+restored_dots!!! : [[522, 52], [441, 292], [441, 1335]]
+
+==================================================
+Metrics for only_ego suitcase_002998.jpg:
+ only_ego Current - KLD: 1.7678 | SIM: 0.2212 | NSS: 2.5593
+
+Cumulative only_ego  Averages over 24 samples:
+Average - KLD: 1.7990 | SIM: 0.4181 | NSS: 1.1403
+==================================================
+
+exo file name : drag_suitcase_010237.jpg / exo_path
+parsed dots!!! : [[460, 310], [460, 460], [460, 610]]
+restored_dots!!! : [[406, 465], [406, 690], [406, 915]]
+
+==================================================
+Metrics for with_exo_best suitcase_002998.jpg:
+ with_exo_best Current - KLD: 9.3156 | SIM: 0.0027 | NSS: -0.5504
+
+Cumulative with_exo_best  Averages over 24 samples:
+Average - KLD: 2.3398 | SIM: 0.4114 | NSS: 1.1258
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  24/123 --------------------------------------------------------------------------------
+Action : type_on, Object : laptop image_name : laptop_000585.jpg
+qwen ego Results!! : [
+  [450, 490],
+  [320, 570],
+  [570, 420]
+]
+parsed dots!!! : [[450, 490], [320, 570], [570, 420]]
+restored_dots!!! : [[288, 208], [204, 242], [364, 178]]
+
+==================================================
+Metrics for only_ego laptop_000585.jpg:
+ only_ego Current - KLD: 0.2504 | SIM: 0.7311 | NSS: 1.9923
+
+Cumulative only_ego  Averages over 25 samples:
+Average - KLD: 1.7370 | SIM: 0.4306 | NSS: 1.1744
+==================================================
+
+exo file name : type_on_laptop_006025.jpg / exo_path
+parsed dots!!! : [[345, 542], [567, 445], [720, 385]]
+restored_dots!!! : [[220, 230], [362, 189], [460, 164]]
+
+==================================================
+Metrics for with_exo_best laptop_000585.jpg:
+ with_exo_best Current - KLD: 0.4901 | SIM: 0.6055 | NSS: 1.7790
+
+Cumulative with_exo_best  Averages over 25 samples:
+Average - KLD: 2.2658 | SIM: 0.4191 | NSS: 1.1519
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  25/123 --------------------------------------------------------------------------------
+Action : type_on, Object : keyboard image_name : keyboard_000439.jpg
+qwen ego Results!! : [
+  [414, 562],
+  [328, 637],
+  [528, 514]
+]
+parsed dots!!! : [[414, 562], [328, 637], [528, 514]]
+restored_dots!!! : [[264, 238], [209, 270], [337, 218]]
+
+==================================================
+Metrics for only_ego keyboard_000439.jpg:
+ only_ego Current - KLD: 3.5028 | SIM: 0.5634 | NSS: 1.0748
+
+Cumulative only_ego  Averages over 26 samples:
+Average - KLD: 1.8049 | SIM: 0.4357 | NSS: 1.1706
+==================================================
+
+exo file name : type_on_keyboard_000898.jpg / exo_path
+parsed dots!!! : [[350, 570], [500, 500], [650, 430]]
+restored_dots!!! : [[224, 242], [320, 212], [416, 182]]
+
+==================================================
+Metrics for with_exo_best keyboard_000439.jpg:
+ with_exo_best Current - KLD: 1.6431 | SIM: 0.5707 | NSS: 1.1014
+
+Cumulative with_exo_best  Averages over 26 samples:
+Average - KLD: 2.2418 | SIM: 0.4250 | NSS: 1.1500
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  26/123 --------------------------------------------------------------------------------
+Action : pack, Object : suitcase image_name : suitcase_002212.jpg
+qwen ego Results!! : [
+  [490, 580],
+  [300, 250],
+  [680, 520]
+]
+parsed dots!!! : [[490, 580], [300, 250], [680, 520]]
+restored_dots!!! : [[648, 870], [397, 375], [900, 780]]
+
+==================================================
+Metrics for only_ego suitcase_002212.jpg:
+ only_ego Current - KLD: 0.9553 | SIM: 0.5486 | NSS: 0.8788
+
+Cumulative only_ego  Averages over 27 samples:
+Average - KLD: 1.7735 | SIM: 0.4399 | NSS: 1.1598
+==================================================
+
+exo file name : pack_suitcase_014051.jpg / exo_path
+parsed dots!!! : [[510, 680], [630, 730], [750, 650]]
+restored_dots!!! : [[675, 1020], [834, 1095], [993, 975]]
+
+==================================================
+Metrics for with_exo_best suitcase_002212.jpg:
+ with_exo_best Current - KLD: 0.7109 | SIM: 0.5674 | NSS: 1.1258
+
+Cumulative with_exo_best  Averages over 27 samples:
+Average - KLD: 2.1851 | SIM: 0.4302 | NSS: 1.1491
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  27/123 --------------------------------------------------------------------------------
+Action : cut, Object : carrot image_name : carrot_001443.jpg
+qwen ego Results!! : [
+  [718, 395],
+  [756, 267],
+  [658, 303]
+]
+parsed dots!!! : [[718, 395], [756, 267], [658, 303]]
+restored_dots!!! : [[359, 132], [378, 89], [329, 101]]
+
+==================================================
+Metrics for only_ego carrot_001443.jpg:
+ only_ego Current - KLD: 0.5087 | SIM: 0.5847 | NSS: 3.3299
+
+Cumulative only_ego  Averages over 28 samples:
+Average - KLD: 1.7283 | SIM: 0.4451 | NSS: 1.2373
+==================================================
+
+exo file name : cut_carrot_009687.jpg / exo_path
+parsed dots!!! : [[250, 900], [350, 900], [450, 900]]
+restored_dots!!! : [[125, 301], [175, 301], [225, 301]]
+
+==================================================
+Metrics for with_exo_best carrot_001443.jpg:
+ with_exo_best Current - KLD: 13.6867 | SIM: 0.0000 | NSS: -0.3763
+
+Cumulative with_exo_best  Averages over 28 samples:
+Average - KLD: 2.5959 | SIM: 0.4149 | NSS: 1.0946
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  28/123 --------------------------------------------------------------------------------
+Action : cut, Object : orange image_name : orange_001193.jpg
+qwen ego Results!! : [
+  [537, 500],
+  [446, 550],
+  [593, 600]
+]
+parsed dots!!! : [[537, 500], [446, 550], [593, 600]]
+restored_dots!!! : [[343, 240], [285, 264], [379, 288]]
+
+==================================================
+Metrics for only_ego orange_001193.jpg:
+ only_ego Current - KLD: 1.6737 | SIM: 0.5232 | NSS: 1.1961
+
+Cumulative only_ego  Averages over 29 samples:
+Average - KLD: 1.7264 | SIM: 0.4478 | NSS: 1.2358
+==================================================
+
+exo file name : cut_orange_003598.jpg / exo_path
+parsed dots!!! : [[510, 515], [570, 410], [440, 570]]
+restored_dots!!! : [[326, 247], [364, 196], [281, 273]]
+
+==================================================
+Metrics for with_exo_best orange_001193.jpg:
+ with_exo_best Current - KLD: 1.2485 | SIM: 0.5119 | NSS: 1.1600
+
+Cumulative with_exo_best  Averages over 29 samples:
+Average - KLD: 2.5495 | SIM: 0.4182 | NSS: 1.0969
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  29/123 --------------------------------------------------------------------------------
+Action : cut, Object : banana image_name : banana_002623.jpg
+qwen ego Results!! : [
+  [347, 565],
+  [588, 765],
+  [268, 798]
+]
+parsed dots!!! : [[347, 565], [588, 765], [268, 798]]
+restored_dots!!! : [[166, 361], [282, 489], [128, 510]]
+
+==================================================
+Metrics for only_ego banana_002623.jpg:
+ only_ego Current - KLD: 0.6893 | SIM: 0.5959 | NSS: 1.1423
+
+Cumulative only_ego  Averages over 30 samples:
+Average - KLD: 1.6919 | SIM: 0.4527 | NSS: 1.2327
+==================================================
+
+exo file name : cut_banana_012330.jpg / exo_path
+parsed dots!!! : [[250, 550], [450, 650], [650, 750]]
+restored_dots!!! : [[120, 352], [216, 416], [312, 480]]
+
+==================================================
+Metrics for with_exo_best banana_002623.jpg:
+ with_exo_best Current - KLD: 0.4150 | SIM: 0.6466 | NSS: 1.1623
+
+Cumulative with_exo_best  Averages over 30 samples:
+Average - KLD: 2.4783 | SIM: 0.4258 | NSS: 1.0991
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  30/123 --------------------------------------------------------------------------------
+Action : cut, Object : apple image_name : apple_000054.jpg
+qwen ego Results!! : [
+  [276, 480],
+  [598, 647],
+  [300, 318]
+]
+parsed dots!!! : [[276, 480], [598, 647], [300, 318]]
+restored_dots!!! : [[176, 225], [382, 304], [192, 149]]
+
+==================================================
+Metrics for only_ego apple_000054.jpg:
+ only_ego Current - KLD: 1.9649 | SIM: 0.5216 | NSS: 0.5184
+
+Cumulative only_ego  Averages over 31 samples:
+Average - KLD: 1.7007 | SIM: 0.4549 | NSS: 1.2097
+==================================================
+
+exo file name : cut_apple_009560.jpg / exo_path
+parsed dots!!! : [[287, 473], [573, 656], [700, 587]]
+restored_dots!!! : [[183, 222], [366, 308], [448, 275]]
+
+==================================================
+Metrics for with_exo_best apple_000054.jpg:
+ with_exo_best Current - KLD: 1.6637 | SIM: 0.5722 | NSS: 0.5737
+
+Cumulative with_exo_best  Averages over 31 samples:
+Average - KLD: 2.4520 | SIM: 0.4305 | NSS: 1.0821
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  31/123 --------------------------------------------------------------------------------
+Action : ride, Object : bicycle image_name : bicycle_003046.jpg
+qwen ego Results!! : [
+  [261, 276],
+  [417, 216],
+  [343, 698]
+]
+parsed dots!!! : [[261, 276], [417, 216], [343, 698]]
+restored_dots!!! : [[167, 136], [266, 106], [219, 345]]
+
+==================================================
+Metrics for only_ego bicycle_003046.jpg:
+ only_ego Current - KLD: 0.5518 | SIM: 0.5861 | NSS: 2.1353
+
+Cumulative only_ego  Averages over 32 samples:
+Average - KLD: 1.6648 | SIM: 0.4590 | NSS: 1.2386
+==================================================
+
+exo file name : ride_bicycle_005749.jpg / exo_path
+parsed dots!!! : [[420, 215], [265, 265], [610, 560]]
+restored_dots!!! : [[268, 106], [169, 131], [390, 277]]
+
+==================================================
+Metrics for with_exo_best bicycle_003046.jpg:
+ with_exo_best Current - KLD: 0.9840 | SIM: 0.4985 | NSS: 1.7492
+
+Cumulative with_exo_best  Averages over 32 samples:
+Average - KLD: 2.4062 | SIM: 0.4327 | NSS: 1.1030
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  32/123 --------------------------------------------------------------------------------
+Action : ride, Object : motorcycle image_name : motorcycle_002198.jpg
+qwen ego Results!! : [
+  [480, 222],
+  [300, 350],
+  [640, 430]
+]
+parsed dots!!! : [[480, 222], [300, 350], [640, 430]]
+restored_dots!!! : [[307, 91], [192, 144], [409, 178]]
+
+==================================================
+Metrics for only_ego motorcycle_002198.jpg:
+ only_ego Current - KLD: 1.2813 | SIM: 0.4671 | NSS: 1.6440
+
+Cumulative only_ego  Averages over 33 samples:
+Average - KLD: 1.6531 | SIM: 0.4593 | NSS: 1.2509
+==================================================
+
+exo file name : ride_motorcycle_005899.jpg / exo_path
+parsed dots!!! : [[480, 218], [415, 345], [720, 610]]
+restored_dots!!! : [[307, 90], [265, 142], [460, 252]]
+
+==================================================
+Metrics for with_exo_best motorcycle_002198.jpg:
+ with_exo_best Current - KLD: 1.5754 | SIM: 0.3779 | NSS: 1.1691
+
+Cumulative with_exo_best  Averages over 33 samples:
+Average - KLD: 2.3810 | SIM: 0.4310 | NSS: 1.1050
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  33/123 --------------------------------------------------------------------------------
+Action : cut_with, Object : scissors image_name : scissors_002479.jpg
+qwen ego Results!! : [
+  [642, 117],
+  [642, 357],
+  [642, 600]
+]
+parsed dots!!! : [[642, 117], [642, 357], [642, 600]]
+restored_dots!!! : [[410, 49], [410, 152], [410, 256]]
+
+==================================================
+Metrics for only_ego scissors_002479.jpg:
+ only_ego Current - KLD: 0.9134 | SIM: 0.4270 | NSS: 2.5186
+
+Cumulative only_ego  Averages over 34 samples:
+Average - KLD: 1.6314 | SIM: 0.4583 | NSS: 1.2882
+==================================================
+
+exo file name : cut_with_scissors_000527.jpg / exo_path
+parsed dots!!! : [[635, 118], [625, 765], [760, 770]]
+restored_dots!!! : [[406, 50], [400, 326], [486, 328]]
+
+==================================================
+Metrics for with_exo_best scissors_002479.jpg:
+ with_exo_best Current - KLD: 1.6287 | SIM: 0.2515 | NSS: 1.2541
+
+Cumulative with_exo_best  Averages over 34 samples:
+Average - KLD: 2.3589 | SIM: 0.4257 | NSS: 1.1094
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  34/123 --------------------------------------------------------------------------------
+Action : cut_with, Object : knife image_name : knife_001749.jpg
+qwen ego Results!! : [
+  [300, 480],
+  [460, 480],
+  [510, 490]
+]
+parsed dots!!! : [[300, 480], [460, 480], [510, 490]]
+restored_dots!!! : [[192, 202], [294, 202], [326, 206]]
+
+==================================================
+Metrics for only_ego knife_001749.jpg:
+ only_ego Current - KLD: 0.9587 | SIM: 0.4769 | NSS: 1.7730
+
+Cumulative only_ego  Averages over 35 samples:
+Average - KLD: 1.6122 | SIM: 0.4588 | NSS: 1.3020
+==================================================
+
+exo file name : cut_with_knife_005999.jpg / exo_path
+parsed dots!!! : [[300, 760], [370, 730], [420, 700]]
+restored_dots!!! : [[192, 320], [236, 308], [268, 295]]
+
+==================================================
+Metrics for with_exo_best knife_001749.jpg:
+ with_exo_best Current - KLD: 3.0423 | SIM: 0.1462 | NSS: 0.1392
+
+Cumulative with_exo_best  Averages over 35 samples:
+Average - KLD: 2.3784 | SIM: 0.4177 | NSS: 1.0816
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  35/123 --------------------------------------------------------------------------------
+Action : sip, Object : bottle image_name : bottle_000341.jpg
+NO SEEN DATA SET : sip/bottle
+--- Start  35/123 --------------------------------------------------------------------------------
+Action : sip, Object : cup image_name : cup_001864.jpg
+qwen ego Results!! : [
+  [490, 490],
+  [400, 400],
+  [580, 400]
+]
+parsed dots!!! : [[490, 490], [400, 400], [580, 400]]
+restored_dots!!! : [[313, 208], [256, 170], [371, 170]]
+
+==================================================
+Metrics for only_ego cup_001864.jpg:
+ only_ego Current - KLD: 1.3041 | SIM: 0.4148 | NSS: 0.4709
+
+Cumulative only_ego  Averages over 36 samples:
+Average - KLD: 1.6036 | SIM: 0.4576 | NSS: 1.2789
+==================================================
+
+exo file name : sip_cup_001709.jpg / exo_path
+parsed dots!!! : [[380, 420], [480, 550], [580, 420]]
+restored_dots!!! : [[243, 178], [307, 233], [371, 178]]
+
+==================================================
+Metrics for with_exo_best cup_001864.jpg:
+ with_exo_best Current - KLD: 1.0704 | SIM: 0.4205 | NSS: 0.5067
+
+Cumulative with_exo_best  Averages over 36 samples:
+Average - KLD: 2.3420 | SIM: 0.4178 | NSS: 1.0657
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  36/123 --------------------------------------------------------------------------------
+Action : sip, Object : wine_glass image_name : wine_glass_003343.jpg
+qwen ego Results!! : [
+  [645, 108],
+  [645, 500],
+  [645, 810]
+]
+parsed dots!!! : [[645, 108], [645, 500], [645, 810]]
+restored_dots!!! : [[412, 46], [412, 213], [412, 345]]
+
+==================================================
+Metrics for only_ego wine_glass_003343.jpg:
+ only_ego Current - KLD: 1.3441 | SIM: 0.2959 | NSS: 1.1769
+
+Cumulative only_ego  Averages over 37 samples:
+Average - KLD: 1.5966 | SIM: 0.4533 | NSS: 1.2762
+==================================================
+
+exo file name : sip_wine_glass_006580.jpg / exo_path
+parsed dots!!! : [[630, 610], [630, 500], [630, 400]]
+restored_dots!!! : [[403, 259], [403, 213], [403, 170]]
+
+==================================================
+Metrics for with_exo_best wine_glass_003343.jpg:
+ with_exo_best Current - KLD: 3.8819 | SIM: 0.0704 | NSS: -0.1745
+
+Cumulative with_exo_best  Averages over 37 samples:
+Average - KLD: 2.3837 | SIM: 0.4084 | NSS: 1.0321
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  37/123 --------------------------------------------------------------------------------
+Action : catch, Object : soccer_ball image_name : soccer_ball_003333.jpg
+qwen ego Results!! : [
+  [490, 585],
+  [380, 660],
+  [590, 800]
+]
+parsed dots!!! : [[490, 585], [380, 660], [590, 800]]
+restored_dots!!! : [[313, 249], [243, 281], [377, 340]]
+
+==================================================
+Metrics for only_ego soccer_ball_003333.jpg:
+ only_ego Current - KLD: 0.1320 | SIM: 0.8249 | NSS: 1.2708
+
+Cumulative only_ego  Averages over 38 samples:
+Average - KLD: 1.5580 | SIM: 0.4630 | NSS: 1.2760
+==================================================
+
+exo file name : catch_soccer_ball_008928.jpg / exo_path
+parsed dots!!! : [[445, 562], [575, 650], [400, 750]]
+restored_dots!!! : [[284, 239], [368, 276], [256, 319]]
+
+==================================================
+Metrics for with_exo_best soccer_ball_003333.jpg:
+ with_exo_best Current - KLD: 0.1761 | SIM: 0.8032 | NSS: 1.2326
+
+Cumulative with_exo_best  Averages over 38 samples:
+Average - KLD: 2.3256 | SIM: 0.4188 | NSS: 1.0374
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  38/123 --------------------------------------------------------------------------------
+Action : catch, Object : frisbee image_name : frisbee_000598.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [250, 300],
+  [750, 700]
+]
+parsed dots!!! : [[500, 500], [250, 300], [750, 700]]
+restored_dots!!! : [[684, 750], [342, 450], [1026, 1050]]
+
+==================================================
+Metrics for only_ego frisbee_000598.jpg:
+ only_ego Current - KLD: 4.1390 | SIM: 0.2618 | NSS: -0.1775
+
+Cumulative only_ego  Averages over 39 samples:
+Average - KLD: 1.6242 | SIM: 0.4579 | NSS: 1.2388
+==================================================
+
+exo file name : catch_frisbee_000263.jpg / exo_path
+parsed dots!!! : [[500, 500], [250, 500], [750, 500]]
+restored_dots!!! : [[684, 750], [342, 750], [1026, 750]]
+
+==================================================
+Metrics for with_exo_best frisbee_000598.jpg:
+ with_exo_best Current - KLD: 4.7055 | SIM: 0.1499 | NSS: -0.3518
+
+Cumulative with_exo_best  Averages over 39 samples:
+Average - KLD: 2.3866 | SIM: 0.4119 | NSS: 1.0018
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  39/123 --------------------------------------------------------------------------------
+Action : catch, Object : rugby_ball image_name : rugby_ball_003522.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [300, 600],
+  [700, 400]
+]
+parsed dots!!! : [[500, 500], [300, 600], [700, 400]]
+restored_dots!!! : [[750, 657], [450, 789], [1050, 526]]
+
+==================================================
+Metrics for only_ego rugby_ball_003522.jpg:
+ only_ego Current - KLD: 1.7350 | SIM: 0.5182 | NSS: 0.3811
+
+Cumulative only_ego  Averages over 40 samples:
+Average - KLD: 1.6270 | SIM: 0.4594 | NSS: 1.2173
+==================================================
+
+exo file name : catch_rugby_ball_010776.jpg / exo_path
+parsed dots!!! : [[380, 380], [500, 500], [620, 620]]
+restored_dots!!! : [[570, 499], [750, 657], [930, 815]]
+
+==================================================
+Metrics for with_exo_best rugby_ball_003522.jpg:
+ with_exo_best Current - KLD: 1.9774 | SIM: 0.5089 | NSS: 0.4442
+
+Cumulative with_exo_best  Averages over 40 samples:
+Average - KLD: 2.3764 | SIM: 0.4144 | NSS: 0.9879
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  40/123 --------------------------------------------------------------------------------
+Action : lie_on, Object : couch image_name : couch_003293.jpg
+qwen ego Results!! : [
+  [298, 707],
+  [517, 707],
+  [788, 765]
+]
+parsed dots!!! : [[298, 707], [517, 707], [788, 765]]
+restored_dots!!! : [[190, 321], [330, 321], [504, 348]]
+
+==================================================
+Metrics for only_ego couch_003293.jpg:
+ only_ego Current - KLD: 0.3809 | SIM: 0.6503 | NSS: 1.8829
+
+Cumulative only_ego  Averages over 41 samples:
+Average - KLD: 1.5966 | SIM: 0.4640 | NSS: 1.2336
+==================================================
+
+exo file name : lie_on_couch_008315.jpg / exo_path
+parsed dots!!! : [[250, 700], [500, 680], [750, 720]]
+restored_dots!!! : [[160, 318], [320, 309], [480, 327]]
+
+==================================================
+Metrics for with_exo_best couch_003293.jpg:
+ with_exo_best Current - KLD: 0.4186 | SIM: 0.6278 | NSS: 1.8254
+
+Cumulative with_exo_best  Averages over 41 samples:
+Average - KLD: 2.3286 | SIM: 0.4196 | NSS: 1.0083
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  41/123 --------------------------------------------------------------------------------
+Action : lie_on, Object : bed image_name : bed_002880.jpg
+qwen ego Results!! : [
+  [450, 690],
+  [500, 700],
+  [550, 690]
+]
+parsed dots!!! : [[450, 690], [500, 700], [550, 690]]
+restored_dots!!! : [[288, 248], [320, 252], [352, 248]]
+
+==================================================
+Metrics for only_ego bed_002880.jpg:
+ only_ego Current - KLD: 0.3040 | SIM: 0.6867 | NSS: 3.1380
+
+Cumulative only_ego  Averages over 42 samples:
+Average - KLD: 1.5658 | SIM: 0.4693 | NSS: 1.2789
+==================================================
+
+exo file name : lie_on_bed_009521.jpg / exo_path
+parsed dots!!! : [[470, 680], [470, 780], [470, 880]]
+restored_dots!!! : [[300, 244], [300, 280], [300, 316]]
+
+==================================================
+Metrics for with_exo_best bed_002880.jpg:
+ with_exo_best Current - KLD: 0.5657 | SIM: 0.5620 | NSS: 2.5005
+
+Cumulative with_exo_best  Averages over 42 samples:
+Average - KLD: 2.2866 | SIM: 0.4229 | NSS: 1.0438
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  42/123 --------------------------------------------------------------------------------
+Action : lie_on, Object : bench image_name : bench_003727.jpg
+qwen ego Results!! : [
+  [320, 520],
+  [500, 540],
+  [680, 560]
+]
+parsed dots!!! : [[320, 520], [500, 540], [680, 560]]
+restored_dots!!! : [[204, 221], [320, 230], [435, 238]]
+
+==================================================
+Metrics for only_ego bench_003727.jpg:
+ only_ego Current - KLD: 0.3830 | SIM: 0.6911 | NSS: 1.6655
+
+Cumulative only_ego  Averages over 43 samples:
+Average - KLD: 1.5383 | SIM: 0.4745 | NSS: 1.2879
+==================================================
+
+exo file name : lie_on_bench_011912.jpg / exo_path
+parsed dots!!! : [[267, 308], [500, 380], [733, 345]]
+restored_dots!!! : [[170, 131], [320, 161], [469, 146]]
+
+==================================================
+Metrics for with_exo_best bench_003727.jpg:
+ with_exo_best Current - KLD: 1.6057 | SIM: 0.2742 | NSS: 0.3722
+
+Cumulative with_exo_best  Averages over 43 samples:
+Average - KLD: 2.2708 | SIM: 0.4195 | NSS: 1.0282
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  43/123 --------------------------------------------------------------------------------
+Action : lie_on, Object : surfboard image_name : surfboard_000221.jpg
+qwen ego Results!! : [
+  [202, 650],
+  [202, 750],
+  [202, 850]
+]
+parsed dots!!! : [[202, 650], [202, 750], [202, 850]]
+restored_dots!!! : [[86, 416], [86, 480], [86, 544]]
+
+==================================================
+Metrics for only_ego surfboard_000221.jpg:
+ only_ego Current - KLD: 0.2917 | SIM: 0.7130 | NSS: 2.2083
+
+Cumulative only_ego  Averages over 44 samples:
+Average - KLD: 1.5100 | SIM: 0.4799 | NSS: 1.3088
+==================================================
+
+exo file name : lie_on_surfboard_002654.jpg / exo_path
+parsed dots!!! : [[198, 552], [198, 725], [198, 875]]
+restored_dots!!! : [[84, 353], [84, 464], [84, 560]]
+
+==================================================
+Metrics for with_exo_best surfboard_000221.jpg:
+ with_exo_best Current - KLD: 0.2889 | SIM: 0.6906 | NSS: 2.4035
+
+Cumulative with_exo_best  Averages over 44 samples:
+Average - KLD: 2.2258 | SIM: 0.4257 | NSS: 1.0595
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  44/123 --------------------------------------------------------------------------------
+Action : open, Object : bottle image_name : bottle_001033.jpg
+qwen ego Results!! : [
+  [490, 69],
+  [490, 150],
+  [490, 220]
+]
+parsed dots!!! : [[490, 69], [490, 150], [490, 220]]
+restored_dots!!! : [[194, 44], [194, 96], [194, 140]]
+
+==================================================
+Metrics for only_ego bottle_001033.jpg:
+ only_ego Current - KLD: 0.8408 | SIM: 0.4513 | NSS: 3.0993
+
+Cumulative only_ego  Averages over 45 samples:
+Average - KLD: 1.4951 | SIM: 0.4793 | NSS: 1.3486
+==================================================
+
+exo file name : open_bottle_011325.jpg / exo_path
+parsed dots!!! : [[450, 100], [450, 300], [450, 500]]
+restored_dots!!! : [[178, 64], [178, 192], [178, 320]]
+
+==================================================
+Metrics for with_exo_best bottle_001033.jpg:
+ with_exo_best Current - KLD: 1.6069 | SIM: 0.2434 | NSS: 1.8702
+
+Cumulative with_exo_best  Averages over 45 samples:
+Average - KLD: 2.2120 | SIM: 0.4216 | NSS: 1.0775
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  45/123 --------------------------------------------------------------------------------
+Action : open, Object : refrigerator image_name : refrigerator_002162.jpg
+qwen ego Results!! : [
+  [390, 350],
+  [470, 350],
+  [500, 500]
+]
+parsed dots!!! : [[390, 350], [470, 350], [500, 500]]
+restored_dots!!! : [[245, 420], [295, 420], [314, 600]]
+
+==================================================
+Metrics for only_ego refrigerator_002162.jpg:
+ only_ego Current - KLD: 0.7912 | SIM: 0.6034 | NSS: 1.3844
+
+Cumulative only_ego  Averages over 46 samples:
+Average - KLD: 1.4798 | SIM: 0.4820 | NSS: 1.3494
+==================================================
+
+exo file name : open_refrigerator_000281.jpg / exo_path
+parsed dots!!! : [[390, 115], [390, 640], [450, 115]]
+restored_dots!!! : [[245, 138], [245, 768], [283, 138]]
+
+==================================================
+Metrics for with_exo_best refrigerator_002162.jpg:
+ with_exo_best Current - KLD: 2.0102 | SIM: 0.3718 | NSS: 0.8640
+
+Cumulative with_exo_best  Averages over 46 samples:
+Average - KLD: 2.2076 | SIM: 0.4205 | NSS: 1.0728
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  46/123 --------------------------------------------------------------------------------
+Action : open, Object : oven image_name : oven_001370.jpg
+qwen ego Results!! : [
+  [650, 150],
+  [940, 590],
+  [330, 800]
+]
+parsed dots!!! : [[650, 150], [940, 590], [330, 800]]
+restored_dots!!! : [[975, 161], [1410, 636], [495, 862]]
+
+==================================================
+Metrics for only_ego oven_001370.jpg:
+ only_ego Current - KLD: 2.4078 | SIM: 0.2772 | NSS: 0.4807
+
+Cumulative only_ego  Averages over 47 samples:
+Average - KLD: 1.4996 | SIM: 0.4776 | NSS: 1.3309
+==================================================
+
+exo file name : open_oven_010297.jpg / exo_path
+parsed dots!!! : [[500, 150], [500, 300], [500, 450]]
+restored_dots!!! : [[750, 161], [750, 323], [750, 485]]
+
+==================================================
+Metrics for with_exo_best oven_001370.jpg:
+ with_exo_best Current - KLD: 4.1559 | SIM: 0.3450 | NSS: 0.7885
+
+Cumulative with_exo_best  Averages over 47 samples:
+Average - KLD: 2.2491 | SIM: 0.4189 | NSS: 1.0668
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  47/123 --------------------------------------------------------------------------------
+Action : open, Object : book image_name : book_003044.jpg
+qwen ego Results!! : [
+  [428, 788],
+  [470, 822],
+  [512, 846]
+]
+parsed dots!!! : [[428, 788], [470, 822], [512, 846]]
+restored_dots!!! : [[273, 335], [300, 350], [327, 360]]
+
+==================================================
+Metrics for only_ego book_003044.jpg:
+ only_ego Current - KLD: 0.7665 | SIM: 0.4836 | NSS: 2.4047
+
+Cumulative only_ego  Averages over 48 samples:
+Average - KLD: 1.4843 | SIM: 0.4777 | NSS: 1.3533
+==================================================
+
+exo file name : open_book_011281.jpg / exo_path
+parsed dots!!! : [[375, 770], [475, 770], [575, 770]]
+restored_dots!!! : [[240, 328], [304, 328], [368, 328]]
+
+==================================================
+Metrics for with_exo_best book_003044.jpg:
+ with_exo_best Current - KLD: 0.8110 | SIM: 0.4711 | NSS: 2.4983
+
+Cumulative with_exo_best  Averages over 48 samples:
+Average - KLD: 2.2191 | SIM: 0.4200 | NSS: 1.0966
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  48/123 --------------------------------------------------------------------------------
+Action : open, Object : suitcase image_name : suitcase_000520.jpg
+qwen ego Results!! : [
+  [500, 150],
+  [250, 350],
+  [750, 350]
+]
+parsed dots!!! : [[500, 150], [250, 350], [750, 350]]
+restored_dots!!! : [[693, 186], [346, 434], [1039, 434]]
+
+==================================================
+Metrics for only_ego suitcase_000520.jpg:
+ only_ego Current - KLD: 3.7054 | SIM: 0.0987 | NSS: -0.2738
+
+Cumulative only_ego  Averages over 49 samples:
+Average - KLD: 1.5296 | SIM: 0.4700 | NSS: 1.3201
+==================================================
+
+exo file name : open_suitcase_004317.jpg / exo_path
+parsed dots!!! : [[340, 500], [490, 350], [650, 550]]
+restored_dots!!! : [[471, 621], [679, 434], [900, 683]]
+
+==================================================
+Metrics for with_exo_best suitcase_000520.jpg:
+ with_exo_best Current - KLD: 5.1181 | SIM: 0.0788 | NSS: -0.2764
+
+Cumulative with_exo_best  Averages over 49 samples:
+Average - KLD: 2.2783 | SIM: 0.4130 | NSS: 1.0686
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  49/123 --------------------------------------------------------------------------------
+Action : open, Object : microwave image_name : microwave_001049.jpg
+qwen ego Results!! : [
+  [490, 205],
+  [300, 205],
+  [680, 205]
+]
+parsed dots!!! : [[490, 205], [300, 205], [680, 205]]
+restored_dots!!! : [[444, 121], [272, 121], [617, 121]]
+
+==================================================
+Metrics for only_ego microwave_001049.jpg:
+ only_ego Current - KLD: 0.5115 | SIM: 0.6542 | NSS: 1.6489
+
+Cumulative only_ego  Averages over 50 samples:
+Average - KLD: 1.5093 | SIM: 0.4737 | NSS: 1.3266
+==================================================
+
+exo file name : open_microwave_007815.jpg / exo_path
+parsed dots!!! : [[730, 480], [730, 550], [730, 620]]
+restored_dots!!! : [[662, 284], [662, 325], [662, 367]]
+
+==================================================
+Metrics for with_exo_best microwave_001049.jpg:
+ with_exo_best Current - KLD: 7.9292 | SIM: 0.0515 | NSS: -0.2819
+
+Cumulative with_exo_best  Averages over 50 samples:
+Average - KLD: 2.3913 | SIM: 0.4058 | NSS: 1.0416
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  50/123 --------------------------------------------------------------------------------
+Action : text_on, Object : cell_phone image_name : cell_phone_003361.jpg
+qwen ego Results!! : [
+  [480, 450],
+  [310, 710],
+  [680, 200]
+]
+parsed dots!!! : [[480, 450], [310, 710], [680, 200]]
+restored_dots!!! : [[307, 173], [198, 273], [435, 77]]
+
+==================================================
+Metrics for only_ego cell_phone_003361.jpg:
+ only_ego Current - KLD: 1.1013 | SIM: 0.3716 | NSS: 1.2475
+
+Cumulative only_ego  Averages over 51 samples:
+Average - KLD: 1.5013 | SIM: 0.4717 | NSS: 1.3251
+==================================================
+
+exo file name : text_on_cell_phone_009857.jpg / exo_path
+parsed dots!!! : [[442, 296], [550, 500], [450, 710]]
+restored_dots!!! : [[282, 113], [352, 192], [288, 273]]
+
+==================================================
+Metrics for with_exo_best cell_phone_003361.jpg:
+ with_exo_best Current - KLD: 1.3677 | SIM: 0.3728 | NSS: 1.1603
+
+Cumulative with_exo_best  Averages over 51 samples:
+Average - KLD: 2.3712 | SIM: 0.4052 | NSS: 1.0439
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  51/123 --------------------------------------------------------------------------------
+Action : boxing, Object : punching_bag image_name : punching_bag_001845.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [300, 300],
+  [700, 300]
+]
+parsed dots!!! : [[500, 500], [300, 300], [700, 300]]
+restored_dots!!! : [[140, 478], [84, 286], [196, 286]]
+
+==================================================
+Metrics for only_ego punching_bag_001845.jpg:
+ only_ego Current - KLD: 3.0164 | SIM: 0.4180 | NSS: 0.2151
+
+Cumulative only_ego  Averages over 52 samples:
+Average - KLD: 1.5304 | SIM: 0.4707 | NSS: 1.3037
+==================================================
+
+exo file name : boxing_punching_bag_006009.jpg / exo_path
+parsed dots!!! : [[500, 400], [300, 600], [700, 600]]
+restored_dots!!! : [[140, 382], [84, 573], [196, 573]]
+
+==================================================
+Metrics for with_exo_best punching_bag_001845.jpg:
+ with_exo_best Current - KLD: 0.7010 | SIM: 0.6867 | NSS: 0.6219
+
+Cumulative with_exo_best  Averages over 52 samples:
+Average - KLD: 2.3391 | SIM: 0.4106 | NSS: 1.0358
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  52/123 --------------------------------------------------------------------------------
+Action : stir, Object : bowl image_name : bowl_000134.jpg
+qwen ego Results!! : [
+  [420, 380],
+  [550, 580],
+  [650, 350]
+]
+parsed dots!!! : [[420, 380], [550, 580], [650, 350]]
+restored_dots!!! : [[268, 161], [352, 247], [416, 149]]
+
+==================================================
+Metrics for only_ego bowl_000134.jpg:
+ only_ego Current - KLD: 0.1454 | SIM: 0.8311 | NSS: 1.2306
+
+Cumulative only_ego  Averages over 53 samples:
+Average - KLD: 1.5043 | SIM: 0.4775 | NSS: 1.3024
+==================================================
+
+exo file name : stir_bowl_000311.jpg / exo_path
+parsed dots!!! : [[333, 425], [575, 350], [667, 600]]
+restored_dots!!! : [[213, 181], [368, 149], [426, 255]]
+
+==================================================
+Metrics for with_exo_best bowl_000134.jpg:
+ with_exo_best Current - KLD: 0.2397 | SIM: 0.7557 | NSS: 1.1839
+
+Cumulative with_exo_best  Averages over 53 samples:
+Average - KLD: 2.2995 | SIM: 0.4171 | NSS: 1.0386
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  53/123 --------------------------------------------------------------------------------
+Action : hit, Object : baseball_bat image_name : baseball_bat_001882.jpg
+qwen ego Results!! : [
+  [500, 400],
+  [300, 700],
+  [700, 200]
+]
+parsed dots!!! : [[500, 400], [300, 700], [700, 200]]
+restored_dots!!! : [[636, 507], [381, 887], [890, 253]]
+
+==================================================
+Metrics for only_ego baseball_bat_001882.jpg:
+ only_ego Current - KLD: 2.7384 | SIM: 0.1939 | NSS: 0.6649
+
+Cumulative only_ego  Averages over 54 samples:
+Average - KLD: 1.5271 | SIM: 0.4722 | NSS: 1.2906
+==================================================
+
+exo file name : hit_baseball_bat_013111.jpg / exo_path
+parsed dots!!! : [[300, 670], [500, 450], [750, 150]]
+restored_dots!!! : [[381, 849], [636, 570], [954, 190]]
+
+==================================================
+Metrics for with_exo_best baseball_bat_001882.jpg:
+ with_exo_best Current - KLD: 3.1359 | SIM: 0.1694 | NSS: 0.4994
+
+Cumulative with_exo_best  Averages over 54 samples:
+Average - KLD: 2.3150 | SIM: 0.4125 | NSS: 1.0286
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  54/123 --------------------------------------------------------------------------------
+Action : hit, Object : tennis_racket image_name : tennis_racket_002268.jpg
+qwen ego Results!! : [
+  [500, 250],
+  [500, 500],
+  [500, 750]
+]
+parsed dots!!! : [[500, 250], [500, 500], [500, 750]]
+restored_dots!!! : [[446, 241], [446, 482], [446, 723]]
+
+==================================================
+Metrics for only_ego tennis_racket_002268.jpg:
+ only_ego Current - KLD: 1.0746 | SIM: 0.3802 | NSS: 2.1400
+
+Cumulative only_ego  Averages over 55 samples:
+Average - KLD: 1.5189 | SIM: 0.4705 | NSS: 1.3060
+==================================================
+
+exo file name : hit_tennis_racket_000070.jpg / exo_path
+parsed dots!!! : [[490, 210], [340, 130], [640, 130]]
+restored_dots!!! : [[437, 202], [303, 125], [570, 125]]
+
+==================================================
+Metrics for with_exo_best tennis_racket_002268.jpg:
+ with_exo_best Current - KLD: 10.9673 | SIM: 0.0017 | NSS: -0.4674
+
+Cumulative with_exo_best  Averages over 55 samples:
+Average - KLD: 2.4723 | SIM: 0.4050 | NSS: 1.0014
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  55/123 --------------------------------------------------------------------------------
+Action : hit, Object : hammer image_name : hammer_001006.jpg
+qwen ego Results!! : [
+  [443, 732],
+  [343, 588],
+  [468, 445]
+]
+parsed dots!!! : [[443, 732], [343, 588], [468, 445]]
+restored_dots!!! : [[283, 311], [219, 250], [299, 189]]
+
+==================================================
+Metrics for only_ego hammer_001006.jpg:
+ only_ego Current - KLD: 2.6058 | SIM: 0.2561 | NSS: 0.7877
+
+Cumulative only_ego  Averages over 56 samples:
+Average - KLD: 1.5383 | SIM: 0.4667 | NSS: 1.2967
+==================================================
+
+exo file name : hit_hammer_004169.jpg / exo_path
+parsed dots!!! : [[385, 570], [475, 730], [530, 375]]
+restored_dots!!! : [[246, 242], [304, 310], [339, 159]]
+
+==================================================
+Metrics for with_exo_best hammer_001006.jpg:
+ with_exo_best Current - KLD: 1.4672 | SIM: 0.3403 | NSS: 1.2311
+
+Cumulative with_exo_best  Averages over 56 samples:
+Average - KLD: 2.4543 | SIM: 0.4039 | NSS: 1.0055
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  56/123 --------------------------------------------------------------------------------
+Action : hit, Object : axe image_name : axe_000961.jpg
+qwen ego Results!! : [
+  [150, 250],
+  [380, 150],
+  [620, 580]
+]
+parsed dots!!! : [[150, 250], [380, 150], [620, 580]]
+restored_dots!!! : [[141, 250], [357, 150], [582, 580]]
+
+==================================================
+Metrics for only_ego axe_000961.jpg:
+ only_ego Current - KLD: 2.1301 | SIM: 0.2928 | NSS: 0.4335
+
+Cumulative only_ego  Averages over 57 samples:
+Average - KLD: 1.5487 | SIM: 0.4637 | NSS: 1.2816
+==================================================
+
+exo file name : hit_axe_008636.jpg / exo_path
+parsed dots!!! : [[125, 230], [340, 170], [610, 540]]
+restored_dots!!! : [[117, 230], [319, 170], [573, 540]]
+
+==================================================
+Metrics for with_exo_best axe_000961.jpg:
+ with_exo_best Current - KLD: 2.3412 | SIM: 0.3040 | NSS: 0.4501
+
+Cumulative with_exo_best  Averages over 57 samples:
+Average - KLD: 2.4524 | SIM: 0.4021 | NSS: 0.9958
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  57/123 --------------------------------------------------------------------------------
+Action : write, Object : pen image_name : pen_003590.jpg
+qwen ego Results!! : [
+  [173, 75],
+  [463, 125],
+  [880, 610]
+]
+parsed dots!!! : [[173, 75], [463, 125], [880, 610]]
+restored_dots!!! : [[110, 31], [296, 52], [563, 258]]
+
+==================================================
+Metrics for only_ego pen_003590.jpg:
+ only_ego Current - KLD: 1.3499 | SIM: 0.3312 | NSS: 1.4417
+
+Cumulative only_ego  Averages over 58 samples:
+Average - KLD: 1.5453 | SIM: 0.4614 | NSS: 1.2844
+==================================================
+
+exo file name : write_pen_005237.jpg / exo_path
+parsed dots!!! : [[235, 105], [445, 275], [815, 615]]
+restored_dots!!! : [[150, 44], [284, 116], [521, 260]]
+
+==================================================
+Metrics for with_exo_best pen_003590.jpg:
+ with_exo_best Current - KLD: 0.9848 | SIM: 0.4122 | NSS: 2.0584
+
+Cumulative with_exo_best  Averages over 58 samples:
+Average - KLD: 2.4271 | SIM: 0.4023 | NSS: 1.0141
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  58/123 --------------------------------------------------------------------------------
+Action : take_photo, Object : cell_phone image_name : cell_phone_000601.jpg
+qwen ego Results!! : [
+  [387, 406],
+  [250, 359],
+  [556, 343]
+]
+parsed dots!!! : [[387, 406], [250, 359], [556, 343]]
+restored_dots!!! : [[247, 172], [160, 152], [355, 146]]
+
+==================================================
+Metrics for only_ego cell_phone_000601.jpg:
+ only_ego Current - KLD: 0.6053 | SIM: 0.5734 | NSS: 1.3473
+
+Cumulative only_ego  Averages over 59 samples:
+Average - KLD: 1.5293 | SIM: 0.4633 | NSS: 1.2854
+==================================================
+
+exo file name : take_photo_phone_010419.jpg / exo_path
+parsed dots!!! : [[350, 400], [480, 300], [280, 550]]
+restored_dots!!! : [[224, 170], [307, 127], [179, 234]]
+
+==================================================
+Metrics for with_exo_best cell_phone_000601.jpg:
+ with_exo_best Current - KLD: 0.3607 | SIM: 0.6946 | NSS: 1.4614
+
+Cumulative with_exo_best  Averages over 59 samples:
+Average - KLD: 2.3920 | SIM: 0.4072 | NSS: 1.0217
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  59/123 --------------------------------------------------------------------------------
+Action : take_photo, Object : camera image_name : camera_002534.jpg
+qwen ego Results!! : [
+  [142, 337],
+  [398, 328],
+  [784, 771]
+]
+parsed dots!!! : [[142, 337], [398, 328], [784, 771]]
+restored_dots!!! : [[90, 159], [254, 155], [501, 364]]
+
+==================================================
+Metrics for only_ego camera_002534.jpg:
+ only_ego Current - KLD: 1.6112 | SIM: 0.4638 | NSS: 0.2573
+
+Cumulative only_ego  Averages over 60 samples:
+Average - KLD: 1.5307 | SIM: 0.4633 | NSS: 1.2683
+==================================================
+
+exo file name : take_photo_camera_010034.jpg / exo_path
+parsed dots!!! : [[150, 337], [425, 400], [750, 720]]
+restored_dots!!! : [[96, 159], [272, 189], [480, 340]]
+
+==================================================
+Metrics for with_exo_best camera_002534.jpg:
+ with_exo_best Current - KLD: 1.2717 | SIM: 0.5121 | NSS: 0.3617
+
+Cumulative with_exo_best  Averages over 60 samples:
+Average - KLD: 2.3734 | SIM: 0.4090 | NSS: 1.0107
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  60/123 --------------------------------------------------------------------------------
+Action : pour, Object : bottle image_name : bottle_002780.jpg
+qwen ego Results!! : [
+  [480, 419],
+  [380, 250],
+  [225, 125]
+]
+parsed dots!!! : [[480, 419], [380, 250], [225, 125]]
+restored_dots!!! : [[307, 178], [243, 106], [144, 53]]
+
+==================================================
+Metrics for only_ego bottle_002780.jpg:
+ only_ego Current - KLD: 0.2764 | SIM: 0.7246 | NSS: 1.9609
+
+Cumulative only_ego  Averages over 61 samples:
+Average - KLD: 1.5101 | SIM: 0.4676 | NSS: 1.2797
+==================================================
+
+exo file name : pour_bottle_012873.jpg / exo_path
+parsed dots!!! : [[275, 184], [450, 350], [625, 550]]
+restored_dots!!! : [[176, 78], [288, 149], [400, 234]]
+
+==================================================
+Metrics for with_exo_best bottle_002780.jpg:
+ with_exo_best Current - KLD: 0.6753 | SIM: 0.5540 | NSS: 1.5022
+
+Cumulative with_exo_best  Averages over 61 samples:
+Average - KLD: 2.3455 | SIM: 0.4114 | NSS: 1.0187
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  61/123 --------------------------------------------------------------------------------
+Action : pour, Object : cup image_name : cup_001535.jpg
+qwen ego Results!! : [
+  [627, 259],
+  [612, 287],
+  [645, 272]
+]
+parsed dots!!! : [[627, 259], [612, 287], [645, 272]]
+restored_dots!!! : [[401, 110], [391, 122], [412, 115]]
+
+==================================================
+Metrics for only_ego cup_001535.jpg:
+ only_ego Current - KLD: 2.8482 | SIM: 0.1500 | NSS: 0.3998
+
+Cumulative only_ego  Averages over 62 samples:
+Average - KLD: 1.5317 | SIM: 0.4624 | NSS: 1.2655
+==================================================
+
+exo file name : pour_cup_003813.jpg / exo_path
+parsed dots!!! : [[625, 250], [680, 320], [720, 250]]
+restored_dots!!! : [[400, 106], [435, 136], [460, 106]]
+
+==================================================
+Metrics for with_exo_best cup_001535.jpg:
+ with_exo_best Current - KLD: 1.7501 | SIM: 0.2637 | NSS: 1.2416
+
+Cumulative with_exo_best  Averages over 62 samples:
+Average - KLD: 2.3359 | SIM: 0.4090 | NSS: 1.0223
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  62/123 --------------------------------------------------------------------------------
+Action : pour, Object : wine_glass image_name : wine_glass_000186.jpg
+qwen ego Results!! : [
+  [500, 175],
+  [500, 475],
+  [500, 725]
+]
+parsed dots!!! : [[500, 175], [500, 475], [500, 725]]
+restored_dots!!! : [[213, 112], [213, 304], [213, 464]]
+
+==================================================
+Metrics for only_ego wine_glass_000186.jpg:
+ only_ego Current - KLD: 0.9932 | SIM: 0.3993 | NSS: 1.5368
+
+Cumulative only_ego  Averages over 63 samples:
+Average - KLD: 1.5232 | SIM: 0.4614 | NSS: 1.2698
+==================================================
+
+exo file name : pour_wine glass_000184.jpg / exo_path
+parsed dots!!! : [[500, 280], [500, 450], [500, 650]]
+restored_dots!!! : [[213, 179], [213, 288], [213, 416]]
+
+==================================================
+Metrics for with_exo_best wine_glass_000186.jpg:
+ with_exo_best Current - KLD: 0.6735 | SIM: 0.5143 | NSS: 2.0025
+
+Cumulative with_exo_best  Averages over 63 samples:
+Average - KLD: 2.3095 | SIM: 0.4107 | NSS: 1.0379
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  63/123 --------------------------------------------------------------------------------
+Action : kick, Object : soccer_ball image_name : soccer_ball_001588.jpg
+qwen ego Results!! : [
+  [450, 440],
+  [490, 580],
+  [420, 520]
+]
+parsed dots!!! : [[450, 440], [490, 580], [420, 520]]
+restored_dots!!! : [[288, 149], [313, 196], [268, 176]]
+
+==================================================
+Metrics for only_ego soccer_ball_001588.jpg:
+ only_ego Current - KLD: 0.1917 | SIM: 0.7720 | NSS: 2.2991
+
+Cumulative only_ego  Averages over 64 samples:
+Average - KLD: 1.5024 | SIM: 0.4663 | NSS: 1.2859
+==================================================
+
+exo file name : kick_soccer_ball_012466.jpg / exo_path
+parsed dots!!! : [[450, 400], [450, 550], [500, 475]]
+restored_dots!!! : [[288, 135], [288, 186], [320, 161]]
+
+==================================================
+Metrics for with_exo_best soccer_ball_001588.jpg:
+ with_exo_best Current - KLD: 0.1079 | SIM: 0.8428 | NSS: 2.3702
+
+Cumulative with_exo_best  Averages over 64 samples:
+Average - KLD: 2.2751 | SIM: 0.4174 | NSS: 1.0587
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  64/123 --------------------------------------------------------------------------------
+Action : kick, Object : rugby_ball image_name : rugby_ball_002080.jpg
+qwen ego Results!! : [
+  [500, 490],
+  [300, 550],
+  [700, 550]
+]
+parsed dots!!! : [[500, 490], [300, 550], [700, 550]]
+restored_dots!!! : [[150, 147], [90, 165], [210, 165]]
+
+==================================================
+Metrics for only_ego rugby_ball_002080.jpg:
+ only_ego Current - KLD: 0.3271 | SIM: 0.7056 | NSS: 0.8104
+
+Cumulative only_ego  Averages over 65 samples:
+Average - KLD: 1.4843 | SIM: 0.4700 | NSS: 1.2785
+==================================================
+
+exo file name : kick_rugby_ball_011224.jpg / exo_path
+parsed dots!!! : [[500, 500], [300, 500], [700, 500]]
+restored_dots!!! : [[150, 150], [90, 150], [210, 150]]
+
+==================================================
+Metrics for with_exo_best rugby_ball_002080.jpg:
+ with_exo_best Current - KLD: 0.3074 | SIM: 0.7153 | NSS: 0.7972
+
+Cumulative with_exo_best  Averages over 65 samples:
+Average - KLD: 2.2449 | SIM: 0.4220 | NSS: 1.0547
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  65/123 --------------------------------------------------------------------------------
+Action : kick, Object : punching_bag image_name : punching_bag_001639.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [300, 700],
+  [700, 700]
+]
+parsed dots!!! : [[500, 500], [300, 700], [700, 700]]
+restored_dots!!! : [[156, 750], [93, 1050], [219, 1050]]
+
+==================================================
+Metrics for only_ego punching_bag_001639.jpg:
+ only_ego Current - KLD: 0.6012 | SIM: 0.6579 | NSS: 0.8597
+
+Cumulative only_ego  Averages over 66 samples:
+Average - KLD: 1.4709 | SIM: 0.4728 | NSS: 1.2722
+==================================================
+
+exo file name : kick_punching_bag_009272.jpg / exo_path
+parsed dots!!! : [[500, 400], [500, 600], [500, 800]]
+restored_dots!!! : [[156, 600], [156, 900], [156, 1200]]
+
+==================================================
+Metrics for with_exo_best punching_bag_001639.jpg:
+ with_exo_best Current - KLD: 0.4548 | SIM: 0.6505 | NSS: 0.7350
+
+Cumulative with_exo_best  Averages over 66 samples:
+Average - KLD: 2.2177 | SIM: 0.4255 | NSS: 1.0498
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  66/123 --------------------------------------------------------------------------------
+Action : pick_up, Object : skis image_name : skis_001547.jpg
+qwen ego Results!! : [
+  [450, 350],
+  [550, 400],
+  [400, 600]
+]
+parsed dots!!! : [[450, 350], [550, 400], [400, 600]]
+restored_dots!!! : [[440, 339], [538, 388], [391, 582]]
+
+==================================================
+Metrics for only_ego skis_001547.jpg:
+ only_ego Current - KLD: 1.1268 | SIM: 0.3678 | NSS: 2.0942
+
+Cumulative only_ego  Averages over 67 samples:
+Average - KLD: 1.4658 | SIM: 0.4713 | NSS: 1.2845
+==================================================
+
+exo file name : pick_up_skis_000097.jpg / exo_path
+parsed dots!!! : [[500, 500], [300, 700], [700, 300]]
+restored_dots!!! : [[489, 485], [293, 679], [685, 291]]
+
+==================================================
+Metrics for with_exo_best skis_001547.jpg:
+ with_exo_best Current - KLD: 1.3928 | SIM: 0.2888 | NSS: 1.7750
+
+Cumulative with_exo_best  Averages over 67 samples:
+Average - KLD: 2.2054 | SIM: 0.4234 | NSS: 1.0606
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  67/123 --------------------------------------------------------------------------------
+Action : pick_up, Object : suitcase image_name : suitcase_002493.jpg
+qwen ego Results!! : [
+  [400, 125],
+  [50, 530],
+  [400, 10]
+]
+parsed dots!!! : [[400, 125], [50, 530], [400, 10]]
+restored_dots!!! : [[359, 187], [44, 795], [359, 15]]
+
+==================================================
+Metrics for only_ego suitcase_002493.jpg:
+ only_ego Current - KLD: 0.6403 | SIM: 0.5411 | NSS: 2.8623
+
+Cumulative only_ego  Averages over 68 samples:
+Average - KLD: 1.4536 | SIM: 0.4723 | NSS: 1.3077
+==================================================
+
+exo file name : pick_up_suitcase_005950.jpg / exo_path
+parsed dots!!! : [[480, 120], [480, 200], [480, 300]]
+restored_dots!!! : [[431, 180], [431, 300], [431, 450]]
+
+==================================================
+Metrics for with_exo_best suitcase_002493.jpg:
+ with_exo_best Current - KLD: 1.2313 | SIM: 0.4044 | NSS: 1.9829
+
+Cumulative with_exo_best  Averages over 68 samples:
+Average - KLD: 2.1911 | SIM: 0.4231 | NSS: 1.0742
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  68/123 --------------------------------------------------------------------------------
+Action : carry, Object : skis image_name : skis_002829.jpg
+qwen ego Results!! : [
+  [280, 490],
+  [720, 490],
+  [280, 150],
+  [720, 150]
+]
+parsed dots!!! : [[280, 490], [720, 490], [280, 150], [720, 150]]
+restored_dots!!! : [[157, 735], [403, 735], [157, 225], [403, 225]]
+
+==================================================
+Metrics for only_ego skis_002829.jpg:
+ only_ego Current - KLD: 1.1402 | SIM: 0.3664 | NSS: 1.4500
+
+Cumulative only_ego  Averages over 69 samples:
+Average - KLD: 1.4491 | SIM: 0.4707 | NSS: 1.3097
+==================================================
+
+exo file name : carry_skis_002348.jpg / exo_path
+parsed dots!!! : [[300, 100], [300, 500], [300, 900]]
+restored_dots!!! : [[168, 150], [168, 750], [168, 1350]]
+
+==================================================
+Metrics for with_exo_best skis_002829.jpg:
+ with_exo_best Current - KLD: 2.4708 | SIM: 0.2351 | NSS: 0.5838
+
+Cumulative with_exo_best  Averages over 69 samples:
+Average - KLD: 2.1952 | SIM: 0.4204 | NSS: 1.0671
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  69/123 --------------------------------------------------------------------------------
+Action : carry, Object : skateboard image_name : skateboard_002668.jpg
+qwen ego Results!! : [
+  [700, 250],
+  [700, 650],
+  [700, 850]
+]
+parsed dots!!! : [[700, 250], [700, 650], [700, 850]]
+restored_dots!!! : [[254, 375], [254, 975], [254, 1275]]
+
+==================================================
+Metrics for only_ego skateboard_002668.jpg:
+ only_ego Current - KLD: 1.6352 | SIM: 0.5236 | NSS: 0.4928
+
+Cumulative only_ego  Averages over 70 samples:
+Average - KLD: 1.4517 | SIM: 0.4715 | NSS: 1.2981
+==================================================
+
+exo file name : carry_skateboard_012945.jpg / exo_path
+parsed dots!!! : [[675, 245], [675, 580], [675, 875]]
+restored_dots!!! : [[245, 367], [245, 870], [245, 1312]]
+
+==================================================
+Metrics for with_exo_best skateboard_002668.jpg:
+ with_exo_best Current - KLD: 1.2826 | SIM: 0.5070 | NSS: 0.4369
+
+Cumulative with_exo_best  Averages over 70 samples:
+Average - KLD: 2.1821 | SIM: 0.4216 | NSS: 1.0581
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  70/123 --------------------------------------------------------------------------------
+Action : carry, Object : surfboard image_name : surfboard_002422.jpg
+qwen ego Results!! : [
+  [490, 825],
+  [190, 725],
+  [760, 725]
+]
+parsed dots!!! : [[490, 825], [190, 725], [760, 725]]
+restored_dots!!! : [[238, 1237], [92, 1087], [370, 1087]]
+
+==================================================
+Metrics for only_ego surfboard_002422.jpg:
+ only_ego Current - KLD: 9.3663 | SIM: 0.0045 | NSS: -0.5858
+
+Cumulative only_ego  Averages over 71 samples:
+Average - KLD: 1.5632 | SIM: 0.4649 | NSS: 1.2715
+==================================================
+
+exo file name : carry_surfboard_005053.jpg / exo_path
+parsed dots!!! : [[280, 420], [360, 520], [480, 680]]
+restored_dots!!! : [[136, 630], [175, 780], [233, 1020]]
+
+==================================================
+Metrics for with_exo_best surfboard_002422.jpg:
+ with_exo_best Current - KLD: 1.4428 | SIM: 0.4458 | NSS: 0.9942
+
+Cumulative with_exo_best  Averages over 71 samples:
+Average - KLD: 2.1717 | SIM: 0.4220 | NSS: 1.0572
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  71/123 --------------------------------------------------------------------------------
+Action : carry, Object : snowboard image_name : snowboard_001325.jpg
+qwen ego Results!! : [
+  [360, 440],
+  [690, 510],
+  [500, 460]
+]
+parsed dots!!! : [[360, 440], [690, 510], [500, 460]]
+restored_dots!!! : [[502, 660], [963, 765], [698, 690]]
+
+==================================================
+Metrics for only_ego snowboard_001325.jpg:
+ only_ego Current - KLD: 1.0362 | SIM: 0.3944 | NSS: 2.8122
+
+Cumulative only_ego  Averages over 72 samples:
+Average - KLD: 1.5559 | SIM: 0.4639 | NSS: 1.2929
+==================================================
+
+exo file name : carry_snowboard_009401.jpg / exo_path
+parsed dots!!! : [[150, 410], [500, 470], [850, 530]]
+restored_dots!!! : [[209, 615], [698, 705], [1187, 795]]
+
+==================================================
+Metrics for with_exo_best snowboard_001325.jpg:
+ with_exo_best Current - KLD: 1.4800 | SIM: 0.2709 | NSS: 2.0293
+
+Cumulative with_exo_best  Averages over 72 samples:
+Average - KLD: 2.1621 | SIM: 0.4199 | NSS: 1.0707
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  72/123 --------------------------------------------------------------------------------
+Action : stick, Object : fork image_name : fork_000095.jpg
+qwen ego Results!! : [
+  [385, 750],
+  [470, 790],
+  [540, 820]
+]
+parsed dots!!! : [[385, 750], [470, 790], [540, 820]]
+restored_dots!!! : [[385, 751], [470, 791], [541, 821]]
+
+==================================================
+Metrics for only_ego fork_000095.jpg:
+ only_ego Current - KLD: 1.1382 | SIM: 0.4368 | NSS: 1.7198
+
+Cumulative only_ego  Averages over 73 samples:
+Average - KLD: 1.5502 | SIM: 0.4636 | NSS: 1.2988
+==================================================
+
+exo file name : stick_fork_008567.jpg / exo_path
+parsed dots!!! : [[385, 748], [480, 720], [560, 675]]
+restored_dots!!! : [[385, 749], [480, 721], [561, 676]]
+
+==================================================
+Metrics for with_exo_best fork_000095.jpg:
+ with_exo_best Current - KLD: 1.5139 | SIM: 0.3395 | NSS: 1.2017
+
+Cumulative with_exo_best  Averages over 73 samples:
+Average - KLD: 2.1532 | SIM: 0.4188 | NSS: 1.0725
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  73/123 --------------------------------------------------------------------------------
+Action : stick, Object : knife image_name : knife_001072.jpg
+qwen ego Results!! : [
+  [250, 375],
+  [520, 500],
+  [890, 660]
+]
+parsed dots!!! : [[250, 375], [520, 500], [890, 660]]
+restored_dots!!! : [[160, 159], [332, 213], [569, 281]]
+
+==================================================
+Metrics for only_ego knife_001072.jpg:
+ only_ego Current - KLD: 2.9459 | SIM: 0.1145 | NSS: 0.4055
+
+Cumulative only_ego  Averages over 74 samples:
+Average - KLD: 1.5690 | SIM: 0.4589 | NSS: 1.2867
+==================================================
+
+exo file name : stick_knife_013357.jpg / exo_path
+parsed dots!!! : [[200, 320], [400, 450], [700, 600]]
+restored_dots!!! : [[128, 136], [256, 191], [448, 255]]
+
+==================================================
+Metrics for with_exo_best knife_001072.jpg:
+ with_exo_best Current - KLD: 1.9222 | SIM: 0.2015 | NSS: 1.4073
+
+Cumulative with_exo_best  Averages over 74 samples:
+Average - KLD: 2.1501 | SIM: 0.4159 | NSS: 1.0770
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  74/123 --------------------------------------------------------------------------------
+Action : look_out, Object : binoculars image_name : binoculars_003630.jpg
+qwen ego Results!! : [
+  [593, 634],
+  [812, 475],
+  [328, 144]
+]
+parsed dots!!! : [[593, 634], [812, 475], [328, 144]]
+restored_dots!!! : [[379, 270], [519, 202], [209, 61]]
+
+==================================================
+Metrics for only_ego binoculars_003630.jpg:
+ only_ego Current - KLD: 2.9712 | SIM: 0.1656 | NSS: -0.2010
+
+Cumulative only_ego  Averages over 75 samples:
+Average - KLD: 1.5877 | SIM: 0.4549 | NSS: 1.2669
+==================================================
+
+exo file name : look_out_binoculars_001652.jpg / exo_path
+parsed dots!!! : [[125, 290], [500, 450], [750, 320]]
+restored_dots!!! : [[80, 123], [320, 191], [480, 136]]
+
+==================================================
+Metrics for with_exo_best binoculars_003630.jpg:
+ with_exo_best Current - KLD: 1.6339 | SIM: 0.3348 | NSS: 0.4557
+
+Cumulative with_exo_best  Averages over 75 samples:
+Average - KLD: 2.1432 | SIM: 0.4148 | NSS: 1.0687
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  75/123 --------------------------------------------------------------------------------
+Action : hold, Object : toothbrush image_name : toothbrush_003341.jpg
+qwen ego Results!! : [
+  [305, 520],
+  [300, 650],
+  [305, 780]
+]
+parsed dots!!! : [[305, 520], [300, 650], [305, 780]]
+restored_dots!!! : [[457, 780], [450, 975], [457, 1170]]
+
+==================================================
+Metrics for only_ego toothbrush_003341.jpg:
+ only_ego Current - KLD: 0.9167 | SIM: 0.4543 | NSS: 2.1104
+
+Cumulative only_ego  Averages over 76 samples:
+Average - KLD: 1.5789 | SIM: 0.4549 | NSS: 1.2780
+==================================================
+
+exo file name : hold_toothbrush_013051.jpg / exo_path
+parsed dots!!! : [[195, 372], [235, 440], [260, 510]]
+restored_dots!!! : [[292, 558], [352, 660], [390, 765]]
+
+==================================================
+Metrics for with_exo_best toothbrush_003341.jpg:
+ with_exo_best Current - KLD: 0.7822 | SIM: 0.4819 | NSS: 2.0590
+
+Cumulative with_exo_best  Averages over 76 samples:
+Average - KLD: 2.1253 | SIM: 0.4157 | NSS: 1.0818
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  76/123 --------------------------------------------------------------------------------
+Action : hold, Object : baseball_bat image_name : baseball_bat_002547.jpg
+qwen ego Results!! : [
+  [500, 490],
+  [700, 380],
+  [850, 330]
+]
+parsed dots!!! : [[500, 490], [700, 380], [850, 330]]
+restored_dots!!! : [[500, 487], [700, 377], [850, 328]]
+
+==================================================
+Metrics for only_ego baseball_bat_002547.jpg:
+ only_ego Current - KLD: 1.3652 | SIM: 0.3092 | NSS: 2.1716
+
+Cumulative only_ego  Averages over 77 samples:
+Average - KLD: 1.5761 | SIM: 0.4530 | NSS: 1.2896
+==================================================
+
+exo file name : hold_baseball_bat_002007.jpg / exo_path
+parsed dots!!! : [[632, 442], [662, 475], [692, 508]]
+restored_dots!!! : [[632, 439], [662, 472], [692, 504]]
+
+==================================================
+Metrics for with_exo_best baseball_bat_002547.jpg:
+ with_exo_best Current - KLD: 4.1220 | SIM: 0.0964 | NSS: 0.1049
+
+Cumulative with_exo_best  Averages over 77 samples:
+Average - KLD: 2.1512 | SIM: 0.4115 | NSS: 1.0691
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  77/123 --------------------------------------------------------------------------------
+Action : hold, Object : bottle image_name : bottle_001227.jpg
+qwen ego Results!! : [
+  [294, 448],
+  [284, 632],
+  [296, 750]
+]
+parsed dots!!! : [[294, 448], [284, 632], [296, 750]]
+restored_dots!!! : [[188, 190], [181, 269], [189, 319]]
+
+==================================================
+Metrics for only_ego bottle_001227.jpg:
+ only_ego Current - KLD: 0.4627 | SIM: 0.6615 | NSS: 2.0039
+
+Cumulative only_ego  Averages over 78 samples:
+Average - KLD: 1.5618 | SIM: 0.4557 | NSS: 1.2987
+==================================================
+
+exo file name : hold_bottle_008720.jpg / exo_path
+parsed dots!!! : [[285, 567], [265, 395], [285, 265]]
+restored_dots!!! : [[182, 241], [169, 168], [182, 112]]
+
+==================================================
+Metrics for with_exo_best bottle_001227.jpg:
+ with_exo_best Current - KLD: 0.9220 | SIM: 0.4621 | NSS: 1.3047
+
+Cumulative with_exo_best  Averages over 78 samples:
+Average - KLD: 2.1355 | SIM: 0.4122 | NSS: 1.0721
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  78/123 --------------------------------------------------------------------------------
+Action : hold, Object : cup image_name : cup_002518.jpg
+qwen ego Results!! : [
+  [210, 470],
+  [350, 570],
+  [450, 520]
+]
+parsed dots!!! : [[210, 470], [350, 570], [450, 520]]
+restored_dots!!! : [[134, 200], [224, 242], [288, 221]]
+
+==================================================
+Metrics for only_ego cup_002518.jpg:
+ only_ego Current - KLD: 1.2499 | SIM: 0.3292 | NSS: 1.4834
+
+Cumulative only_ego  Averages over 79 samples:
+Average - KLD: 1.5579 | SIM: 0.4541 | NSS: 1.3011
+==================================================
+
+exo file name : hold_cup_009920.jpg / exo_path
+parsed dots!!! : [[312, 537], [412, 612], [500, 525]]
+restored_dots!!! : [[199, 228], [263, 260], [320, 223]]
+
+==================================================
+Metrics for with_exo_best cup_002518.jpg:
+ with_exo_best Current - KLD: 2.8308 | SIM: 0.1466 | NSS: 0.3129
+
+Cumulative with_exo_best  Averages over 79 samples:
+Average - KLD: 2.1443 | SIM: 0.4088 | NSS: 1.0625
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  79/123 --------------------------------------------------------------------------------
+Action : hold, Object : scissors image_name : scissors_002479.jpg
+qwen ego Results!! : [
+  [542, 802],
+  [743, 802],
+  [648, 352]
+]
+parsed dots!!! : [[542, 802], [743, 802], [648, 352]]
+restored_dots!!! : [[346, 342], [475, 342], [414, 150]]
+
+==================================================
+Metrics for only_ego scissors_002479.jpg:
+ only_ego Current - KLD: 0.6778 | SIM: 0.5440 | NSS: 1.7902
+
+Cumulative only_ego  Averages over 80 samples:
+Average - KLD: 1.5469 | SIM: 0.4552 | NSS: 1.3072
+==================================================
+
+exo file name : hold_scissors_005355.jpg / exo_path
+parsed dots!!! : [[134, 550], [223, 570], [270, 650]]
+restored_dots!!! : [[85, 234], [142, 243], [172, 277]]
+
+==================================================
+Metrics for with_exo_best scissors_002479.jpg:
+ with_exo_best Current - KLD: 11.1693 | SIM: 0.0030 | NSS: -0.4133
+
+Cumulative with_exo_best  Averages over 80 samples:
+Average - KLD: 2.2571 | SIM: 0.4037 | NSS: 1.0440
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  80/123 --------------------------------------------------------------------------------
+Action : hold, Object : skis image_name : skis_001357.jpg
+qwen ego Results!! : [
+  [350, 550],
+  [450, 450],
+  [550, 350]
+]
+parsed dots!!! : [[350, 550], [450, 450], [550, 350]]
+restored_dots!!! : [[170, 270], [218, 220], [267, 171]]
+
+==================================================
+Metrics for only_ego skis_001357.jpg:
+ only_ego Current - KLD: 1.0438 | SIM: 0.4102 | NSS: 2.3698
+
+Cumulative only_ego  Averages over 81 samples:
+Average - KLD: 1.5407 | SIM: 0.4547 | NSS: 1.3203
+==================================================
+
+exo file name : hold_skis_010408.jpg / exo_path
+parsed dots!!! : [[375, 490], [500, 300], [625, 110]]
+restored_dots!!! : [[182, 240], [243, 147], [303, 54]]
+
+==================================================
+Metrics for with_exo_best skis_001357.jpg:
+ with_exo_best Current - KLD: 1.8100 | SIM: 0.2542 | NSS: 1.3214
+
+Cumulative with_exo_best  Averages over 81 samples:
+Average - KLD: 2.2516 | SIM: 0.4019 | NSS: 1.0475
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  81/123 --------------------------------------------------------------------------------
+Action : hold, Object : tennis_racket image_name : tennis_racket_001785.jpg
+qwen ego Results!! : [
+  [250, 850],
+  [320, 700],
+  [410, 550]
+]
+parsed dots!!! : [[250, 850], [320, 700], [410, 550]]
+restored_dots!!! : [[375, 850], [480, 700], [615, 550]]
+
+==================================================
+Metrics for only_ego tennis_racket_001785.jpg:
+ only_ego Current - KLD: 0.6996 | SIM: 0.5038 | NSS: 3.0664
+
+Cumulative only_ego  Averages over 82 samples:
+Average - KLD: 1.5304 | SIM: 0.4553 | NSS: 1.3416
+==================================================
+
+exo file name : hold_tennis_racket_009295.jpg / exo_path
+parsed dots!!! : [[240, 850], [360, 650], [410, 450]]
+restored_dots!!! : [[360, 850], [540, 650], [615, 450]]
+
+==================================================
+Metrics for with_exo_best tennis_racket_001785.jpg:
+ with_exo_best Current - KLD: 0.9188 | SIM: 0.4280 | NSS: 2.6422
+
+Cumulative with_exo_best  Averages over 82 samples:
+Average - KLD: 2.2353 | SIM: 0.4022 | NSS: 1.0669
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  82/123 --------------------------------------------------------------------------------
+Action : hold, Object : book image_name : book_001195.jpg
+qwen ego Results!! : [
+  [200, 620],
+  [500, 750],
+  [800, 850]
+]
+parsed dots!!! : [[200, 620], [500, 750], [800, 850]]
+restored_dots!!! : [[128, 264], [320, 319], [512, 362]]
+
+==================================================
+Metrics for only_ego book_001195.jpg:
+ only_ego Current - KLD: 1.4429 | SIM: 0.4051 | NSS: 0.6755
+
+Cumulative only_ego  Averages over 83 samples:
+Average - KLD: 1.5294 | SIM: 0.4547 | NSS: 1.3336
+==================================================
+
+exo file name : hold_book_010605.jpg / exo_path
+parsed dots!!! : [[250, 550], [500, 400], [750, 750]]
+restored_dots!!! : [[160, 234], [320, 170], [480, 319]]
+
+==================================================
+Metrics for with_exo_best book_001195.jpg:
+ with_exo_best Current - KLD: 2.8377 | SIM: 0.2267 | NSS: 0.1083
+
+Cumulative with_exo_best  Averages over 83 samples:
+Average - KLD: 2.2426 | SIM: 0.4001 | NSS: 1.0554
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  83/123 --------------------------------------------------------------------------------
+Action : hold, Object : frisbee image_name : frisbee_001130.jpg
+qwen ego Results!! : [
+  [250, 500],
+  [750, 500],
+  [500, 250]
+]
+parsed dots!!! : [[250, 500], [750, 500], [500, 250]]
+restored_dots!!! : [[370, 750], [1110, 750], [740, 375]]
+
+==================================================
+Metrics for only_ego frisbee_001130.jpg:
+ only_ego Current - KLD: 3.4309 | SIM: 0.1865 | NSS: -0.3473
+
+Cumulative only_ego  Averages over 84 samples:
+Average - KLD: 1.5520 | SIM: 0.4515 | NSS: 1.3136
+==================================================
+
+exo file name : hold_frisbee_005348.jpg / exo_path
+parsed dots!!! : [[105, 375], [120, 395], [110, 415]]
+restored_dots!!! : [[155, 562], [177, 592], [162, 622]]
+
+==================================================
+Metrics for with_exo_best frisbee_001130.jpg:
+ with_exo_best Current - KLD: 6.3919 | SIM: 0.1824 | NSS: 0.1790
+
+Cumulative with_exo_best  Averages over 84 samples:
+Average - KLD: 2.2920 | SIM: 0.3975 | NSS: 1.0449
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  84/123 --------------------------------------------------------------------------------
+Action : hold, Object : golf_clubs image_name : golf_clubs_000045.jpg
+qwen ego Results!! : [
+  [680, 230],
+  [550, 560],
+  [360, 820]
+]
+parsed dots!!! : [[680, 230], [550, 560], [360, 820]]
+restored_dots!!! : [[169, 251], [136, 611], [89, 895]]
+
+==================================================
+Metrics for only_ego golf_clubs_000045.jpg:
+ only_ego Current - KLD: 2.7725 | SIM: 0.2097 | NSS: 0.6038
+
+Cumulative only_ego  Averages over 85 samples:
+Average - KLD: 1.5664 | SIM: 0.4486 | NSS: 1.3052
+==================================================
+
+exo file name : hold_golf_clubs_013541.jpg / exo_path
+parsed dots!!! : [[450, 720], [470, 600], [490, 480]]
+restored_dots!!! : [[112, 786], [117, 655], [122, 524]]
+
+==================================================
+Metrics for with_exo_best golf_clubs_000045.jpg:
+ with_exo_best Current - KLD: 11.8848 | SIM: 0.0013 | NSS: -0.7127
+
+Cumulative with_exo_best  Averages over 85 samples:
+Average - KLD: 2.4048 | SIM: 0.3928 | NSS: 1.0242
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  85/123 --------------------------------------------------------------------------------
+Action : hold, Object : hammer image_name : hammer_000215.jpg
+qwen ego Results!! : [
+  [220, 200],
+  [340, 300],
+  [450, 420]
+]
+parsed dots!!! : [[220, 200], [340, 300], [450, 420]]
+restored_dots!!! : [[140, 71], [217, 107], [288, 150]]
+
+==================================================
+Metrics for only_ego hammer_000215.jpg:
+ only_ego Current - KLD: 1.2835 | SIM: 0.3308 | NSS: 1.8264
+
+Cumulative only_ego  Averages over 86 samples:
+Average - KLD: 1.5631 | SIM: 0.4473 | NSS: 1.3113
+==================================================
+
+exo file name : hold_hammer_008034.jpg / exo_path
+parsed dots!!! : [[210, 190], [450, 380], [600, 550]]
+restored_dots!!! : [[134, 68], [288, 136], [384, 197]]
+
+==================================================
+Metrics for with_exo_best hammer_000215.jpg:
+ with_exo_best Current - KLD: 1.4494 | SIM: 0.2685 | NSS: 1.5505
+
+Cumulative with_exo_best  Averages over 86 samples:
+Average - KLD: 2.3937 | SIM: 0.3914 | NSS: 1.0304
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  86/123 --------------------------------------------------------------------------------
+Action : hold, Object : fork image_name : fork_000804.jpg
+qwen ego Results!! : [
+  [300, 650],
+  [450, 480],
+  [650, 300]
+]
+parsed dots!!! : [[300, 650], [450, 480], [650, 300]]
+restored_dots!!! : [[369, 975], [553, 720], [800, 450]]
+
+==================================================
+Metrics for only_ego fork_000804.jpg:
+ only_ego Current - KLD: 2.1093 | SIM: 0.3659 | NSS: 0.9982
+
+Cumulative only_ego  Averages over 87 samples:
+Average - KLD: 1.5694 | SIM: 0.4463 | NSS: 1.3077
+==================================================
+
+exo file name : hold_fork_007421.jpg / exo_path
+parsed dots!!! : [[125, 730], [250, 650], [375, 550]]
+restored_dots!!! : [[153, 1095], [307, 975], [461, 825]]
+
+==================================================
+Metrics for with_exo_best fork_000804.jpg:
+ with_exo_best Current - KLD: 0.8103 | SIM: 0.5150 | NSS: 1.4232
+
+Cumulative with_exo_best  Averages over 87 samples:
+Average - KLD: 2.3755 | SIM: 0.3928 | NSS: 1.0349
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  87/123 --------------------------------------------------------------------------------
+Action : hold, Object : badminton_racket image_name : badminton_racket_002255.jpg
+qwen ego Results!! : [
+  [150, 800],
+  [375, 800],
+  [150, 700]
+]
+parsed dots!!! : [[150, 800], [375, 800], [150, 700]]
+restored_dots!!! : [[150, 828], [375, 828], [150, 725]]
+
+==================================================
+Metrics for only_ego badminton_racket_002255.jpg:
+ only_ego Current - KLD: 0.6015 | SIM: 0.5525 | NSS: 1.9467
+
+Cumulative only_ego  Averages over 88 samples:
+Average - KLD: 1.5584 | SIM: 0.4475 | NSS: 1.3149
+==================================================
+
+exo file name : hold_badminton_racket_012015.jpg / exo_path
+parsed dots!!! : [[375, 972], [375, 770], [375, 568]]
+restored_dots!!! : [[375, 1006], [375, 797], [375, 588]]
+
+==================================================
+Metrics for with_exo_best badminton_racket_002255.jpg:
+ with_exo_best Current - KLD: 1.7443 | SIM: 0.3978 | NSS: 1.3419
+
+Cumulative with_exo_best  Averages over 88 samples:
+Average - KLD: 2.3684 | SIM: 0.3929 | NSS: 1.0384
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  88/123 --------------------------------------------------------------------------------
+Action : hold, Object : suitcase image_name : suitcase_003687.jpg
+qwen ego Results!! : [
+  [360, 275],
+  [230, 320],
+  [400, 950]
+]
+parsed dots!!! : [[360, 275], [230, 320], [400, 950]]
+restored_dots!!! : [[259, 411], [166, 479], [288, 1423]]
+
+==================================================
+Metrics for only_ego suitcase_003687.jpg:
+ only_ego Current - KLD: 4.5436 | SIM: 0.2539 | NSS: 1.0152
+
+Cumulative only_ego  Averages over 89 samples:
+Average - KLD: 1.5919 | SIM: 0.4454 | NSS: 1.3116
+==================================================
+
+exo file name : hold_suitcase_001316.jpg / exo_path
+parsed dots!!! : [[500, 100], [250, 250], [750, 250]]
+restored_dots!!! : [[361, 149], [180, 374], [541, 374]]
+
+==================================================
+Metrics for with_exo_best suitcase_003687.jpg:
+ with_exo_best Current - KLD: 1.7087 | SIM: 0.3005 | NSS: 1.1356
+
+Cumulative with_exo_best  Averages over 89 samples:
+Average - KLD: 2.3609 | SIM: 0.3918 | NSS: 1.0395
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  89/123 --------------------------------------------------------------------------------
+Action : hold, Object : wine_glass image_name : wine_glass_002374.jpg
+qwen ego Results!! : [
+  [500, 700],
+  [500, 850],
+  [500, 550]
+]
+parsed dots!!! : [[500, 700], [500, 850], [500, 550]]
+restored_dots!!! : [[240, 448], [240, 544], [240, 352]]
+
+==================================================
+Metrics for only_ego wine_glass_002374.jpg:
+ only_ego Current - KLD: 0.4206 | SIM: 0.6455 | NSS: 1.8555
+
+Cumulative only_ego  Averages over 90 samples:
+Average - KLD: 1.5789 | SIM: 0.4476 | NSS: 1.3176
+==================================================
+
+exo file name : hold_wine glass_014076.jpg / exo_path
+parsed dots!!! : [[480, 780], [480, 600], [480, 450]]
+restored_dots!!! : [[230, 499], [230, 384], [230, 288]]
+
+==================================================
+Metrics for with_exo_best wine_glass_002374.jpg:
+ with_exo_best Current - KLD: 0.3896 | SIM: 0.6610 | NSS: 1.9010
+
+Cumulative with_exo_best  Averages over 90 samples:
+Average - KLD: 2.3390 | SIM: 0.3948 | NSS: 1.0490
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  90/123 --------------------------------------------------------------------------------
+Action : hold, Object : skateboard image_name : skateboard_002387.jpg
+qwen ego Results!! : [
+  [490, 375],
+  [350, 480],
+  [650, 450]
+]
+parsed dots!!! : [[490, 375], [350, 480], [650, 450]]
+restored_dots!!! : [[735, 356], [525, 456], [975, 427]]
+
+==================================================
+Metrics for only_ego skateboard_002387.jpg:
+ only_ego Current - KLD: 3.4042 | SIM: 0.4016 | NSS: 0.6708
+
+Cumulative only_ego  Averages over 91 samples:
+Average - KLD: 1.5989 | SIM: 0.4471 | NSS: 1.3105
+==================================================
+
+exo file name : hold_skateboard_002615.jpg / exo_path
+parsed dots!!! : [[234, 692], [275, 750], [312, 810]]
+restored_dots!!! : [[351, 657], [412, 712], [468, 769]]
+
+==================================================
+Metrics for with_exo_best skateboard_002387.jpg:
+ with_exo_best Current - KLD: 6.7054 | SIM: 0.1268 | NSS: -0.1595
+
+Cumulative with_exo_best  Averages over 91 samples:
+Average - KLD: 2.3870 | SIM: 0.3919 | NSS: 1.0358
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  91/123 --------------------------------------------------------------------------------
+Action : hold, Object : axe image_name : axe_001552.jpg
+qwen ego Results!! : [
+  [642, 355],
+  [500, 490],
+  [330, 590]
+]
+parsed dots!!! : [[642, 355], [500, 490], [330, 590]]
+restored_dots!!! : [[963, 532], [750, 735], [495, 885]]
+
+==================================================
+Metrics for only_ego axe_001552.jpg:
+ only_ego Current - KLD: 0.4693 | SIM: 0.5995 | NSS: 2.4467
+
+Cumulative only_ego  Averages over 92 samples:
+Average - KLD: 1.5867 | SIM: 0.4487 | NSS: 1.3228
+==================================================
+
+exo file name : hold_axe_003505.jpg / exo_path
+parsed dots!!! : [[412, 520], [540, 430], [710, 320]]
+restored_dots!!! : [[618, 780], [810, 645], [1065, 480]]
+
+==================================================
+Metrics for with_exo_best axe_001552.jpg:
+ with_exo_best Current - KLD: 0.3903 | SIM: 0.6410 | NSS: 2.5530
+
+Cumulative with_exo_best  Averages over 92 samples:
+Average - KLD: 2.3653 | SIM: 0.3946 | NSS: 1.0523
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  92/123 --------------------------------------------------------------------------------
+Action : hold, Object : surfboard image_name : surfboard_002631.jpg
+qwen ego Results!! : [
+  [385, 625],
+  [515, 700],
+  [660, 760]
+]
+parsed dots!!! : [[385, 625], [515, 700], [660, 760]]
+restored_dots!!! : [[246, 221], [329, 247], [422, 269]]
+
+==================================================
+Metrics for only_ego surfboard_002631.jpg:
+ only_ego Current - KLD: 0.8160 | SIM: 0.4628 | NSS: 2.6164
+
+Cumulative only_ego  Averages over 93 samples:
+Average - KLD: 1.5784 | SIM: 0.4489 | NSS: 1.3368
+==================================================
+
+exo file name : hold_surfboard_003445.jpg / exo_path
+parsed dots!!! : [[320, 550], [500, 675], [700, 780]]
+restored_dots!!! : [[204, 194], [320, 238], [448, 276]]
+
+==================================================
+Metrics for with_exo_best surfboard_002631.jpg:
+ with_exo_best Current - KLD: 1.1391 | SIM: 0.3608 | NSS: 2.0651
+
+Cumulative with_exo_best  Averages over 93 samples:
+Average - KLD: 2.3521 | SIM: 0.3942 | NSS: 1.0631
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  93/123 --------------------------------------------------------------------------------
+Action : hold, Object : snowboard image_name : snowboard_001704.jpg
+qwen ego Results!! : [
+  [250, 400],
+  [750, 400],
+  [500, 700]
+]
+parsed dots!!! : [[250, 400], [750, 400], [500, 700]]
+restored_dots!!! : [[150, 600], [451, 600], [301, 1050]]
+
+==================================================
+Metrics for only_ego snowboard_001704.jpg:
+ only_ego Current - KLD: 1.5926 | SIM: 0.2869 | NSS: 0.4661
+
+Cumulative only_ego  Averages over 94 samples:
+Average - KLD: 1.5785 | SIM: 0.4472 | NSS: 1.3275
+==================================================
+
+exo file name : hold_snowboard_000402.jpg / exo_path
+parsed dots!!! : [[375, 680], [375, 780], [375, 880]]
+restored_dots!!! : [[225, 1020], [225, 1170], [225, 1320]]
+
+==================================================
+Metrics for with_exo_best snowboard_001704.jpg:
+ with_exo_best Current - KLD: 5.7947 | SIM: 0.0434 | NSS: -0.4276
+
+Cumulative with_exo_best  Averages over 94 samples:
+Average - KLD: 2.3888 | SIM: 0.3905 | NSS: 1.0473
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  94/123 --------------------------------------------------------------------------------
+Action : hold, Object : bowl image_name : bowl_000546.jpg
+qwen ego Results!! : [
+  [200, 550],
+  [480, 550],
+  [780, 550]
+]
+parsed dots!!! : [[200, 550], [480, 550], [780, 550]]
+restored_dots!!! : [[25, 51], [60, 51], [97, 51]]
+
+==================================================
+Metrics for only_ego bowl_000546.jpg:
+ only_ego Current - KLD: 0.1755 | SIM: 0.7840 | NSS: 0.8253
+
+Cumulative only_ego  Averages over 95 samples:
+Average - KLD: 1.5638 | SIM: 0.4507 | NSS: 1.3222
+==================================================
+
+exo file name : hold_bowl_013844.jpg / exo_path
+parsed dots!!! : [[180, 500], [380, 500], [580, 500]]
+restored_dots!!! : [[22, 46], [47, 46], [72, 46]]
+
+==================================================
+Metrics for with_exo_best bowl_000546.jpg:
+ with_exo_best Current - KLD: 1.7806 | SIM: 0.5639 | NSS: 0.6781
+
+Cumulative with_exo_best  Averages over 95 samples:
+Average - KLD: 2.3823 | SIM: 0.3923 | NSS: 1.0434
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  95/123 --------------------------------------------------------------------------------
+Action : hold, Object : knife image_name : knife_002682.jpg
+qwen ego Results!! : [
+  [888, 654],
+  [855, 598],
+  [808, 546]
+]
+parsed dots!!! : [[888, 654], [855, 598], [808, 546]]
+restored_dots!!! : [[568, 278], [547, 254], [517, 232]]
+
+==================================================
+Metrics for only_ego knife_002682.jpg:
+ only_ego Current - KLD: 0.7020 | SIM: 0.5348 | NSS: 3.0701
+
+Cumulative only_ego  Averages over 96 samples:
+Average - KLD: 1.5548 | SIM: 0.4516 | NSS: 1.3404
+==================================================
+
+exo file name : hold_knife_001508.jpg / exo_path
+parsed dots!!! : [[600, 300], [750, 450], [850, 600]]
+restored_dots!!! : [[384, 127], [480, 191], [544, 255]]
+
+==================================================
+Metrics for with_exo_best knife_002682.jpg:
+ with_exo_best Current - KLD: 1.7618 | SIM: 0.2698 | NSS: 1.5638
+
+Cumulative with_exo_best  Averages over 96 samples:
+Average - KLD: 2.3759 | SIM: 0.3910 | NSS: 1.0488
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  96/123 --------------------------------------------------------------------------------
+Action : drink_with, Object : bottle image_name : bottle_003259.jpg
+qwen ego Results!! : [
+  [495, 125],
+  [495, 430],
+  [495, 750]
+]
+parsed dots!!! : [[495, 125], [495, 430], [495, 750]]
+restored_dots!!! : [[210, 80], [210, 275], [210, 480]]
+
+==================================================
+Metrics for only_ego bottle_003259.jpg:
+ only_ego Current - KLD: 1.5445 | SIM: 0.2594 | NSS: 1.9772
+
+Cumulative only_ego  Averages over 97 samples:
+Average - KLD: 1.5547 | SIM: 0.4496 | NSS: 1.3470
+==================================================
+
+exo file name : drink_with_bottle_003118.jpg / exo_path
+parsed dots!!! : [[475, 212], [475, 525], [475, 812]]
+restored_dots!!! : [[202, 135], [202, 336], [202, 519]]
+
+==================================================
+Metrics for with_exo_best bottle_003259.jpg:
+ with_exo_best Current - KLD: 1.7243 | SIM: 0.2261 | NSS: 1.6948
+
+Cumulative with_exo_best  Averages over 97 samples:
+Average - KLD: 2.3692 | SIM: 0.3893 | NSS: 1.0555
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  97/123 --------------------------------------------------------------------------------
+Action : drink_with, Object : cup image_name : cup_000508.jpg
+qwen ego Results!! : [
+  [562, 585],
+  [575, 735],
+  [662, 656]
+]
+parsed dots!!! : [[562, 585], [575, 735], [662, 656]]
+restored_dots!!! : [[359, 249], [368, 313], [423, 279]]
+
+==================================================
+Metrics for only_ego cup_000508.jpg:
+ only_ego Current - KLD: 0.6493 | SIM: 0.5257 | NSS: 2.6175
+
+Cumulative only_ego  Averages over 98 samples:
+Average - KLD: 1.5454 | SIM: 0.4504 | NSS: 1.3599
+==================================================
+
+exo file name : drink_with_cup_001824.jpg / exo_path
+parsed dots!!! : [[520, 600], [660, 600], [660, 780]]
+restored_dots!!! : [[332, 255], [422, 255], [422, 332]]
+
+==================================================
+Metrics for with_exo_best cup_000508.jpg:
+ with_exo_best Current - KLD: 0.7423 | SIM: 0.4865 | NSS: 2.5168
+
+Cumulative with_exo_best  Averages over 98 samples:
+Average - KLD: 2.3526 | SIM: 0.3903 | NSS: 1.0704
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  98/123 --------------------------------------------------------------------------------
+Action : drink_with, Object : wine_glass image_name : wine_glass_003343.jpg
+qwen ego Results!! : [
+  [645, 584],
+  [630, 323],
+  [635, 820]
+]
+parsed dots!!! : [[645, 584], [630, 323], [635, 820]]
+restored_dots!!! : [[412, 248], [403, 137], [406, 349]]
+
+==================================================
+Metrics for only_ego wine_glass_003343.jpg:
+ only_ego Current - KLD: 2.6712 | SIM: 0.1276 | NSS: 0.1159
+
+Cumulative only_ego  Averages over 99 samples:
+Average - KLD: 1.5568 | SIM: 0.4471 | NSS: 1.3474
+==================================================
+
+exo file name : drink_with_wine glass_003449.jpg / exo_path
+parsed dots!!! : [[578, 542], [642, 638], [692, 550]]
+restored_dots!!! : [[369, 230], [410, 271], [442, 234]]
+
+==================================================
+Metrics for with_exo_best wine_glass_003343.jpg:
+ with_exo_best Current - KLD: 6.8705 | SIM: 0.0171 | NSS: -0.3787
+
+Cumulative with_exo_best  Averages over 99 samples:
+Average - KLD: 2.3982 | SIM: 0.3866 | NSS: 1.0558
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  99/123 --------------------------------------------------------------------------------
+Action : brush_with, Object : toothbrush image_name : toothbrush_001764.jpg
+qwen ego Results!! : [
+  [495, 115],
+  [495, 555],
+  [495, 800]
+]
+parsed dots!!! : [[495, 115], [495, 555], [495, 800]]
+restored_dots!!! : [[498, 172], [498, 832], [498, 1200]]
+
+==================================================
+Metrics for only_ego toothbrush_001764.jpg:
+ only_ego Current - KLD: 1.5984 | SIM: 0.2476 | NSS: 2.2124
+
+Cumulative only_ego  Averages over 100 samples:
+Average - KLD: 1.5572 | SIM: 0.4451 | NSS: 1.3560
+==================================================
+
+exo file name : brush_with_toothbrush_011221.jpg / exo_path
+parsed dots!!! : [[120, 610], [140, 540], [110, 680]]
+restored_dots!!! : [[120, 915], [141, 810], [110, 1020]]
+
+==================================================
+Metrics for with_exo_best toothbrush_001764.jpg:
+ with_exo_best Current - KLD: 11.8735 | SIM: 0.0000 | NSS: -0.3559
+
+Cumulative with_exo_best  Averages over 100 samples:
+Average - KLD: 2.4930 | SIM: 0.3827 | NSS: 1.0416
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  100/123 --------------------------------------------------------------------------------
+Action : throw, Object : soccer_ball image_name : soccer_ball_003436.jpg
+NO SEEN DATA SET : throw/soccer_ball
+--- Start  100/123 --------------------------------------------------------------------------------
+Action : throw, Object : javelin image_name : javelin_001474.jpg
+qwen ego Results!! : [
+  [395, 395],
+  [520, 520],
+  [750, 750]
+]
+parsed dots!!! : [[395, 395], [520, 520], [750, 750]]
+restored_dots!!! : [[592, 393], [780, 517], [1125, 746]]
+
+==================================================
+Metrics for only_ego javelin_001474.jpg:
+ only_ego Current - KLD: 1.2261 | SIM: 0.3404 | NSS: 2.7489
+
+Cumulative only_ego  Averages over 101 samples:
+Average - KLD: 1.5539 | SIM: 0.4441 | NSS: 1.3698
+==================================================
+
+exo file name : throw_javelin_000788.jpg / exo_path
+parsed dots!!! : [[100, 100], [300, 300], [700, 700]]
+restored_dots!!! : [[150, 99], [450, 298], [1050, 696]]
+
+==================================================
+Metrics for with_exo_best javelin_001474.jpg:
+ with_exo_best Current - KLD: 2.8481 | SIM: 0.1243 | NSS: 0.4865
+
+Cumulative with_exo_best  Averages over 101 samples:
+Average - KLD: 2.4965 | SIM: 0.3801 | NSS: 1.0361
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  101/123 --------------------------------------------------------------------------------
+Action : throw, Object : frisbee image_name : frisbee_003249.jpg
+qwen ego Results!! : [
+  [500, 350],
+  [350, 500],
+  [650, 500]
+]
+parsed dots!!! : [[500, 350], [350, 500], [650, 500]]
+restored_dots!!! : [[750, 525], [525, 750], [975, 750]]
+
+==================================================
+Metrics for only_ego frisbee_003249.jpg:
+ only_ego Current - KLD: 1.7769 | SIM: 0.2790 | NSS: -0.0385
+
+Cumulative only_ego  Averages over 102 samples:
+Average - KLD: 1.5561 | SIM: 0.4425 | NSS: 1.3560
+==================================================
+
+exo file name : throw_frisbee_012801.jpg / exo_path
+parsed dots!!! : [[320, 420], [500, 450], [680, 420]]
+restored_dots!!! : [[480, 630], [750, 675], [1020, 630]]
+
+==================================================
+Metrics for with_exo_best frisbee_003249.jpg:
+ with_exo_best Current - KLD: 2.2033 | SIM: 0.2958 | NSS: -0.0065
+
+Cumulative with_exo_best  Averages over 102 samples:
+Average - KLD: 2.4936 | SIM: 0.3793 | NSS: 1.0259
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  102/123 --------------------------------------------------------------------------------
+Action : throw, Object : discus image_name : discus_003558.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [420, 420],
+  [580, 420]
+]
+parsed dots!!! : [[500, 500], [420, 420], [580, 420]]
+restored_dots!!! : [[236, 236], [198, 198], [273, 198]]
+
+==================================================
+Metrics for only_ego discus_003558.jpg:
+ only_ego Current - KLD: 1.5732 | SIM: 0.3632 | NSS: 0.2921
+
+Cumulative only_ego  Averages over 103 samples:
+Average - KLD: 1.5563 | SIM: 0.4417 | NSS: 1.3457
+==================================================
+
+exo file name : throw_discus_008003.jpg / exo_path
+parsed dots!!! : [[500, 380], [300, 500], [700, 500]]
+restored_dots!!! : [[236, 179], [141, 236], [330, 236]]
+
+==================================================
+Metrics for with_exo_best discus_003558.jpg:
+ with_exo_best Current - KLD: 0.9128 | SIM: 0.5778 | NSS: 0.7699
+
+Cumulative with_exo_best  Averages over 103 samples:
+Average - KLD: 2.4783 | SIM: 0.3812 | NSS: 1.0234
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  103/123 --------------------------------------------------------------------------------
+Action : throw, Object : rugby_ball image_name : rugby_ball_000001.jpg
+qwen ego Results!! : [
+  [490, 300],
+  [490, 430],
+  [490, 560]
+]
+parsed dots!!! : [[490, 300], [490, 430], [490, 560]]
+restored_dots!!! : [[490, 450], [490, 645], [490, 840]]
+
+==================================================
+Metrics for only_ego rugby_ball_000001.jpg:
+ only_ego Current - KLD: 0.4958 | SIM: 0.6316 | NSS: 0.7944
+
+Cumulative only_ego  Averages over 104 samples:
+Average - KLD: 1.5461 | SIM: 0.4435 | NSS: 1.3404
+==================================================
+
+exo file name : throw_rugby_ball_013755.jpg / exo_path
+parsed dots!!! : [[500, 400], [400, 450], [600, 450]]
+restored_dots!!! : [[500, 600], [400, 675], [600, 675]]
+
+==================================================
+Metrics for with_exo_best rugby_ball_000001.jpg:
+ with_exo_best Current - KLD: 0.6774 | SIM: 0.6191 | NSS: 0.6796
+
+Cumulative with_exo_best  Averages over 104 samples:
+Average - KLD: 2.4609 | SIM: 0.3835 | NSS: 1.0201
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  104/123 --------------------------------------------------------------------------------
+Action : throw, Object : baseball image_name : baseball_002670.jpg
+qwen ego Results!! : [
+  [500, 430],
+  [530, 480],
+  [470, 480]
+]
+parsed dots!!! : [[500, 430], [530, 480], [470, 480]]
+restored_dots!!! : [[320, 184], [339, 205], [300, 205]]
+
+==================================================
+Metrics for only_ego baseball_002670.jpg:
+ only_ego Current - KLD: 0.3978 | SIM: 0.6362 | NSS: 3.4899
+
+Cumulative only_ego  Averages over 105 samples:
+Average - KLD: 1.5352 | SIM: 0.4454 | NSS: 1.3609
+==================================================
+
+exo file name : throw_baseball_004545.jpg / exo_path
+parsed dots!!! : [[470, 420], [510, 460], [550, 420]]
+restored_dots!!! : [[300, 179], [326, 196], [352, 179]]
+
+==================================================
+Metrics for with_exo_best baseball_002670.jpg:
+ with_exo_best Current - KLD: 0.4026 | SIM: 0.6339 | NSS: 3.5119
+
+Cumulative with_exo_best  Averages over 105 samples:
+Average - KLD: 2.4413 | SIM: 0.3859 | NSS: 1.0439
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  105/123 --------------------------------------------------------------------------------
+Action : throw, Object : basketball image_name : basketball_003534.jpg
+qwen ego Results!! : [
+  [375, 267],
+  [410, 300],
+  [390, 230]
+]
+parsed dots!!! : [[375, 267], [410, 300], [390, 230]]
+restored_dots!!! : [[480, 285], [524, 321], [499, 246]]
+
+==================================================
+Metrics for only_ego basketball_003534.jpg:
+ only_ego Current - KLD: 0.3398 | SIM: 0.6663 | NSS: 3.4947
+
+Cumulative only_ego  Averages over 106 samples:
+Average - KLD: 1.5239 | SIM: 0.4475 | NSS: 1.3810
+==================================================
+
+exo file name : throw_basketball_006865.jpg / exo_path
+parsed dots!!! : [[365, 250], [410, 310], [385, 290]]
+restored_dots!!! : [[467, 267], [524, 332], [492, 310]]
+
+==================================================
+Metrics for with_exo_best basketball_003534.jpg:
+ with_exo_best Current - KLD: 0.3310 | SIM: 0.6714 | NSS: 3.5214
+
+Cumulative with_exo_best  Averages over 106 samples:
+Average - KLD: 2.4214 | SIM: 0.3886 | NSS: 1.0672
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  106/123 --------------------------------------------------------------------------------
+Action : beat, Object : drum image_name : drum_002586.jpg
+qwen ego Results!! : [
+  [500, 300],
+  [250, 300],
+  [750, 300]
+]
+parsed dots!!! : [[500, 300], [250, 300], [750, 300]]
+restored_dots!!! : [[320, 127], [160, 127], [480, 127]]
+
+==================================================
+Metrics for only_ego drum_002586.jpg:
+ only_ego Current - KLD: 0.2868 | SIM: 0.7570 | NSS: 0.9586
+
+Cumulative only_ego  Averages over 107 samples:
+Average - KLD: 1.5123 | SIM: 0.4503 | NSS: 1.3770
+==================================================
+
+exo file name : beat_drum_001314.jpg / exo_path
+parsed dots!!! : [[500, 320], [200, 250], [800, 250]]
+restored_dots!!! : [[320, 136], [128, 106], [512, 106]]
+
+==================================================
+Metrics for with_exo_best drum_002586.jpg:
+ with_exo_best Current - KLD: 0.3554 | SIM: 0.6906 | NSS: 0.8635
+
+Cumulative with_exo_best  Averages over 107 samples:
+Average - KLD: 2.4021 | SIM: 0.3914 | NSS: 1.0653
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  107/123 --------------------------------------------------------------------------------
+Action : lift, Object : fork image_name : fork_001691.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [200, 200],
+  [800, 800]
+]
+parsed dots!!! : [[500, 500], [200, 200], [800, 800]]
+restored_dots!!! : [[470, 486], [188, 194], [752, 777]]
+
+==================================================
+Metrics for only_ego fork_001691.jpg:
+ only_ego Current - KLD: 0.9094 | SIM: 0.4767 | NSS: 1.4509
+
+Cumulative only_ego  Averages over 108 samples:
+Average - KLD: 1.5067 | SIM: 0.4506 | NSS: 1.3777
+==================================================
+
+exo file name : lift_fork_006407.jpg / exo_path
+parsed dots!!! : [[250, 250], [500, 400], [800, 700]]
+restored_dots!!! : [[235, 243], [470, 388], [752, 680]]
+
+==================================================
+Metrics for with_exo_best fork_001691.jpg:
+ with_exo_best Current - KLD: 1.4551 | SIM: 0.3189 | NSS: 0.8034
+
+Cumulative with_exo_best  Averages over 108 samples:
+Average - KLD: 2.3933 | SIM: 0.3907 | NSS: 1.0629
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  108/123 --------------------------------------------------------------------------------
+Action : talk_on, Object : cell_phone image_name : cell_phone_000601.jpg
+qwen ego Results!! : [
+  [375, 425],
+  [195, 590],
+  [585, 400]
+]
+parsed dots!!! : [[375, 425], [195, 590], [585, 400]]
+restored_dots!!! : [[240, 181], [124, 251], [374, 170]]
+
+==================================================
+Metrics for only_ego cell_phone_000601.jpg:
+ only_ego Current - KLD: 0.6940 | SIM: 0.5115 | NSS: 1.4068
+
+Cumulative only_ego  Averages over 109 samples:
+Average - KLD: 1.4993 | SIM: 0.4511 | NSS: 1.3780
+==================================================
+
+exo file name : talk_on_cell_phone_003850.jpg / exo_path
+parsed dots!!! : [[295, 450], [450, 325], [550, 550]]
+restored_dots!!! : [[188, 191], [288, 138], [352, 234]]
+
+==================================================
+Metrics for with_exo_best cell_phone_000601.jpg:
+ with_exo_best Current - KLD: 0.6444 | SIM: 0.5352 | NSS: 1.4771
+
+Cumulative with_exo_best  Averages over 109 samples:
+Average - KLD: 2.3773 | SIM: 0.3921 | NSS: 1.0667
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  109/123 --------------------------------------------------------------------------------
+Action : push, Object : bicycle image_name : bicycle_002432.jpg
+qwen ego Results!! : [
+  [350, 235],
+  [525, 190],
+  [700, 675]
+]
+parsed dots!!! : [[350, 235], [525, 190], [700, 675]]
+restored_dots!!! : [[224, 100], [336, 80], [448, 287]]
+
+==================================================
+Metrics for only_ego bicycle_002432.jpg:
+ only_ego Current - KLD: 2.3935 | SIM: 0.2718 | NSS: 1.2627
+
+Cumulative only_ego  Averages over 110 samples:
+Average - KLD: 1.5074 | SIM: 0.4495 | NSS: 1.3769
+==================================================
+
+exo file name : push_bicycle_000800.jpg / exo_path
+parsed dots!!! : [[495, 194], [347, 234], [687, 700]]
+restored_dots!!! : [[316, 82], [222, 99], [439, 298]]
+
+==================================================
+Metrics for with_exo_best bicycle_002432.jpg:
+ with_exo_best Current - KLD: 2.9671 | SIM: 0.2412 | NSS: 1.0263
+
+Cumulative with_exo_best  Averages over 110 samples:
+Average - KLD: 2.3827 | SIM: 0.3907 | NSS: 1.0663
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  110/123 --------------------------------------------------------------------------------
+Action : push, Object : motorcycle image_name : motorcycle_003541.jpg
+qwen ego Results!! : [
+  [257, 488],
+  [417, 574],
+  [475, 762]
+]
+parsed dots!!! : [[257, 488], [417, 574], [475, 762]]
+restored_dots!!! : [[164, 234], [266, 275], [304, 365]]
+
+==================================================
+Metrics for only_ego motorcycle_003541.jpg:
+ only_ego Current - KLD: 0.7627 | SIM: 0.4921 | NSS: 2.0371
+
+Cumulative only_ego  Averages over 111 samples:
+Average - KLD: 1.5007 | SIM: 0.4499 | NSS: 1.3829
+==================================================
+
+exo file name : push_motorcycle_012257.jpg / exo_path
+parsed dots!!! : [[115, 765], [200, 680], [475, 750]]
+restored_dots!!! : [[73, 367], [128, 326], [304, 360]]
+
+==================================================
+Metrics for with_exo_best motorcycle_003541.jpg:
+ with_exo_best Current - KLD: 2.6707 | SIM: 0.1430 | NSS: 0.0653
+
+Cumulative with_exo_best  Averages over 111 samples:
+Average - KLD: 2.3853 | SIM: 0.3885 | NSS: 1.0573
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  111/123 --------------------------------------------------------------------------------
+Action : eat, Object : hot_dog image_name : hot_dog_002166.jpg
+qwen ego Results!! : [
+  [367, 373],
+  [406, 562],
+  [514, 767]
+]
+parsed dots!!! : [[367, 373], [406, 562], [514, 767]]
+restored_dots!!! : [[234, 159], [259, 239], [328, 327]]
+
+==================================================
+Metrics for only_ego hot_dog_002166.jpg:
+ only_ego Current - KLD: 2.1143 | SIM: 0.5607 | NSS: 0.8385
+
+Cumulative only_ego  Averages over 112 samples:
+Average - KLD: 1.5062 | SIM: 0.4509 | NSS: 1.3780
+==================================================
+
+exo file name : eat_hot_dog_013525.jpg / exo_path
+parsed dots!!! : [[200, 150], [400, 450], [600, 750]]
+restored_dots!!! : [[128, 64], [256, 192], [384, 320]]
+
+==================================================
+Metrics for with_exo_best hot_dog_002166.jpg:
+ with_exo_best Current - KLD: 0.3867 | SIM: 0.6892 | NSS: 0.9446
+
+Cumulative with_exo_best  Averages over 112 samples:
+Average - KLD: 2.3674 | SIM: 0.3912 | NSS: 1.0563
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  112/123 --------------------------------------------------------------------------------
+Action : eat, Object : carrot image_name : carrot_001443.jpg
+qwen ego Results!! : [
+  [742, 394],
+  [700, 273],
+  [773, 444]
+]
+parsed dots!!! : [[742, 394], [700, 273], [773, 444]]
+restored_dots!!! : [[371, 131], [350, 91], [386, 148]]
+
+==================================================
+Metrics for only_ego carrot_001443.jpg:
+ only_ego Current - KLD: 0.7019 | SIM: 0.5069 | NSS: 2.8346
+
+Cumulative only_ego  Averages over 113 samples:
+Average - KLD: 1.4991 | SIM: 0.4514 | NSS: 1.3909
+==================================================
+
+exo file name : eat_carrot_002983.jpg / exo_path
+parsed dots!!! : [[650, 280], [740, 360], [780, 450]]
+restored_dots!!! : [[325, 93], [370, 120], [390, 150]]
+
+==================================================
+Metrics for with_exo_best carrot_001443.jpg:
+ with_exo_best Current - KLD: 0.7376 | SIM: 0.4938 | NSS: 2.8771
+
+Cumulative with_exo_best  Averages over 113 samples:
+Average - KLD: 2.3530 | SIM: 0.3921 | NSS: 1.0724
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  113/123 --------------------------------------------------------------------------------
+Action : eat, Object : orange image_name : orange_001193.jpg
+qwen ego Results!! : [
+  [523, 509],
+  [439, 535],
+  [635, 556]
+]
+parsed dots!!! : [[523, 509], [439, 535], [635, 556]]
+restored_dots!!! : [[334, 244], [280, 256], [406, 266]]
+
+==================================================
+Metrics for only_ego orange_001193.jpg:
+ only_ego Current - KLD: 1.2308 | SIM: 0.5700 | NSS: 1.2420
+
+Cumulative only_ego  Averages over 114 samples:
+Average - KLD: 1.4967 | SIM: 0.4524 | NSS: 1.3896
+==================================================
+
+exo file name : eat_orange_006091.jpg / exo_path
+parsed dots!!! : [[537, 518], [428, 507], [595, 639]]
+restored_dots!!! : [[343, 248], [273, 243], [380, 306]]
+
+==================================================
+Metrics for with_exo_best orange_001193.jpg:
+ with_exo_best Current - KLD: 1.9211 | SIM: 0.4959 | NSS: 1.1506
+
+Cumulative with_exo_best  Averages over 114 samples:
+Average - KLD: 2.3492 | SIM: 0.3930 | NSS: 1.0731
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  114/123 --------------------------------------------------------------------------------
+Action : eat, Object : banana image_name : banana_002458.jpg
+qwen ego Results!! : [
+  [250, 250],
+  [380, 400],
+  [150, 150]
+]
+parsed dots!!! : [[250, 250], [380, 400], [150, 150]]
+restored_dots!!! : [[153, 153], [232, 244], [91, 91]]
+
+==================================================
+Metrics for only_ego banana_002458.jpg:
+ only_ego Current - KLD: 0.1377 | SIM: 0.8108 | NSS: 1.5765
+
+Cumulative only_ego  Averages over 115 samples:
+Average - KLD: 1.4849 | SIM: 0.4555 | NSS: 1.3912
+==================================================
+
+exo file name : eat_banana_006526.jpg / exo_path
+parsed dots!!! : [[175, 175], [350, 350], [450, 550]]
+restored_dots!!! : [[107, 107], [214, 214], [275, 336]]
+
+==================================================
+Metrics for with_exo_best banana_002458.jpg:
+ with_exo_best Current - KLD: 0.3355 | SIM: 0.7152 | NSS: 1.4695
+
+Cumulative with_exo_best  Averages over 115 samples:
+Average - KLD: 2.3317 | SIM: 0.3958 | NSS: 1.0766
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  115/123 --------------------------------------------------------------------------------
+Action : eat, Object : broccoli image_name : broccoli_002796.jpg
+qwen ego Results!! : [
+  [428, 308],
+  [262, 487],
+  [378, 567]
+]
+parsed dots!!! : [[428, 308], [262, 487], [378, 567]]
+restored_dots!!! : [[273, 131], [167, 207], [241, 241]]
+
+==================================================
+Metrics for only_ego broccoli_002796.jpg:
+ only_ego Current - KLD: 0.2344 | SIM: 0.7923 | NSS: 1.5674
+
+Cumulative only_ego  Averages over 116 samples:
+Average - KLD: 1.4741 | SIM: 0.4584 | NSS: 1.3928
+==================================================
+
+exo file name : eat_broccoli_001549.jpg / exo_path
+parsed dots!!! : [[425, 292], [255, 475], [375, 575]]
+restored_dots!!! : [[272, 124], [163, 202], [240, 244]]
+
+==================================================
+Metrics for with_exo_best broccoli_002796.jpg:
+ with_exo_best Current - KLD: 0.2722 | SIM: 0.7715 | NSS: 1.5764
+
+Cumulative with_exo_best  Averages over 116 samples:
+Average - KLD: 2.3139 | SIM: 0.3990 | NSS: 1.0809
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  116/123 --------------------------------------------------------------------------------
+Action : eat, Object : apple image_name : apple_001541.jpg
+qwen ego Results!! : [
+  [500, 460],
+  [350, 400],
+  [700, 450]
+]
+parsed dots!!! : [[500, 460], [350, 400], [700, 450]]
+restored_dots!!! : [[255, 294], [178, 256], [357, 288]]
+
+==================================================
+Metrics for only_ego apple_001541.jpg:
+ only_ego Current - KLD: 0.3642 | SIM: 0.6835 | NSS: 1.0016
+
+Cumulative only_ego  Averages over 117 samples:
+Average - KLD: 1.4646 | SIM: 0.4604 | NSS: 1.3894
+==================================================
+
+exo file name : eat_apple_008686.jpg / exo_path
+parsed dots!!! : [[460, 470], [620, 510], [510, 370]]
+restored_dots!!! : [[234, 300], [316, 326], [260, 236]]
+
+==================================================
+Metrics for with_exo_best apple_001541.jpg:
+ with_exo_best Current - KLD: 0.4040 | SIM: 0.7031 | NSS: 0.9609
+
+Cumulative with_exo_best  Averages over 117 samples:
+Average - KLD: 2.2976 | SIM: 0.4016 | NSS: 1.0798
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  117/123 --------------------------------------------------------------------------------
+Action : swing, Object : baseball_bat image_name : baseball_bat_001882.jpg
+qwen ego Results!! : [
+  [500, 500],
+  [200, 750],
+  [700, 250]
+]
+parsed dots!!! : [[500, 500], [200, 750], [700, 250]]
+restored_dots!!! : [[636, 634], [254, 951], [890, 317]]
+
+==================================================
+Metrics for only_ego baseball_bat_001882.jpg:
+ only_ego Current - KLD: 1.5816 | SIM: 0.2628 | NSS: 1.1656
+
+Cumulative only_ego  Averages over 118 samples:
+Average - KLD: 1.4656 | SIM: 0.4587 | NSS: 1.3875
+==================================================
+
+exo file name : swing_baseball_bat_005713.jpg / exo_path
+parsed dots!!! : [[250, 750], [500, 400], [750, 150]]
+restored_dots!!! : [[318, 951], [636, 507], [954, 190]]
+
+==================================================
+Metrics for with_exo_best baseball_bat_001882.jpg:
+ with_exo_best Current - KLD: 1.7770 | SIM: 0.2613 | NSS: 1.1366
+
+Cumulative with_exo_best  Averages over 118 samples:
+Average - KLD: 2.2932 | SIM: 0.4004 | NSS: 1.0803
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  118/123 --------------------------------------------------------------------------------
+Action : swing, Object : tennis_racket image_name : tennis_racket_003066.jpg
+qwen ego Results!! : [
+  [500, 300],
+  [500, 650],
+  [500, 900]
+]
+parsed dots!!! : [[500, 300], [500, 650], [500, 900]]
+restored_dots!!! : [[166, 283], [166, 614], [166, 851]]
+
+==================================================
+Metrics for only_ego tennis_racket_003066.jpg:
+ only_ego Current - KLD: 1.4004 | SIM: 0.3100 | NSS: 1.2891
+
+Cumulative only_ego  Averages over 119 samples:
+Average - KLD: 1.4651 | SIM: 0.4574 | NSS: 1.3867
+==================================================
+
+exo file name : swing_tennis_racket_009785.jpg / exo_path
+parsed dots!!! : [[500, 250], [500, 500], [500, 750]]
+restored_dots!!! : [[166, 236], [166, 473], [166, 709]]
+
+==================================================
+Metrics for with_exo_best tennis_racket_003066.jpg:
+ with_exo_best Current - KLD: 2.5443 | SIM: 0.2116 | NSS: 0.6488
+
+Cumulative with_exo_best  Averages over 119 samples:
+Average - KLD: 2.2953 | SIM: 0.3988 | NSS: 1.0767
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  119/123 --------------------------------------------------------------------------------
+Action : swing, Object : golf_clubs image_name : golf_clubs_001992.jpg
+qwen ego Results!! : [
+  [175, 48],
+  [165, 495],
+  [135, 950]
+]
+parsed dots!!! : [[175, 48], [165, 495], [135, 950]]
+restored_dots!!! : [[184, 72], [174, 742], [142, 1425]]
+
+==================================================
+Metrics for only_ego golf_clubs_001992.jpg:
+ only_ego Current - KLD: 2.0017 | SIM: 0.2423 | NSS: 1.0608
+
+Cumulative only_ego  Averages over 120 samples:
+Average - KLD: 1.4695 | SIM: 0.4557 | NSS: 1.3840
+==================================================
+
+exo file name : swing_golf_clubs_012660.jpg / exo_path
+parsed dots!!! : [[100, 950], [160, 450], [160, 100]]
+restored_dots!!! : [[105, 1425], [168, 675], [168, 150]]
+
+==================================================
+Metrics for with_exo_best golf_clubs_001992.jpg:
+ with_exo_best Current - KLD: 1.3302 | SIM: 0.3285 | NSS: 1.5640
+
+Cumulative with_exo_best  Averages over 120 samples:
+Average - KLD: 2.2873 | SIM: 0.3982 | NSS: 1.0808
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+--- Start  120/123 --------------------------------------------------------------------------------
+Action : swing, Object : badminton_racket image_name : badminton_racket_003649.jpg
+qwen ego Results!! : [
+  [690, 200],
+  [480, 500],
+  [250, 750]
+]
+parsed dots!!! : [[690, 200], [480, 500], [250, 750]]
+restored_dots!!! : [[1019, 277], [709, 693], [369, 1039]]
+
+==================================================
+Metrics for only_ego badminton_racket_003649.jpg:
+ only_ego Current - KLD: 1.4315 | SIM: 0.2743 | NSS: 1.5189
+
+Cumulative only_ego  Averages over 121 samples:
+Average - KLD: 1.4692 | SIM: 0.4542 | NSS: 1.3851
+==================================================
+
+exo file name : swing_badminton_racket_010197.jpg / exo_path
+parsed dots!!! : [[350, 650], [450, 450], [650, 250]]
+restored_dots!!! : [[517, 900], [665, 623], [960, 346]]
+
+==================================================
+Metrics for with_exo_best badminton_racket_003649.jpg:
+ with_exo_best Current - KLD: 2.8176 | SIM: 0.1612 | NSS: 0.5492
+
+Cumulative with_exo_best  Averages over 121 samples:
+Average - KLD: 2.2917 | SIM: 0.3963 | NSS: 1.0764
+==================================================
+
+*** End   ******************************************************************************************************************************************************
+
+
+
+==================================================
+Total number of action-object pairs processed: 123
+Number of missing GT files: 0
+All images successfully processed!

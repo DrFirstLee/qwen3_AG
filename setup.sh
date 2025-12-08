@@ -34,6 +34,9 @@ unzip AGD20K.zip
 
 # 깃허브 레포 클론
 git clone git@github.com:DrFirstLee/qwen3_AG.git
+git clone https://github.com/DrFirstLee/qwen3_AG.git
+
+
 
 # qwen25 환경 생성
 cd qwen_AG_new
@@ -43,15 +46,11 @@ conda env create -f qwen3.yaml -n qwen3
 echo ">>> qwen3 환경 생성 완료. 다음 명령으로 활성화하세요:"
 echo "conda activate qwen3"
 
-정리해보면
-소라 : 잘만들어준다 그런데 일관성이 없다.
-veo : 다 좋은데 비싸구나,,
 
+ssh -p 40743 root@185.65.93.114 -L 8080:localhost:8080
 
-ssh -p 46854 root@185.65.93.114 -L 8080:localhost:8080
-
-ssh -i /home/bongo/porter_notebook/research/research.pem -p 10142 root@192.165.134.28  "tar -C /root/qwen3_AG/ -czf - results" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
-ssh -i /home/bongo/porter_notebook/research/research.pem -p 10142 root@192.165.134.28  "tar -C /root/qwen3_AG/ -czf - 32B_exo_random2" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
+ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying/ -czf - top_attention_heads" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
+ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying -czf - 32B_exo_random2" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
 
 /root/anaconda3/envs/qwen3/bin/python ego_only_relative.py
 /venv/qwen3/bin/python ego_only_relative.py

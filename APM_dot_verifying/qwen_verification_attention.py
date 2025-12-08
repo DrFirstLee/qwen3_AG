@@ -3,7 +3,7 @@ from PIL import Image
 import io
 import sys
 import base64
-
+import gc
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
@@ -190,9 +190,13 @@ from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 # dtype="auto", device_map="auto" 적용
 model = Qwen3VLForConditionalGeneration.from_pretrained(
     model_name,
-    dtype="auto",
-    device_map="auto",
+    torch_dtype=torch.bfloat16, # 명시적 지정
     attn_implementation="eager",
+    device_map="cuda", 
+    do_sample=False,       # 샘플링 끄기 (Greedy Search)
+    temperature=0.0,       # 확률 분포 평탄화 방지 (do_sample=False면 무시되긴 함)
+    top_p=1.0,             # Nucleus Sampling 끄기
+    num_beams=1,           # Beam Search 끄기 (가장 단순하게)
 )
 processor = AutoProcessor.from_pretrained(model_name)
 # 모델이 로드된 주 디바이스 확인 (DINO를 같은 곳에 올리기 위해)
@@ -203,9 +207,8 @@ device = model.device
 
 cnt_d = 0
 # --- 실행 ---
-file_path = '/home/bongo/porter_notebook/research/qwen3/32B_ego_exo_relative_prompt5/ego_exo_prompt5_relative.log'
-df_fin = parse_log_to_df(file_path).head(1)
-df_fin
+file_path = '/home/bongo/porter_notebook/research/qwen3/ego_exo_prompt5_relative.txt'
+df_fin = parse_log_to_df(file_path)
 threshold_ratio = 0.5
 print(f"length of Data : {len(df_fin)}, threshold_ratio : {threshold_ratio}")
 
@@ -219,11 +222,12 @@ for index, row in df_fin.iterrows():
     dot_list =  row['dots']
     file_name_real = f"{AGD20K_PATH}/Seen/testset/egocentric/{action}/{object_name}/{filename}"
     # if (object_name=='cup')&(action =='drink_with'):
-    print(index,object_name,action,filename)
+    print(index,' >>>>>>>>>>>>>>>>>>>>>>>   ', object_name,action,filename)
     image_base64 = make_input_image(file_name_real)
     dot_res_list = []
     dot_reason_list = []
     dot_real_list = []
+    imsi_d = 0
 
     for dot in dot_list:
         messages = [
@@ -351,40 +355,23 @@ for index, row in df_fin.iterrows():
                     "head": head_idx,
                     "heatmap": heatmap_2d
                 })
-
-                # # 변환된 그리드 좌표(target_x, target_y)로 값 확인
-                # point_value = heatmap_2d[target_x, target_y]
-                # threshold_value = 0 # heatmap_2d.max() * threshold_ratio                
-                # if point_value > threshold_value:
-                #     accumulated_heatmap += heatmap_2d
-                #     valid_heads_count += 1
-                #     # print(f"Point value: {point_value}, max value: {heatmap_2d.max()}, valid_heads_count: {valid_heads_count}")
-                #     print(f" Grid Coords: ({target_x}, {target_y}) / ✅ Found valid head! Layer: {layer_idx}, Head: {head_idx} (Val: {point_value:.4f} / Max: {heatmap_2d.max():.4f}), threshold_value: {threshold_value}")
-
-                #     # --- ✨ 히트맵 저장 코드 시작 ---
-                #     # 1. 저장할 폴더 만들기 (없으면 생성)
-                #     save_dir = "valid_heads_visualization"
-                #     os.makedirs(save_dir, exist_ok=True)
-                    
-                #     # 2. 파일 이름 생성 (레이어_헤드 번호 포함)
-                #     # 예: valid_heads_visualization/layer05_head12.png
-                #     save_filename = os.path.join(save_dir, f"{filename}_{dot[0]}_{dot[1]}_layer{layer_idx:02d}_head{head_idx:02d}.png")
-                    
-                #     # 3. 이미지로 저장 (cmap='jet'으로 컬러 히트맵 적용)
-                #     # vmin=0, vmax=1 로 고정하면 모든 헤드의 스케일을 통일해서 볼 수 있습니다.
-                #     plt.imsave(save_filename, heatmap_2d, cmap='jet', vmin=0, vmax=1)
-                #     print(save_filename)
-                #     # --- 히트맵 저장 코드 끝 ---
-                # else:
-                #     print(f"❌ Invalid head! Layer: {layer_idx}, Head: {head_idx} (Val: {point_value:.4f} / Max: {heatmap_2d.max():.4f})")
         all_heads_scores.sort(key=lambda x: x["score"], reverse=True)
+    
+        del outputs
+        del inputs
+
+        torch.cuda.empty_cache()
+        gc.collect()
+
+
+
         # 2. 상위 5개 선택
-        top_k_heads = all_heads_scores[:5]
+        top_k_heads = all_heads_scores[:10]
         
         print(f"✅ Saving Top-{len(top_k_heads)} attention heads...")
 
         # 3. 저장 폴더 생성
-        save_dir = "top_attention_heads"
+        save_dir = f"top_attention_heads/{action}/{object_name}"
         os.makedirs(save_dir, exist_ok=True)
         
         # 4. 이미지 저장
@@ -395,7 +382,7 @@ for index, row in df_fin.iterrows():
             heatmap = item["heatmap"]
             
             print(f"Rank {rank+1}: Layer {layer}, Head {head}, Score {score:.4f}")
-            save_filename = os.path.join(save_dir, f"{dot[0]}_{dot[1]}_rank{rank+1:02d}_L{layer:02d}_H{head:02d}_score_{score:.4f}.png")
+            save_filename = os.path.join(save_dir, f"{filename}_{dot[0]}_{dot[1]}_rank{rank+1:02d}_L{layer:02d}_H{head:02d}_score_{score:.4f}.png")
             # --- ✨ 수정: 빨간 네모 그리기 ---
             # 1. 캔버스(Figure) 생성 (프레임 없이 이미지 크기에 딱 맞게 설정하려면 조금 복잡하지만, 여기선 보기 좋게 그립니다)
             fig, ax = plt.subplots(figsize=(5, 5))
@@ -430,10 +417,8 @@ for index, row in df_fin.iterrows():
 
             # 3. 파일 이름 생성 (요청하신 포맷)
             # dot[0], dot[1]이 float일 수 있으므로 포맷팅을 깔끔하게 하려면 :.0f 등을 추가할 수 있습니다.
-            save_filename2 = os.path.join(
-                save_dir, 
-                f"upsampled_{dot[0]}_{dot[1]}_rank{rank+1:02d}_L{layer:02d}_H{head:02d}_score_{score:.4f}.png"
-            )
+            save_filename2 = os.path.join(save_dir, f"upsampled_{filename}_{dot[0]}_{dot[1]}_rank{rank+1:02d}_L{layer:02d}_H{head:02d}_score_{score:.4f}.png")
+
 
             # 4. 오버레이 이미지 생성 및 저장
             # 이미지 크기에 맞는 Figure 생성 (DPI 조절로 해상도 유지 가능)
@@ -453,18 +438,19 @@ for index, row in df_fin.iterrows():
             plt.close(fig)
 
 
+        print('cler')
         # break
     result_row.append(dot_res_list)
     reason_row.append(dot_reason_list)
     final_dot_row.append(dot_real_list)
-    if cnt_d ==0 : 
-        break
-    cnt_d += 1
+    # if cnt_d ==0 : 
+    #     break
+    # cnt_d += 1
 df_fin['veri_result'] = result_row
 df_fin['veri_reason'] = reason_row
 df_fin['final_dot'] = final_dot_row
 print(df_fin)
 
-# df_fin.to_pickle('test_verify_qwen3_2b.pkl')
+df_fin.to_pickle('test_verify_qwen3_3b_attention.pkl')
 
     

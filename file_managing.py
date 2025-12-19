@@ -2,7 +2,9 @@ import os
 import json
 from pathlib import Path
 from config import AGD20K_PATH
-
+from io import BytesIO
+import base64
+from PIL import Image
 
 def load_selected_samples(json_path):
     with open(json_path, 'r', encoding='utf-8') as f:
@@ -12,6 +14,21 @@ def load_selected_samples(json_path):
 def get_actual_path(path_with_variable):
     """Convert ${AGD20K_PATH} to actual path"""
     return path_with_variable.replace("${AGD20K_PATH}", AGD20K_PATH)
+
+def make_input_image(file_name_real):
+    # 1. 이미지 열기 및 리사이즈
+    with Image.open(file_name_real) as img:
+        img = img.convert("RGB")
+        resized_image = img.resize((1000, 1000))
+        
+        # 2. 함수 내부에서 버퍼 생성 (with 구문 사용 추천 X -> getvalue 후엔 자동 GC됨)
+        buffered = BytesIO()
+        # 3. 버퍼에 저장 (메모리에 JPEG 생성)
+        resized_image.save(buffered, format="JPEG")
+        
+        # 4. 바로 인코딩 후 리턴 (한 줄로 처리)
+        return base64.b64encode(buffered.getvalue()).decode('utf-8')
+
 
 def get_gt_path(image_path):
     """

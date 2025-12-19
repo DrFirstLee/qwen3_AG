@@ -1,0 +1,1 @@
+TOTAL Average - KLD: 1.7037 | SIM: 0.2611 | NSS: 0.7943

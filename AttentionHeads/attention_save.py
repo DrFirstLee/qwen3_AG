@@ -77,13 +77,17 @@ cnt_d = 0
 
 df_fin = pd.read_pickle("target_df_w_description.pkl")
 df_fin['s_img'] = ""
+# df_fin = df_fin.iloc[3:].reset_index(drop=True)
 print(f"length of Data : {len(df_fin)}")
 
 for index, row in df_fin.iterrows():
     object_name = row['object']
     action = row['action']
     filename = row['filename']
-    description = row['description']
+    # description = row['description']
+    description = f"""When people perform {action} with {object_name}, which part of the {object_name} is used for '{action}'?
+                    answer in one sentence."""
+
     file_name_real = f"{AGD20K_PATH}/Seen/testset/egocentric/{action}/{object_name}/{filename}"
     print(index,' >>>>>>>>>>>>>>>>>>>>>>>   ', object_name,action,filename)
     image_base64 = make_input_image(file_name_real)
@@ -103,7 +107,7 @@ for index, row in df_fin.iterrows():
                             ]
                 }
                 ]
-    # 2. 추론 (OpenAI API 호출)
+    # 2. Inference
     inputs = processor.apply_chat_template(
         messages,
         tokenize=True,
@@ -121,8 +125,6 @@ for index, row in df_fin.iterrows():
             use_cache=False,
             return_dict=True
         )
-    # fw_outputs.attentions: (num_layers,) 튜플
-    # 각 원소 shape 보통: [B, num_heads, seq_len, seq_len]
     attentions = fw_outputs.attentions
 
     # -----------------------
@@ -139,14 +141,12 @@ for index, row in df_fin.iterrows():
 
     special_ids = set(tok.all_special_ids)
     def is_whitespace_token(tok_str: str) -> bool:
-        # 토크나이저마다 공백 표식이 다름: ▁, Ġ 등
-        if tok_str in ["Ċ", "ĊĊ"]:   # newline / double newline (케이스별로 존재)
+        if tok_str in ["Ċ", "ĊĊ"]:   # newline / double newline 
             return True
         s = tok_str.replace("▁", "").replace("Ġ", "")
         return s.strip() == ""
 
-    # q_txt는 "텍스트 프롬프트의 마지막 의미 토큰"
-    # -> vision_end 이후부터 시퀀스 끝까지에서 뒤로 훑어 마지막 의미 토큰 찾기
+    # q_txt is real last token
     q_txt_idx = len(ids_list) - 1
     
     while q_txt_idx > vis_end_idx:
@@ -187,18 +187,19 @@ for index, row in df_fin.iterrows():
 
     # 4. Layer & Head iteration
     for layer_idx, layer_attn in enumerate(attentions):
-        heads_attn = layer_attn[0, :, q_txt_idx, :]   # batch : 0, allhead, query = 마지막 텍스트 토큰, key : all
+        heads_attn = layer_attn[0, :, q_txt_idx, :]   
+        # batch : 0, allhead, 
+        # query = last text token, 
+        # key : all
         num_heads = heads_attn.shape[0]
 
         for head_idx in range(num_heads):
             this_head_attn = heads_attn[head_idx]     # [seq_len]
-
-            # vision token 범위(이미 계산한 vis_start_idx, vis_end_idx 사용)
+            # vision token range(from vis_start_idx to vis_end_idx)
             img_attn_1d = this_head_attn[vis_start_idx + 1 : vis_end_idx]  # ✅ key/value = 이미지 토큰
-            # ✅ 논문식 S_img 계산 (이미지 토큰 attention 총합)
+            # Calculate S_img (sum of image token attention) like CVPR25
             S_img = float(img_attn_1d.sum().detach().cpu().item())
             val = img_attn_1d.sum()
-            # print("raw S_img:", val.item(), f"{val.item():.10e}")
 
             s_img_list.append({ 
                 "layer": layer_idx,
@@ -217,8 +218,16 @@ for index, row in df_fin.iterrows():
     df_fin.at[index, 's_img'] = s_img_list
     save_every = 20
     if (index ) % save_every == 0:
-        df_fin.to_pickle("attention_result.pkl")
+        df_fin.to_pickle("attention_result_delme.pkl")
         print(f"✅ saved at index={index}")
+    del fw_outputs 
+    del inputs 
+    torch.cuda.empty_cache() 
+    gc.collect()
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    del  attentions, s_img_list
+
 
 print(df_fin)
 

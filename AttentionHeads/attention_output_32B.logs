@@ -1,0 +1,461 @@
+nohup: ignoring input
+🤖 Qwen/Qwen3-VL-32B-Instruct 모델 로딩중...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:07,  1.65it/s]
+Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:07,  1.65it/s]
+Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:06,  1.68it/s]
+Loading checkpoint shards:  29%|██▊       | 4/14 [00:02<00:05,  1.70it/s]
+Loading checkpoint shards:  36%|███▌      | 5/14 [00:02<00:05,  1.70it/s]
+Loading checkpoint shards:  43%|████▎     | 6/14 [00:03<00:04,  1.72it/s]
+Loading checkpoint shards:  50%|█████     | 7/14 [00:04<00:04,  1.75it/s]
+Loading checkpoint shards:  57%|█████▋    | 8/14 [00:04<00:03,  1.76it/s]
+Loading checkpoint shards:  64%|██████▍   | 9/14 [00:05<00:02,  1.78it/s]
+Loading checkpoint shards:  71%|███████▏  | 10/14 [00:05<00:02,  1.77it/s]
+Loading checkpoint shards:  79%|███████▊  | 11/14 [00:06<00:01,  1.78it/s]
+Loading checkpoint shards:  86%|████████▌ | 12/14 [00:06<00:01,  1.80it/s]
+Loading checkpoint shards:  93%|█████████▎| 13/14 [00:07<00:00,  1.82it/s]
+Loading checkpoint shards: 100%|██████████| 14/14 [00:07<00:00,  1.90it/s]
+Loading checkpoint shards: 100%|██████████| 14/14 [00:07<00:00,  1.78it/s]
+length of Data : 121
+
+0 >>> apple | cut | apple_000054.jpg
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+📝 Output Sentence: When people cut an apple, they typically use the entire fruit, including the flesh, skin, and sometimes the core, depending on the purpose of the cut.
+
+1 >>> apple | eat | apple_001541.jpg
+📝 Output Sentence: The flesh of the apple is the part eaten, typically after removing the core and seeds.
+
+2 >>> apple | peel | apple_001541.jpg
+📝 Output Sentence: When people perform "peel" with an apple, they remove the outer skin, which is the thin, colored layer covering the fruit.
+
+3 >>> axe | hit | axe_000961.jpg
+📝 Output Sentence: The blade (or cutting edge) of the axe is used for hitting or chopping.
+
+4 >>> axe | hold | axe_001552.jpg
+📝 Output Sentence: The handle (or shaft) of the axe is used for holding.
+
+5 >>> badminton_racket | hold | badminton_racket_002255.jpg
+📝 Output Sentence: The handle (or grip) of the badminton racket is used for holding.
+✅ Saved at index=1
+
+6 >>> badminton_racket | swing | badminton_racket_003649.jpg
+📝 Output Sentence: The handle of the badminton racket is used for swinging, as it is the part gripped by the player to control and maneuver the racket during play.
+
+7 >>> banana | cut | banana_002623.jpg
+📝 Output Sentence: The peel of the banana is typically removed before cutting, and the soft, edible flesh inside is the part used for cutting into pieces or slices.
+
+8 >>> banana | eat | banana_002458.jpg
+📝 Output Sentence: The inner flesh of the banana, which is the soft, yellow, edible part inside the peel, is used for eating.
+
+9 >>> banana | peel | banana_000480.jpg
+📝 Output Sentence: The outer yellow skin of the banana is used for 'peel'.
+
+10 >>> baseball | throw | baseball_002670.jpg
+📝 Output Sentence: The entire baseball is used for throwing, but the grip on the seams (especially the raised stitching) is crucial for control and spin.
+✅ Saved at index=2
+
+11 >>> baseball_bat | hit | baseball_bat_001882.jpg
+📝 Output Sentence: The barrel, which is the thick, rounded end of the baseball bat, is used for hitting the ball.
+
+12 >>> baseball_bat | hold | baseball_bat_002547.jpg
+📝 Output Sentence: The handle of the baseball bat is used for holding.
+
+13 >>> baseball_bat | swing | baseball_bat_001882.jpg
+📝 Output Sentence: The barrel of the baseball_bat is used for swinging and making contact with the ball.
+
+14 >>> basketball | throw | basketball_003534.jpg
+📝 Output Sentence: When people throw a basketball, they use their hands, specifically the fingers and palm, to grip and propel the ball.
+
+15 >>> bed | lie_on | bed_002880.jpg
+📝 Output Sentence: The mattress is the part of the bed used for lying on.
+✅ Saved at index=3
+
+16 >>> bed | sit_on | bed_003622.jpg
+📝 Output Sentence: People typically sit on the **top surface of the mattress** when performing the "sit_on" action with a bed.
+
+17 >>> bench | lie_on | bench_003727.jpg
+📝 Output Sentence: The seat of the bench is used for lying on.
+
+18 >>> bench | sit_on | bench_001877.jpg
+📝 Output Sentence: The flat, horizontal slats on the top surface of the bench are used for sitting on.
+
+19 >>> bicycle | push | bicycle_002432.jpg
+📝 Output Sentence: When people perform a push with a bicycle, the pedals are used to push, as they transfer the rider's leg force to the chain and rear wheel to propel the bike forward.
+
+20 >>> bicycle | ride | bicycle_003046.jpg
+📝 Output Sentence: The seat of the bicycle is used for riding, as it is where the rider sits while pedaling.
+✅ Saved at index=4
+
+21 >>> bicycle | sit_on | bicycle_002100.jpg
+📝 Output Sentence: The seat (or saddle) of the bicycle is used for 'sit_on'.
+
+22 >>> binoculars | look_out | binoculars_003630.jpg
+📝 Output Sentence: The eyepieces (the smaller lenses at the front end closest to the eyes) are used for "look_out" when using binoculars.
+
+23 >>> book | hold | book_001195.jpg
+📝 Output Sentence: People typically use the **cover and spine** of the book to hold it securely.
+
+24 >>> book | open | book_003044.jpg
+📝 Output Sentence: The spine of the book is used for 'open' when people perform the action of opening it.
+
+25 >>> bottle | drink_with | bottle_003259.jpg
+📝 Output Sentence: The mouth of the bottle, specifically the opening at the top, is used for 'drink_with'.
+✅ Saved at index=5
+
+26 >>> bottle | hold | bottle_001227.jpg
+📝 Output Sentence: People typically hold a bottle by its neck or body, with the neck being the most common and secure grip point for stability and control.
+
+27 >>> bottle | open | bottle_001033.jpg
+📝 Output Sentence: The cap or cork at the top of the bottle is used for 'open'.
+
+28 >>> bottle | pour | bottle_002780.jpg
+📝 Output Sentence: The narrow spout or tip of the bottle is used for pouring.
+
+29 >>> bowl | hold | bowl_000546.jpg
+📝 Output Sentence: The rim or edge of the bowl is typically used for holding.
+
+30 >>> bowl | stir | bowl_000134.jpg
+📝 Output Sentence: The interior surface of the bowl, specifically the bottom and sides, is used for stirring when mixing contents with a spoon or utensil.
+✅ Saved at index=6
+
+31 >>> bowl | wash | bowl_002825.jpg
+📝 Output Sentence: The interior surface of the bowl is used for washing, as it holds the water and allows for rinsing or scrubbing.
+
+32 >>> broccoli | eat | broccoli_002796.jpg
+📝 Output Sentence: People typically eat the florets and stalks of broccoli, as both are edible and nutritious.
+
+33 >>> camera | take_photo | camera_002534.jpg
+📝 Output Sentence: The shutter button on top of the camera is used to take a photo.
+
+34 >>> carrot | cut | carrot_001443.jpg
+📝 Output Sentence: The part of the carrot used for 'cut' is the solid, edible root portion, typically the cylindrical body, which is sliced or diced with a knife.
+
+35 >>> carrot | eat | carrot_001443.jpg
+📝 Output Sentence: The edible part of the carrot used for eating is the taproot, which is the orange, fleshy, cylindrical portion shown being cut on the cutting board.
+✅ Saved at index=7
+
+36 >>> carrot | peel | carrot_003707.jpg
+📝 Output Sentence: The outer skin or rind of the carrot is peeled off using a knife or peeler to remove dirt, tough fibers, and any imperfections.
+
+37 >>> cell_phone | take_photo | cell_phone_000601.jpg
+📝 Output Sentence: The camera lens, typically located on the back of the cell phone, is used for taking photos.
+
+38 >>> cell_phone | talk_on | cell_phone_000601.jpg
+📝 Output Sentence: The microphone and speaker of the cell phone are used for 'talk_on'.
+
+39 >>> cell_phone | text_on | cell_phone_003361.jpg
+📝 Output Sentence: The screen of the cell_phone is used for 'text_on'.
+
+40 >>> chair | sit_on | chair_002839.jpg
+📝 Output Sentence: The seat cushion of the chair is used for 'sit_on'.
+✅ Saved at index=8
+
+41 >>> couch | lie_on | couch_003293.jpg
+📝 Output Sentence: The seat and back cushions of the couch are used for lying on.
+
+42 >>> couch | sit_on | couch_000779.jpg
+📝 Output Sentence: The seat cushions of the couch are used for sitting on.
+
+43 >>> cup | drink_with | cup_000508.jpg
+📝 Output Sentence: The rim of the cup is used for drinking, as it is the top edge where the liquid is brought to the mouth.
+
+44 >>> cup | hold | cup_002518.jpg
+📝 Output Sentence: People use the handle of the cup to hold it.
+
+45 >>> cup | pour | cup_001535.jpg
+📝 Output Sentence: The spout or rim of the cup is typically used for pouring.
+✅ Saved at index=9
+
+46 >>> cup | sip | cup_001864.jpg
+📝 Output Sentence: The rim of the cup is used for sipping.
+
+47 >>> cup | wash | cup_003621.jpg
+📝 Output Sentence: The interior surface of the cup is used for washing, as it is the part that comes into contact with water and cleaning agents during the cleaning process.
+
+48 >>> discus | throw | discus_003558.jpg
+📝 Output Sentence: The central metal hub (or grip) of the discus is used for holding and throwing.
+
+49 >>> drum | beat | drum_002586.jpg
+📝 Output Sentence: The drumhead is the part of the drum used for producing the "beat" when struck.
+
+50 >>> fork | hold | fork_000804.jpg
+📝 Output Sentence: The handle of the fork is used for holding.
+✅ Saved at index=10
+
+51 >>> fork | lift | fork_001691.jpg
+📝 Output Sentence: The tines (the prongs) of the fork are used for lifting food.
+
+52 >>> fork | stick | fork_000095.jpg
+📝 Output Sentence: The tines (the prongs) of the fork are used for 'sticking' into food.
+
+53 >>> fork | wash | fork_001691.jpg
+📝 Output Sentence: Forks are not typically used for washing; they are utensils for eating, so no part of the fork is designed or used for washing.
+
+54 >>> frisbee | catch | frisbee_000598.jpg
+📝 Output Sentence: People typically use the **edges or rim** of the frisbee to catch it, as this provides a better grip and control during the catch.
+
+55 >>> frisbee | hold | frisbee_001130.jpg
+📝 Output Sentence: When people perform a hold with a frisbee, they typically use the **rim** (the edge) of the frisbee for grip and control.
+✅ Saved at index=11
+
+56 >>> frisbee | throw | frisbee_003249.jpg
+📝 Output Sentence: The edge or rim of the frisbee is typically used for throwing, as it provides a firm grip and allows for proper spin and flight control.
+
+57 >>> golf_clubs | hold | golf_clubs_000045.jpg
+📝 Output Sentence: People use the grip (the black, textured handle) of the golf club to hold it.
+
+58 >>> golf_clubs | swing | golf_clubs_001992.jpg
+📝 Output Sentence: The shaft and grip of the golf club are used for swinging, as they allow the golfer to hold and rotate the club during the swing motion.
+
+59 >>> hammer | hit | hammer_001006.jpg
+📝 Output Sentence: The flat, heavy end of the hammer, known as the head or face, is used for hitting.
+
+60 >>> hammer | hold | hammer_000215.jpg
+📝 Output Sentence: The handle (or shaft) of the hammer is used for holding.
+✅ Saved at index=12
+
+61 >>> hot_dog | eat | hot_dog_002166.jpg
+📝 Output Sentence: People eat the entire cooked sausage portion of the hot dog, typically including the casing and the seasoned meat inside, which is placed in a bun.
+
+62 >>> javelin | throw | javelin_001474.jpg
+📝 Output Sentence: The grip section, typically marked by a yellow or colored band, is used for throwing the javelin.
+
+63 >>> keyboard | type_on | keyboard_000439.jpg
+📝 Output Sentence: The keys on the keyboard are used for 'type_on' when people perform typing.
+
+64 >>> knife | cut_with | knife_001749.jpg
+📝 Output Sentence: The blade of the knife is used for cutting.
+
+65 >>> knife | hold | knife_002682.jpg
+📝 Output Sentence: When people perform a hold with a knife, the handle is used for holding.
+✅ Saved at index=13
+
+66 >>> knife | stick | knife_001072.jpg
+📝 Output Sentence: In a "stick with knife" technique, typically the **tip** of the knife is used for the "stick" action, as it provides precision and penetration.
+
+67 >>> knife | wash | knife_002720.jpg
+📝 Output Sentence: The term "wash" is not a standard knife technique; if you mean sharpening, the blade edge is used against a sharpening stone.
+
+68 >>> laptop | type_on | laptop_000585.jpg
+📝 Output Sentence: The keyboard is the part of the laptop used for 'type_on'.
+
+69 >>> microwave | open | microwave_001049.jpg
+📝 Output Sentence: The handle on the top front of the microwave is used to open the door.
+
+70 >>> motorcycle | push | motorcycle_003541.jpg
+📝 Output Sentence: When people push a motorcycle, they typically use the **kickstand** or **frame near the rear wheel** to push it, as the kickstand provides a stable point to apply force without damaging the vehicle.
+✅ Saved at index=14
+
+71 >>> motorcycle | ride | motorcycle_002198.jpg
+📝 Output Sentence: The seat of the motorcycle is used for riding, as it is where the rider sits to operate and control the vehicle.
+
+72 >>> motorcycle | sit_on | motorcycle_000837.jpg
+📝 Output Sentence: The part of the motorcycle used for "sit_on" is the seat.
+
+73 >>> orange | cut | orange_001193.jpg
+📝 Output Sentence: When people perform a "cut" with an orange, they typically use the **rind or peel** to make a sharp, clean cut, often by scoring or slicing it with a knife.
+
+74 >>> orange | eat | orange_001193.jpg
+📝 Output Sentence: When people eat an orange, they consume the juicy segments inside the peel, which are the edible flesh surrounding the seeds.
+
+75 >>> orange | peel | orange_001193.jpg
+📝 Output Sentence: The outer skin, or rind, of the orange is used for 'peel'.
+✅ Saved at index=15
+
+76 >>> orange | wash | orange_001193.jpg
+📝 Output Sentence: The peel of the orange is used for "wash," as it contains essential oils that can be used for cleaning or scrubbing.
+
+77 >>> oven | open | oven_001370.jpg
+📝 Output Sentence: The handle on the front of the oven door is used to open the oven.
+
+78 >>> pen | write | pen_003590.jpg
+📝 Output Sentence: The tip of the pen, specifically the nib or ballpoint, is used for writing.
+
+79 >>> punching_bag | boxing | punching_bag_001845.jpg
+📝 Output Sentence: The main body of the punching bag, particularly the red central section, is used for boxing, as it is designed to absorb and respond to punches.
+
+80 >>> punching_bag | kick | punching_bag_001639.jpg
+📝 Output Sentence: The lower, wider section of the punching bag is typically used for kicks, as it provides a stable and larger surface area to absorb impact and allows for proper technique and balance during leg strikes.
+✅ Saved at index=16
+
+81 >>> refrigerator | open | refrigerator_002162.jpg
+📝 Output Sentence: People use the **door handles** to open the refrigerator.
+
+82 >>> rugby_ball | catch | rugby_ball_003522.jpg
+📝 Output Sentence: When people catch a rugby ball, they typically use the entire surface of the ball, but the textured brown panels and the laces (especially the bright green ones) provide grip and are often used to secure the ball during the catch.
+
+83 >>> rugby_ball | kick | rugby_ball_002080.jpg
+📝 Output Sentence: When people perform a kick with a rugby ball, they typically use the **pointed end** (or tip) of the ball for accuracy and distance.
+
+84 >>> rugby_ball | throw | rugby_ball_000001.jpg
+📝 Output Sentence: When people throw a rugby ball, they typically use the laces and the pointed ends for grip and control during the throw.
+
+85 >>> scissors | cut_with | scissors_002479.jpg
+📝 Output Sentence: The blades of the scissors are used for 'cut_with'.
+✅ Saved at index=17
+
+86 >>> scissors | hold | scissors_002479.jpg
+📝 Output Sentence: The handles (or finger loops) of the scissors are used for "hold" when people perform cutting or holding actions.
+
+87 >>> skateboard | carry | skateboard_002668.jpg
+📝 Output Sentence: People typically carry a skateboard by holding the **deck**—the flat, elongated board with grip tape on top—usually by the edges or near the middle for balance and comfort.
+
+88 >>> skateboard | hold | skateboard_002387.jpg
+📝 Output Sentence: When people perform a "hold" on a skateboard, they typically use the **deck**—specifically the grip tape surface—by placing their hand or hands on it to maintain control or balance.
+
+89 >>> skateboard | jump | skateboard_002387.jpg
+📝 Output Sentence: When people perform a jump with a skateboard, the **tail** of the skateboard is typically used to pop or flick upward to initiate the jump.
+
+90 >>> skateboard | sit_on | skateboard_001460.jpg
+📝 Output Sentence: People typically sit on the deck of the skateboard, which is the flat, elongated surface with the grip tape and graphic design.
+✅ Saved at index=18
+
+91 >>> skis | carry | skis_002829.jpg
+📝 Output Sentence: When carrying skis, people typically hold them by the **tips** or **tails**, but most commonly by the **tips** for balance and ease, especially when carrying them over the shoulder or in hand.
+
+92 >>> skis | hold | skis_001357.jpg
+📝 Output Sentence: The tips of the skis are used for "hold" when performing a hold maneuver, as they are designed to grip the snow and maintain control during turns or stops.
+
+93 >>> skis | jump | skis_002829.jpg
+📝 Output Sentence: When people perform jumps with skis, the entire ski is used, but the **tips** (the front ends) are primarily responsible for initiating and landing the jump, as they absorb impact and help with balance and control during takeoff and landing.
+
+94 >>> skis | pick_up | skis_001547.jpg
+📝 Output Sentence: People typically use the **tips** (the front ends) of the skis to pick them up, as they are the most convenient and balanced part to grasp.
+
+95 >>> snowboard | carry | snowboard_001325.jpg
+📝 Output Sentence: People typically carry a snowboard by gripping the **edges or the ends** of the board, often using the **rounded tips** or the **centered area near the bindings** for balance and comfort.
+✅ Saved at index=19
+
+96 >>> snowboard | hold | snowboard_001704.jpg
+📝 Output Sentence: When people perform a "hold" with a snowboard, they typically use the **edges** of the snowboard—specifically the **sidecut edges**—to maintain control and balance while riding or stopping.
+
+97 >>> snowboard | jump | snowboard_001704.jpg
+📝 Output Sentence: When people perform a jump with a snowboard, the entire board is used, but the **nose (front)** and **tail (back)** are primarily engaged during takeoff and landing, with the **center** providing balance and control mid-air.
+
+98 >>> soccer_ball | catch | soccer_ball_003333.jpg
+📝 Output Sentence: When people perform a catch with a soccer ball, they typically use their hands and arms to grasp the entire surface of the ball, as it is not designed for catching like a baseball or football but rather for kicking and controlling with feet or body.
+
+99 >>> soccer_ball | kick | soccer_ball_001588.jpg
+📝 Output Sentence: When people kick a soccer ball, they typically use the **front or top surface** of the ball, striking it with the **instep or inside of the foot** for control and accuracy.
+
+100 >>> suitcase | drag | suitcase_002998.jpg
+📝 Output Sentence: The wheels at the bottom of the suitcase are used for dragging it along the ground.
+Traceback (most recent call last):
+  File "/root/qwen3_AG/AttentionHeads/attention_save_output.py", line 219, in <module>
+    df_fin.iloc[(attempt_time-1)*save_every:(attempt_time)*save_every].to_pickle(f"attention_result_full_output_32B_{attempt_time}.pkl")
+  File "/root/anaconda3/envs/qwen3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/root/anaconda3/envs/qwen3/lib/python3.9/site-packages/pandas/core/generic.py", line 3184, in to_pickle
+    to_pickle(
+  File "/root/anaconda3/envs/qwen3/lib/python3.9/site-packages/pandas/io/pickle.py", line 111, in to_pickle
+    pickle.dump(obj, handles.handle, protocol=protocol)
+OSError: [Errno 28] No space left on 
+
+nohup: ignoring input
+🤖 Qwen/Qwen3-VL-32B-Instruct 모델 로딩중...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:07,  1.63it/s]
+Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:08,  1.49it/s]
+Loading checkpoint shards:  21%|██▏       | 3/14 [00:01<00:06,  1.58it/s]
+Loading checkpoint shards:  29%|██▊       | 4/14 [00:02<00:06,  1.62it/s]
+Loading checkpoint shards:  36%|███▌      | 5/14 [00:03<00:05,  1.65it/s]
+Loading checkpoint shards:  43%|████▎     | 6/14 [00:03<00:04,  1.67it/s]
+Loading checkpoint shards:  50%|█████     | 7/14 [00:04<00:04,  1.71it/s]
+Loading checkpoint shards:  57%|█████▋    | 8/14 [00:04<00:03,  1.73it/s]
+Loading checkpoint shards:  64%|██████▍   | 9/14 [00:05<00:02,  1.75it/s]
+Loading checkpoint shards:  71%|███████▏  | 10/14 [00:05<00:02,  1.76it/s]
+Loading checkpoint shards:  79%|███████▊  | 11/14 [00:06<00:01,  1.76it/s]
+Loading checkpoint shards:  86%|████████▌ | 12/14 [00:07<00:01,  1.78it/s]
+Loading checkpoint shards:  93%|█████████▎| 13/14 [00:07<00:00,  1.81it/s]
+Loading checkpoint shards: 100%|██████████| 14/14 [00:08<00:00,  1.89it/s]
+Loading checkpoint shards: 100%|██████████| 14/14 [00:08<00:00,  1.74it/s]
+length of Data : 121
+
+95 >>> snowboard | carry | snowboard_001325.jpg
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+📝 Output Sentence: People typically carry a snowboard by gripping the **edges or the ends** of the board, often using the **rounded tips** or the **centered area near the bindings** for balance and comfort.
+
+96 >>> snowboard | hold | snowboard_001704.jpg
+📝 Output Sentence: When people perform a "hold" with a snowboard, they typically use the **edges** of the snowboard—specifically the **sidecut edges**—to maintain control and balance while riding or stopping.
+
+97 >>> snowboard | jump | snowboard_001704.jpg
+📝 Output Sentence: When people perform a jump with a snowboard, the entire board is used, but the **nose (front)** and **tail (back)** are primarily engaged during takeoff and landing, with the **center** providing balance and control mid-air.
+
+98 >>> soccer_ball | catch | soccer_ball_003333.jpg
+📝 Output Sentence: When people perform a catch with a soccer ball, they typically use their hands and arms to grasp the entire surface of the ball, as it is not designed for catching like a baseball or football but rather for kicking and controlling with feet or body.
+
+99 >>> soccer_ball | kick | soccer_ball_001588.jpg
+📝 Output Sentence: When people kick a soccer ball, they typically use the **front or top surface** of the ball, striking it with the **instep or inside of the foot** for control and accuracy.
+
+100 >>> suitcase | drag | suitcase_002998.jpg
+📝 Output Sentence: The wheels at the bottom of the suitcase are used for dragging it along the ground.
+✅ Saved at index=20
+
+101 >>> suitcase | hold | suitcase_003687.jpg
+📝 Output Sentence: People use the telescopic handle on top of the suitcase for holding and pulling it.
+
+102 >>> suitcase | open | suitcase_000520.jpg
+📝 Output Sentence: The zipper is the part of the suitcase used to "open" it.
+
+103 >>> suitcase | pack | suitcase_002212.jpg
+📝 Output Sentence: The main compartment inside the suitcase, lined with leopard print fabric and featuring mesh pockets and straps, is used for packing.
+
+104 >>> suitcase | pick_up | suitcase_002493.jpg
+📝 Output Sentence: People typically use the top handle or the side handle of the suitcase for 'pick_up'.
+
+105 >>> surfboard | carry | surfboard_002422.jpg
+📝 Output Sentence: People typically carry a surfboard by gripping the **center of the board’s top surface**, near the **middle or just behind the nose**, where it’s thickest and most balanced, often using the **handholds or indentations** if present, as seen in the image with the black circular grips.
+✅ Saved at index=21
+
+106 >>> surfboard | hold | surfboard_002631.jpg
+📝 Output Sentence: The part of the surfboard used for "hold" is typically the **tail** or **rear end**, where surfers grip it with their hands while paddling or standing up.
+
+107 >>> surfboard | jump | surfboard_000658.jpg
+📝 Output Sentence: When performing a jump with a surfboard, the tail (rear end) of the board is typically used to generate lift and pop off the wave.
+
+108 >>> surfboard | lie_on | surfboard_000221.jpg
+📝 Output Sentence: When people perform "lie_on" with a surfboard, they typically use the flat, broad top surface (also called the deck) of the board.
+
+109 >>> surfboard | sit_on | surfboard_000010.jpg
+📝 Output Sentence: The central, textured deck area of the surfboard, typically featuring grip patterns and foot placements, is used for sitting on.
+
+110 >>> tennis_racket | hit | tennis_racket_002268.jpg
+📝 Output Sentence: The strings of the tennis racket are used to hit the ball.
+✅ Saved at index=22
+
+111 >>> tennis_racket | hold | tennis_racket_001785.jpg
+📝 Output Sentence: The handle of the tennis racket is used for holding.
+
+112 >>> tennis_racket | swing | tennis_racket_003066.jpg
+📝 Output Sentence: The handle of the tennis racket is used for swinging, as it is gripped by the player to control and maneuver the racket during a swing.
+
+113 >>> toothbrush | brush_with | toothbrush_001764.jpg
+📝 Output Sentence: The bristles at the head of the toothbrush are used for 'brush_with' when people brush their teeth.
+
+114 >>> toothbrush | hold | toothbrush_003341.jpg
+📝 Output Sentence: The handle of the toothbrush is used for holding.
+
+115 >>> toothbrush | wash | toothbrush_001991.jpg
+📝 Output Sentence: The bristles at the head of the toothbrush are used for washing the teeth.
+✅ Saved at index=23
+
+116 >>> wine_glass | drink_with | wine_glass_003343.jpg
+📝 Output Sentence: The bowl of the wine glass is used for drinking, as it holds the liquid and is brought to the mouth.
+
+117 >>> wine_glass | hold | wine_glass_002374.jpg
+📝 Output Sentence: People typically hold the wine glass by its stem to avoid warming the wine with their hand and to prevent smudging the bowl.
+
+118 >>> wine_glass | pour | wine_glass_000186.jpg
+📝 Output Sentence: The rim of the wine glass is used for pouring, as the liquid flows over it into the glass.
+
+119 >>> wine_glass | sip | wine_glass_003343.jpg
+📝 Output Sentence: The rim of the wine glass is used for sipping.
+
+120 >>> wine_glass | wash | wine_glass_000186.jpg
+📝 Output Sentence: When people perform a "wash" with a wine glass, the bowl (the rounded part) of the wine glass is used to hold and swirl the liquid for rinsing or cleaning purposes.
+✅ Saved at index=24
+작업 완료

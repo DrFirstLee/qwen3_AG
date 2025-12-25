@@ -1,0 +1,628 @@
+🤖 Qwen/Qwen3-VL-32B-Instruct 모델 로딩중...
+length of Data : 121
+0  >>>>>>>>>>>>>>>>>>>>>>>    apple cut apple_000054.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'apple'
+decoded: 'apple'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=0
+1  >>>>>>>>>>>>>>>>>>>>>>>    apple eat apple_001541.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'fruit'
+decoded: 'fruit'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+2  >>>>>>>>>>>>>>>>>>>>>>>    apple peel apple_001541.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'fruit'
+decoded: 'fruit'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+3  >>>>>>>>>>>>>>>>>>>>>>>    axe hit axe_000961.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+4  >>>>>>>>>>>>>>>>>>>>>>>    axe hold axe_001552.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+5  >>>>>>>>>>>>>>>>>>>>>>>    badminton_racket hold badminton_racket_002255.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+6  >>>>>>>>>>>>>>>>>>>>>>>    badminton_racket swing badminton_racket_003649.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+7  >>>>>>>>>>>>>>>>>>>>>>>    banana cut banana_002623.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'banana'
+decoded: 'banana'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+8  >>>>>>>>>>>>>>>>>>>>>>>    banana eat banana_002458.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'banana'
+decoded: 'banana'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+9  >>>>>>>>>>>>>>>>>>>>>>>    banana peel banana_000480.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'banana'
+decoded: 'banana'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+10  >>>>>>>>>>>>>>>>>>>>>>>    baseball throw baseball_002670.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'ball'
+decoded: 'ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+11  >>>>>>>>>>>>>>>>>>>>>>>    baseball_bat hit baseball_bat_001882.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġbat'
+decoded: ' bat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+12  >>>>>>>>>>>>>>>>>>>>>>>    baseball_bat hold baseball_bat_002547.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+13  >>>>>>>>>>>>>>>>>>>>>>>    baseball_bat swing baseball_bat_001882.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+14  >>>>>>>>>>>>>>>>>>>>>>>    basketball throw basketball_003534.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'ball'
+decoded: 'ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+15  >>>>>>>>>>>>>>>>>>>>>>>    bed lie_on bed_002880.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'bed'
+decoded: 'bed'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+16  >>>>>>>>>>>>>>>>>>>>>>>    bed sit_on bed_003622.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'bed'
+decoded: 'bed'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+17  >>>>>>>>>>>>>>>>>>>>>>>    bench lie_on bench_003727.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+18  >>>>>>>>>>>>>>>>>>>>>>>    bench sit_on bench_001877.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+19  >>>>>>>>>>>>>>>>>>>>>>>    bicycle push bicycle_002432.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'bars'
+decoded: 'bars'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+20  >>>>>>>>>>>>>>>>>>>>>>>    bicycle ride bicycle_003046.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1015 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=20
+21  >>>>>>>>>>>>>>>>>>>>>>>    bicycle sit_on bicycle_002100.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+22  >>>>>>>>>>>>>>>>>>>>>>>    binoculars look_out binoculars_003630.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 's'
+decoded: 's'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+23  >>>>>>>>>>>>>>>>>>>>>>>    book hold book_001195.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġpage'
+decoded: ' page'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+24  >>>>>>>>>>>>>>>>>>>>>>>    book open book_003044.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġpage'
+decoded: ' page'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+25  >>>>>>>>>>>>>>>>>>>>>>>    bottle drink_with bottle_003259.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġcap'
+decoded: ' cap'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+26  >>>>>>>>>>>>>>>>>>>>>>>    bottle hold bottle_001227.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġbody'
+decoded: ' body'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+27  >>>>>>>>>>>>>>>>>>>>>>>    bottle open bottle_001033.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġcap'
+decoded: ' cap'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+28  >>>>>>>>>>>>>>>>>>>>>>>    bottle pour bottle_002780.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġbody'
+decoded: ' body'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+29  >>>>>>>>>>>>>>>>>>>>>>>    bowl hold bowl_000546.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'owl'
+decoded: 'owl'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+30  >>>>>>>>>>>>>>>>>>>>>>>    bowl stir bowl_000134.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġinside'
+decoded: ' inside'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+31  >>>>>>>>>>>>>>>>>>>>>>>    bowl wash bowl_002825.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġbowl'
+decoded: ' bowl'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+32  >>>>>>>>>>>>>>>>>>>>>>>    broccoli eat broccoli_002796.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'ccoli'
+decoded: 'ccoli'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+33  >>>>>>>>>>>>>>>>>>>>>>>    camera take_photo camera_002534.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġgrip'
+decoded: ' grip'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+34  >>>>>>>>>>>>>>>>>>>>>>>    carrot cut carrot_001443.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'rot'
+decoded: 'rot'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+35  >>>>>>>>>>>>>>>>>>>>>>>    carrot eat carrot_001443.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'rot'
+decoded: 'rot'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+36  >>>>>>>>>>>>>>>>>>>>>>>    carrot peel carrot_003707.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'rot'
+decoded: 'rot'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+37  >>>>>>>>>>>>>>>>>>>>>>>    cell_phone take_photo cell_phone_000601.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġphone'
+decoded: ' phone'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+38  >>>>>>>>>>>>>>>>>>>>>>>    cell_phone talk_on cell_phone_000601.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġscreen'
+decoded: ' screen'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+39  >>>>>>>>>>>>>>>>>>>>>>>    cell_phone text_on cell_phone_003361.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġscreen'
+decoded: ' screen'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+40  >>>>>>>>>>>>>>>>>>>>>>>    chair sit_on chair_002839.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=40
+41  >>>>>>>>>>>>>>>>>>>>>>>    couch lie_on couch_003293.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+42  >>>>>>>>>>>>>>>>>>>>>>>    couch sit_on couch_000779.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+43  >>>>>>>>>>>>>>>>>>>>>>>    cup drink_with cup_000508.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+44  >>>>>>>>>>>>>>>>>>>>>>>    cup hold cup_002518.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+45  >>>>>>>>>>>>>>>>>>>>>>>    cup pour cup_001535.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+46  >>>>>>>>>>>>>>>>>>>>>>>    cup sip cup_001864.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+47  >>>>>>>>>>>>>>>>>>>>>>>    cup wash cup_003621.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'cup'
+decoded: 'cup'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+48  >>>>>>>>>>>>>>>>>>>>>>>    discus throw discus_003558.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+49  >>>>>>>>>>>>>>>>>>>>>>>    drum beat drum_002586.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'um'
+decoded: 'um'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+50  >>>>>>>>>>>>>>>>>>>>>>>    fork hold fork_000804.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+51  >>>>>>>>>>>>>>>>>>>>>>>    fork lift fork_001691.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+52  >>>>>>>>>>>>>>>>>>>>>>>    fork stick fork_000095.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'ines'
+decoded: 'ines'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+53  >>>>>>>>>>>>>>>>>>>>>>>    fork wash fork_001691.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'ines'
+decoded: 'ines'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+54  >>>>>>>>>>>>>>>>>>>>>>>    frisbee catch frisbee_000598.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+55  >>>>>>>>>>>>>>>>>>>>>>>    frisbee hold frisbee_001130.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+56  >>>>>>>>>>>>>>>>>>>>>>>    frisbee throw frisbee_003249.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+57  >>>>>>>>>>>>>>>>>>>>>>>    golf_clubs hold golf_clubs_000045.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+58  >>>>>>>>>>>>>>>>>>>>>>>    golf_clubs swing golf_clubs_001992.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+59  >>>>>>>>>>>>>>>>>>>>>>>    hammer hit hammer_001006.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+60  >>>>>>>>>>>>>>>>>>>>>>>    hammer hold hammer_000215.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=60
+61  >>>>>>>>>>>>>>>>>>>>>>>    hot_dog eat hot_dog_002166.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġdog'
+decoded: ' dog'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+62  >>>>>>>>>>>>>>>>>>>>>>>    javelin throw javelin_001474.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+63  >>>>>>>>>>>>>>>>>>>>>>>    keyboard type_on keyboard_000439.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'keyboard'
+decoded: 'keyboard'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+64  >>>>>>>>>>>>>>>>>>>>>>>    knife cut_with knife_001749.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġblade'
+decoded: ' blade'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+65  >>>>>>>>>>>>>>>>>>>>>>>    knife hold knife_002682.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+66  >>>>>>>>>>>>>>>>>>>>>>>    knife stick knife_001072.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġblade'
+decoded: ' blade'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+67  >>>>>>>>>>>>>>>>>>>>>>>    knife wash knife_002720.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġblade'
+decoded: ' blade'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+68  >>>>>>>>>>>>>>>>>>>>>>>    laptop type_on laptop_000585.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġkeyboard'
+decoded: ' keyboard'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+69  >>>>>>>>>>>>>>>>>>>>>>>    microwave open microwave_001049.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+70  >>>>>>>>>>>>>>>>>>>>>>>    motorcycle push motorcycle_003541.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1013 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+71  >>>>>>>>>>>>>>>>>>>>>>>    motorcycle ride motorcycle_002198.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1018 / token: 'rest'
+decoded: 'rest'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+72  >>>>>>>>>>>>>>>>>>>>>>>    motorcycle sit_on motorcycle_000837.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġseat'
+decoded: ' seat'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+73  >>>>>>>>>>>>>>>>>>>>>>>    orange cut orange_001193.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'orange'
+decoded: 'orange'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+74  >>>>>>>>>>>>>>>>>>>>>>>    orange eat orange_001193.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'orange'
+decoded: 'orange'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+75  >>>>>>>>>>>>>>>>>>>>>>>    orange peel orange_001193.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'orange'
+decoded: 'orange'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+76  >>>>>>>>>>>>>>>>>>>>>>>    orange wash orange_001193.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1006 / token: 'orange'
+decoded: 'orange'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+77  >>>>>>>>>>>>>>>>>>>>>>>    oven open oven_001370.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+78  >>>>>>>>>>>>>>>>>>>>>>>    pen write pen_003590.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġgrip'
+decoded: ' grip'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+79  >>>>>>>>>>>>>>>>>>>>>>>    punching_bag boxing punching_bag_001845.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġbag'
+decoded: ' bag'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+80  >>>>>>>>>>>>>>>>>>>>>>>    punching_bag kick punching_bag_001639.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġbag'
+decoded: ' bag'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=80
+81  >>>>>>>>>>>>>>>>>>>>>>>    refrigerator open refrigerator_002162.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+82  >>>>>>>>>>>>>>>>>>>>>>>    rugby_ball catch rugby_ball_003522.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġball'
+decoded: ' ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+83  >>>>>>>>>>>>>>>>>>>>>>>    rugby_ball kick rugby_ball_002080.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġball'
+decoded: ' ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+84  >>>>>>>>>>>>>>>>>>>>>>>    rugby_ball throw rugby_ball_000001.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġball'
+decoded: ' ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+85  >>>>>>>>>>>>>>>>>>>>>>>    scissors cut_with scissors_002479.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġblade'
+decoded: ' blade'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+86  >>>>>>>>>>>>>>>>>>>>>>>    scissors hold scissors_002479.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+87  >>>>>>>>>>>>>>>>>>>>>>>    skateboard carry skateboard_002668.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġskateboard'
+decoded: ' skateboard'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+88  >>>>>>>>>>>>>>>>>>>>>>>    skateboard hold skateboard_002387.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġskateboard'
+decoded: ' skateboard'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+89  >>>>>>>>>>>>>>>>>>>>>>>    skateboard jump skateboard_002387.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1011 / token: 'Ġarea'
+decoded: ' area'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+90  >>>>>>>>>>>>>>>>>>>>>>>    skateboard sit_on skateboard_001460.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġtop'
+decoded: ' top'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+91  >>>>>>>>>>>>>>>>>>>>>>>    skis carry skis_002829.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'is'
+decoded: 'is'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+92  >>>>>>>>>>>>>>>>>>>>>>>    skis hold skis_001357.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'is'
+decoded: 'is'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+93  >>>>>>>>>>>>>>>>>>>>>>>    skis jump skis_002829.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġarea'
+decoded: ' area'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+94  >>>>>>>>>>>>>>>>>>>>>>>    skis pick_up skis_001547.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'is'
+decoded: 'is'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+95  >>>>>>>>>>>>>>>>>>>>>>>    snowboard carry snowboard_001325.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+96  >>>>>>>>>>>>>>>>>>>>>>>    snowboard hold snowboard_001704.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+97  >>>>>>>>>>>>>>>>>>>>>>>    snowboard jump snowboard_001704.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġarea'
+decoded: ' area'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+98  >>>>>>>>>>>>>>>>>>>>>>>    soccer_ball catch soccer_ball_003333.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġball'
+decoded: ' ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+99  >>>>>>>>>>>>>>>>>>>>>>>    soccer_ball kick soccer_ball_001588.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġball'
+decoded: ' ball'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+100  >>>>>>>>>>>>>>>>>>>>>>>    suitcase drag suitcase_002998.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=100
+101  >>>>>>>>>>>>>>>>>>>>>>>    suitcase hold suitcase_003687.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+102  >>>>>>>>>>>>>>>>>>>>>>>    suitcase open suitcase_000520.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+103  >>>>>>>>>>>>>>>>>>>>>>>    suitcase pack suitcase_002212.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'Ġsuitcase'
+decoded: ' suitcase'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+104  >>>>>>>>>>>>>>>>>>>>>>>    suitcase pick_up suitcase_002493.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'case'
+decoded: 'case'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+105  >>>>>>>>>>>>>>>>>>>>>>>    surfboard carry surfboard_002422.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+106  >>>>>>>>>>>>>>>>>>>>>>>    surfboard hold surfboard_002631.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+107  >>>>>>>>>>>>>>>>>>>>>>>    surfboard jump surfboard_000658.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'Ġarea'
+decoded: ' area'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+108  >>>>>>>>>>>>>>>>>>>>>>>    surfboard lie_on surfboard_000221.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+109  >>>>>>>>>>>>>>>>>>>>>>>    surfboard sit_on surfboard_000010.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1007 / token: 'board'
+decoded: 'board'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+110  >>>>>>>>>>>>>>>>>>>>>>>    tennis_racket hit tennis_racket_002268.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+111  >>>>>>>>>>>>>>>>>>>>>>>    tennis_racket hold tennis_racket_001785.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+112  >>>>>>>>>>>>>>>>>>>>>>>    tennis_racket swing tennis_racket_003066.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+113  >>>>>>>>>>>>>>>>>>>>>>>    toothbrush brush_with toothbrush_001764.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'istle'
+decoded: 'istle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+114  >>>>>>>>>>>>>>>>>>>>>>>    toothbrush hold toothbrush_003341.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1009 / token: 'Ġhandle'
+decoded: ' handle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+115  >>>>>>>>>>>>>>>>>>>>>>>    toothbrush wash toothbrush_001991.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1010 / token: 'istle'
+decoded: 'istle'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+116  >>>>>>>>>>>>>>>>>>>>>>>    wine_glass drink_with wine_glass_003343.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+117  >>>>>>>>>>>>>>>>>>>>>>>    wine_glass hold wine_glass_002374.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġneck'
+decoded: ' neck'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+118  >>>>>>>>>>>>>>>>>>>>>>>    wine_glass pour wine_glass_000186.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġneck'
+decoded: ' neck'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+119  >>>>>>>>>>>>>>>>>>>>>>>    wine_glass sip wine_glass_003343.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġrim'
+decoded: ' rim'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+120  >>>>>>>>>>>>>>>>>>>>>>>    wine_glass wash wine_glass_000186.jpg
+vis_start_idx: 43 vis_end_idx: 1005
+q_txt_idx: 1008 / token: 'Ġbody'
+decoded: ' body'
+grid_h : 62, grid_w : 62, grid_t :1, llm_grid_h : 31, llm_grid_w : 31
+✅ saved at index=120
+         action  ...                                              s_img
+0           cut  ...  [{'layer': 0, 'head': 0, 'S_img': 0.0971679687...
+1           eat  ...  [{'layer': 0, 'head': 0, 'S_img': 0.2255859375...
+2          peel  ...  [{'layer': 0, 'head': 0, 'S_img': 0.2255859375...
+3           hit  ...  [{'layer': 0, 'head': 0, 'S_img': 0.248046875,...
+4          hold  ...  [{'layer': 0, 'head': 0, 'S_img': 0.177734375,...
+..          ...  ...                                                ...
+116  drink_with  ...  [{'layer': 0, 'head': 0, 'S_img': 0.09765625, ...
+117        hold  ...  [{'layer': 0, 'head': 0, 'S_img': 0.0576171875...
+118        pour  ...  [{'layer': 0, 'head': 0, 'S_img': 0.0471191406...
+119         sip  ...  [{'layer': 0, 'head': 0, 'S_img': 0.0815429687...
+120        wash  ...  [{'layer': 0, 'head': 0, 'S_img': 0.0776367187...
+
+[121 rows x 5 columns]

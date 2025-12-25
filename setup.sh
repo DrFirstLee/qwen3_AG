@@ -52,6 +52,11 @@ ssh -p 40743 root@185.65.93.114 -L 8080:localhost:8080
 ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying/ -czf - top_attention_heads" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
 ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying -czf - 32B_exo_random2" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
 
+scp -i /home/bongo/porter_notebook/research/research.pem -P 40743 root@185.65.93.114:/root/qwen3_AG/AttentionHeads/attention_result_full_output_32B_3.pkl /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
+scp -i /home/bongo/porter_notebook/research/research.pem -P 40743 root@185.65.93.114:/root/qwen3_AG/AttentionHeads/attention_32B_simple_descriptions.logs /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
+
+/root/qwen3_AG/AttentionHeads/
+
 /root/anaconda3/envs/qwen3/bin/python ego_only_relative.py
 /venv/qwen3/bin/python ego_only_relative.py
 

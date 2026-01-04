@@ -47,6 +47,8 @@ df_fin['output_attentions'] = "" # 여기에 복잡한 구조의 데이터가 �
 print(f"length of Data : {len(df_fin)}")
 
 for index, row in df_fin.iterrows():
+    # if (index < 74) or (index > 80):
+    #     continue
     object_name = row['object']
     action = row['action']
     filename = row['filename']
@@ -133,7 +135,7 @@ for index, row in df_fin.iterrows():
     ids_list = full_input_ids[0].tolist()
     tok = processor.tokenizer
     
-# Vision Token ID 정의
+    # Vision Token ID 정의
     vision_start_id = tok.convert_tokens_to_ids("<|vision_start|>")
     vision_end_id   = tok.convert_tokens_to_ids("<|vision_end|>")
 
@@ -141,32 +143,26 @@ for index, row in df_fin.iterrows():
     all_starts = [i for i, x in enumerate(ids_list) if x == vision_start_id]
     all_ends   = [i for i, x in enumerate(ids_list) if x == vision_end_id]
 
-    # 2. 우리가 원하는 건 '첫 번째 이미지(Egocentric)' 입니다.
-    # index 0 -> 첫 번째 이미지 (Egocentric)
-    # index 1 -> 두 번째 이미지 (Exocentric)
-    target_img_idx = 0 
-    
-    if len(all_starts) > target_img_idx:
-        vis_start_idx = all_starts[target_img_idx]
-        vis_end_idx   = all_ends[target_img_idx]
-    else:
-        # 혹시라도 이미지가 제대로 안 들어갔을 경우를 대비한 예외처리
-        print(f"Error: Image index {target_img_idx} not found in sequence.")
+# [수정] 이미지 2개가 정상적으로 있는지 확인
+    if len(all_starts) < 2:
+        print("Error: Expected 2 images, but found fewer.")
         raise Exception("Image not found in sequence.")
+    else:
+        # 첫 번째 이미지 (Egocentric) 범위
+        idx1_start, idx1_end = all_starts[0], all_ends[0]
+        # 두 번째 이미지 (Exocentric) 범위
+        idx2_start, idx2_end = all_starts[1], all_ends[1]
 
-    # Output Token 위치 범위 (Query 범위)
-    # input_len 부터 끝까지가 생성된 답변의 토큰들입니다.
-    # 단, � 같은게 뒤에 붙을 수 있으니 실제 유의미한 토큰만 볼 수도 있음.
-    # 여기서는 output_ids 전체를 대상으로 함.
-    query_start_idx = input_len
-    query_end_idx = len(ids_list) 
+    # 히트맵 생성을 위한 Target(Ego) 설정
+    target_start = idx1_start
+    target_end = idx1_end
 
-    # Grid Info for Reshaping
+    # Grid Info (첫 번째 이미지 기준)
     grid_t, grid_h, grid_w = inputs.image_grid_thw[0].detach().cpu().numpy()
     llm_grid_h = grid_h // 2
     llm_grid_w = grid_w // 2
-
-    
+    query_start_idx = input_len
+    query_end_idx = len(ids_list)  
     output_attn_data = []
 
     # 각 Output Token에 대해 순회 (Query Iteration)
@@ -192,22 +188,27 @@ for index, row in df_fin.iterrows():
             for head_idx in range(num_heads):
                 this_head_attn = heads_attn[head_idx] # [seq_len]
                 
-                # Image Token에 대한 Attention만 추출 (Key: Vision Tokens)
-                # vis_start_idx + 1 부터 vis_end_idx 전까지가 실제 패치 토큰
-                img_attn_1d = this_head_attn[vis_start_idx + 1 : vis_end_idx]
-                
-                # S_img (Sum) 계산 (옵션)
-                s_img_val = float(img_attn_1d.sum().detach().cpu().item())
-                
+                # [수정] 1번 이미지 Attention 합
+                attn_img1 = this_head_attn[idx1_start + 1 : idx1_end]
+                sum_img1 = float(attn_img1.sum().detach().cpu().item())
+                # [수정] 2번 이미지 Attention 합 (존재할 경우)
+                sum_img2 = 0.0
+                attn_img2 = this_head_attn[idx2_start + 1 : idx2_end]
+                sum_img2 = float(attn_img2.sum().detach().cpu().item())
+                # [최종] 두 이미지의 Attention 총합
+                total_s_img_val = sum_img1 + sum_img2
+
                 # Heatmap 저장 (메모리 절약을 위해 float16 등으로 변환 고려 가능)
-                heatmap_np = img_attn_1d.reshape(llm_grid_h, llm_grid_w).float().cpu().numpy()
+                heatmap_np = attn_img1.reshape(llm_grid_h, llm_grid_w).float().cpu().numpy()
                 
                 # 필요한 정보만 저장 (전체 맵을 다 저장하면 용량이 매우 큽니다!)
                 # 여기서는 요청대로 "V 값을 모두 저장" 하도록 heatmap을 저장합니다.
                 token_data["attentions"].append({
                     "layer": layer_idx,
                     "head": head_idx,
-                    "s_img": s_img_val, 
+                    "s_img": total_s_img_val, # <--- 여기가 수정됨 (1+2 합)
+                    "s_img_ego": sum_img1,    # (옵션) 나중을 위해 분리해서 저장해도 좋음
+                    "s_img_exo": sum_img2,    # (옵션) 
                     "heatmap": heatmap_np 
                 })
         
@@ -219,10 +220,11 @@ for index, row in df_fin.iterrows():
     # STEP 6: Save & Cleanup
     # -------------------------------------------------------
     save_every = 5 # 용량이 크므로 더 자주 저장 권장
-    if (index % save_every == 0) and (index > 0):
+    if (index % save_every == 0) and (index > 1):
         save_index = int(index/save_every)
-        df_fin.iloc[index-5:index].to_pickle(f"exo_attention_result_2B_{save_index}.pkl")
-        print(f"✅ Saved at index={index}")
+        print(f"✅ Saving!!!=== at index={index}")
+        df_fin.iloc[index-5:index].to_pickle(f"exo_attention_result_32B_2_{save_index}.pkl")
+        print(f"✅ Saved at index={index} // {save_index}")
 
     # Memory Cleanup
     del generated_ids, full_input_ids, outputs, attentions, output_attn_data

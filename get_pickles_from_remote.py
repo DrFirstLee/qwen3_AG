@@ -5,15 +5,16 @@ import paramiko
 
 # --- 설정 정보 ---
 REMOTE_HOST = "185.65.93.114"
-REMOTE_PORT = "40743"
+REMOTE_PORT = "45474"
 REMOTE_USER = "root"
 KEY_PATH = "/home/bongo/porter_notebook/research/research.pem"
 
-REMOTE_DIR = "/root/qwen3_AG/AttentionHeads/" 
-LOCAL_DIR = "/home/bongo/porter_notebook/research/qwen3/AttentionHeads/"
+REMOTE_DIR = "/root/qwen3_AG/AttentionHeads_exo/" 
+LOCAL_DIR = "/home/bongo/porter_notebook/research/qwen3/AttentionHeads_exo/output_results2/"
 INTERVAL = 10 
 
-search_pattern = f"{REMOTE_DIR}attention_result_full_output_32B_*.pkl"
+# search_pattern = f"{REMOTE_DIR}exo_attention_result_32B_2_*.pkl"
+search_pattern = f"{REMOTE_DIR}exo_sample_32B_*.pkl"
 
 def get_and_delete_large_files():
     ssh = paramiko.SSHClient()

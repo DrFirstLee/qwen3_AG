@@ -162,6 +162,20 @@ def make_input_image(file_name_real):
         # 4. 바로 인코딩 후 리턴 (한 줄로 처리)
         return base64.b64encode(buffered.getvalue()).decode('utf-8')
 
+def make_input_image_exo(file_name_real):
+    # 1. 이미지 열기 및 리사이즈
+    with Image.open(file_name_real) as img:
+        img = img.convert("RGB")
+        resized_image = img.resize((768, 768))
+        
+        # 2. 함수 내부에서 버퍼 생성 (with 구문 사용 추천 X -> getvalue 후엔 자동 GC됨)
+        buffered = BytesIO()
+        # 3. 버퍼에 저장 (메모리에 JPEG 생성)
+        resized_image.save(buffered, format="JPEG")
+        
+        # 4. 바로 인코딩 후 리턴 (한 줄로 처리)
+        return base64.b64encode(buffered.getvalue()).decode('utf-8')
+
 
 def get_gt_path(image_path):
     """

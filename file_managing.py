@@ -139,6 +139,7 @@ def get_clipseg_heatmap(
     return final_heatmap
 
 
+    
 def load_selected_samples(json_path):
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)

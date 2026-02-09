@@ -18,6 +18,7 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append("/home/bongo/porter_notebook/research/qwen3")
 from file_managing import (
     make_input_image,
+    make_input_image_exo,
     calculate_metrics, 
     load_ground_truth ,
     prompt_dict_obj
@@ -28,10 +29,7 @@ from VLM_model_dot_relative import MetricsTracker
 
 from config import AGD20K_PATH, model_name
 
-# --- [추가] Exo 이미지 로드 함수 ---
-def make_input_image_exo(path):
-    # 기존 make_input_image와 동일하거나 exo 전용 전처리가 필요할 경우 수정
-    return make_input_image(path)
+
 
 # ------------------------------------------------------
 # 1. 환경 설정 및 모델 로딩
@@ -310,7 +308,7 @@ for index, row in tqdm(df_fin.iterrows(), total=len(df_fin), desc="Processing"):
     # -------------------------------------------------------------------------
     desc_context = f"Refer to the second image (exocentric view) for context. Based on the first image (egocentric view), when people perform {action} with {object_name.replace('_',' ')}, which part of the {object_name.replace('_',' ')} is used for '{action}'? Answer in one sentence."
     
-    ego_b64 = make_input_image(ego_path)
+    ego_b64 = make_input_image_exo(ego_path)
     exo_b64 = make_input_image_exo(exo_path)
 
     msg_context = [

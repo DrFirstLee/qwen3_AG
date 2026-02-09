@@ -167,7 +167,7 @@ def make_input_image_exo(file_name_real):
     # 1. 이미지 열기 및 리사이즈
     with Image.open(file_name_real) as img:
         img = img.convert("RGB")
-        resized_image = img.resize((768, 768))
+        resized_image = img.resize((512, 512))
         
         # 2. 함수 내부에서 버퍼 생성 (with 구문 사용 추천 X -> getvalue 후엔 자동 GC됨)
         buffered = BytesIO()

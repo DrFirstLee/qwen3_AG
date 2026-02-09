@@ -47,13 +47,13 @@ echo ">>> qwen3 환경 생성 완료. 다음 명령으로 활성화하세요:"
 echo "conda activate qwen3"
 
 
-ssh -p 40743 root@185.65.93.114 -L 8080:localhost:8080
+ssh -p 4811  root@40.84.35.44 -L 8080:localhost:8080
 
-ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying/ -czf - top_attention_heads" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
-ssh -i /home/bongo/porter_notebook/research/research.pem -p 40743 root@185.65.93.114  "tar -C /root/qwen3_AG/APM_dot_verifying -czf - 32B_exo_random2" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
+ssh -i /home/bongo/porter_notebook/research/research.pem -p 4811  root@40.84.35.44  "tar -C /root/qwen3_AG/ECCV_codes/ablations/Seen -czf - 32B_vis_all_coocur_exo_analysis" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/ECCV_codes/ablations/Seen
+ssh -i /home/bongo/porter_notebook/research/research.pem -p 4811  root@40.84.35.44  "tar -C /root/qwen3_AG/APM_dot_verifying -czf - 32B_exo_random2" | tar -xzvf - -C /home/bongo/porter_notebook/research/qwen3/
 
-scp -i /home/bongo/porter_notebook/research/research.pem -P 40743 root@185.65.93.114:/root/qwen3_AG/AttentionHeads/attention_result_full_output_32B_3.pkl /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
-scp -i /home/bongo/porter_notebook/research/research.pem -P 40743 root@185.65.93.114:/root/qwen3_AG/AttentionHeads/attention_32B_simple_descriptions.logs /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
+scp -i /home/bongo/porter_notebook/research/research.pem -P 4811  root@40.84.35.44:/root/qwen3_AG/AttentionHeads/attention_result_full_output_32B_3.pkl /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
+scp -i /home/bongo/porter_notebook/research/research.pem -P 4811  root@40.84.35.44:/root/qwen3_AG/AttentionHeads/attention_32B_simple_descriptions.logs /home/bongo/porter_notebook/research/qwen3/AttentionHeads/
 
 /root/qwen3_AG/AttentionHeads/
 
